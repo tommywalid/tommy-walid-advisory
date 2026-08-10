@@ -1,0 +1,82 @@
+TOMMY WALID ADVISORY MASTER PROJECT SUMMARY
+
+PROJECT GOAL - Build a premium multilingual website (FR/EN/AR) -
+Position Tommy Walid Advisory as a trusted Dubai Real Estate Investment
+Advisor - Focus on quality, expertise, human relationship and long-term
+wealth creation - Website must generate qualified leads and become a
+long-term SEO asset
+
+DOCUMENTS TO CREATE
+
+00_Vision.md - Mission - Vision - Philosophy - Values - Promise - Brand
+signature
+
+01_Brand_Strategy.md - Positioning - Brand personality - Client
+profile - Brand voice - Customer journey - Editorial rules - CTAs
+
+02_Design_System.md - Family Office inspiration - Luxury, warm,
+discreet - Color palette - Typography - Components - Animations - UI
+rules
+
+03_Site_Architecture.md Main Menu: - Home - Projects - Market Insights -
+Our Method - Accompaniment - About - Book a Meeting
+
+Homepage: - Hero - Why Dubai - Why Tommy - Our Method - Services -
+Selected Projects - Market Insights - Reviews - FAQ - CTA
+
+Services: - Investment - Company Creation - Investor Visa - Golden
+Visa - Bank Account - Property Management - Rental - Resale - Portfolio
+Optimization - Trusted Partners
+
+Lead Funnel: Visitor → Article/Project → Qualification Form → Calendly →
+WhatsApp → Client
+
+Qualification Form: - Name - WhatsApp (required) - Email - Country -
+Budget - Objective - Investment Horizon - Message
+
+04_Technical_Architecture.md
+
+Stack: - Next.js 15 - React - TypeScript - Tailwind CSS - shadcn/ui -
+Framer Motion - Supabase - Resend - Make.com - GitHub - Vercel -
+Cloudflare - Google Analytics - Google Search Console - Microsoft
+Clarity
+
+Database: - Projects - Developers - Articles - Categories - FAQ -
+Reviews - Leads - Appointments - Users - Partners - Media
+
+05_SEO_Content_Strategy.md
+
+SEO Pillars: - Dubai Investment - Districts - Developers - Guides -
+Comparisons - Services
+
+Target: - 300+ indexable pages - Blog - FAQ - Guides - Lead magnets -
+Automated publishing with Make + AI
+
+06_Development_Roadmap.md
+
+Sprint 0: Setup Sprint 1: Design System Sprint 2: Homepage Sprint 3:
+Core Pages Sprint 4: Projects Sprint 5: Blog Sprint 6: Dashboard Sprint
+7: SEO Sprint 8: Forms Sprint 9: Automations Sprint 10: Optimization
+Sprint 11: Production Sprint 12: V2 Features
+
+07_CLAUDE_RULES.md
+
+Rules: - Read all docs before coding - Never change architecture without
+approval - Production-ready code only - Modular components - TypeScript
+strict - SEO first - Accessibility - Performance >95 - No duplicated
+code - No hardcoded content - Reusable components - Responsive
+everywhere
+
+FINAL WORKFLOW
+
+1.  Claude creates the GitHub repository.
+2.  Claude creates the entire folder structure.
+3.  Claude creates /docs.
+4.  Claude writes every specification file.
+5.  Claude starts Sprint 0.
+6.  One sprint at a time.
+7.  Commit after every completed feature.
+8.  Automatic deployment to Vercel.
+
+IMPORTANT Claude must act as a Lead Software Engineer, not as an
+assistant.

@@ -1,0 +1,74 @@
+# =============================================================================
+# Tommy Walid — .gitignore
+# Foundation-stage ignore rules. Extended as the tech stack is adopted
+# (see docs/technical/tech-stack.md).
+# =============================================================================
+
+# --- OS files ----------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Editors / IDEs ------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Environment & secrets -----------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# --- Node / JavaScript / TypeScript (future application code) ------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+dist/
+build/
+out/
+coverage/
+*.tsbuildinfo
+
+# --- Next.js (anticipated frontend framework) -----------------------------------
+.next/
+next-env.d.ts
+
+# --- Vercel ------------------------------------------------------------------
+.vercel
+
+# --- Python (in case of data/automation scripts) --------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Logs ------------------------------------------------------------------------
+logs/
+*.log
+
+# --- Package manager artifacts ----------------------------------------------------
+.npm/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# --- Local overrides ---------------------------------------------------------------
+*.local
+
+# --- Claude Code local settings (machine-specific, not project config) -------------
+.claude/settings.local.json
