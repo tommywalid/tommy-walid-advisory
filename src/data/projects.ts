@@ -56,7 +56,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "valia",
     name: "Valia",
-    published: true,
+    published: false,
     developerId: "emaar",
     location: "Dubai Creek Harbour",
     tier: "A",
@@ -99,7 +99,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "aeon",
     name: "AEON",
-    published: true,
+    published: false,
     developerId: "emaar",
     location: "Dubai Creek Harbour",
     tier: "A",
@@ -147,7 +147,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "park-lane",
     name: "Park Lane",
-    published: true,
+    published: false,
     developerId: "emaar",
     location: "Dubai Hills Estate",
     tier: "A",
@@ -194,7 +194,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "chelsea-residences",
     name: "Chelsea Residences",
-    published: true,
+    published: false,
     developerId: "damac",
     location: "Dubai Maritime City",
     tier: "B",
@@ -232,7 +232,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "damac-islands-2",
     name: "DAMAC Islands 2",
-    published: true,
+    published: false,
     developerId: "damac",
     location: "Dubailand",
     tier: "B",
@@ -278,7 +278,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "the-meriva-collection",
     name: "The Meriva Collection",
-    published: true,
+    published: false,
     developerId: "ellington",
     location: "Dubai Islands",
     tier: "B",
@@ -320,7 +320,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "everly-place",
     name: "Everly Place",
-    published: true,
+    published: false,
     developerId: "ellington",
     location: "Mohammed Bin Rashid City",
     tier: "B",
@@ -365,7 +365,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "aquarise",
     name: "Aquarise",
-    published: true,
+    published: false,
     developerId: "binghatti",
     location: "Business Bay",
     tier: "B",
@@ -398,7 +398,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "wraith",
     name: "Wraith",
-    published: true,
+    published: false,
     developerId: "binghatti",
     location: "Al Jaddaf",
     tier: "B",
@@ -439,7 +439,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "the-archive",
     name: "The Archive",
-    published: true,
+    published: false,
     developerId: "imtiaz",
     location: "DLRC",
     tier: "C",
@@ -478,7 +478,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "enre-residence",
     name: "Enre Residence",
-    published: true,
+    published: false,
     developerId: "imtiaz",
     location: "Dubai South",
     tier: "C",
@@ -520,7 +520,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "raw-district-2",
     name: "Raw District II",
-    published: true,
+    published: false,
     developerId: "imtiaz",
     location: "Downtown Jebel Ali",
     tier: "C",
@@ -560,7 +560,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "elar1s-rise",
     name: "ELAR1S Rise",
-    published: true,
+    published: false,
     developerId: "object-1",
     location: "JVT",
     tier: "C",
@@ -597,7 +597,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "aurel1a-residence",
     name: "AUREL1A Residence",
-    published: true,
+    published: false,
     developerId: "object-1",
     location: "Dubai Sports City",
     tier: "C",
@@ -636,7 +636,7 @@ export const projects: Project[] = [
   draftProject({
     slug: "samana-south-haven",
     name: "SAMANA South Haven",
-    published: true,
+    published: false,
     developerId: "samana",
     location: "Dubai South",
     tier: "C",
