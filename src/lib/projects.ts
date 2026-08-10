@@ -16,7 +16,18 @@ export function getAllProjects(): Project[] {
   return projects;
 }
 
+/**
+ * The public-facing view of the catalog. In local development (`next dev`,
+ * NODE_ENV=development) this intentionally returns every project regardless
+ * of `published` — Tommy's private review environment, never deployed
+ * publicly — so the full site can be reviewed as content comes in without a
+ * separate preview step. Production (`next build`/`next start`,
+ * NODE_ENV=production) is unaffected: published-only, exactly as before.
+ * `published` itself, and every other consumer of this function, are
+ * unchanged — this is the one gate all of them already went through.
+ */
 export function getPublishedProjects(): Project[] {
+  if (process.env.NODE_ENV !== "production") return projects;
   return projects.filter((p) => p.published);
 }
 
