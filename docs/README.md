@@ -30,7 +30,7 @@ Templates in this documentation set start as headings-only skeletons. As each do
 ## Domain Contents
 
 ### Product
-See [`product/`](product) — vision & mission, positioning, target audience, business model, roadmap, competitive analysis, feature scope.
+See [`product/`](product) — vision & mission, positioning, target audience, business model, roadmap, competitive analysis, feature scope, [V1 editorial catalog](product/v1-editorial-catalog.md).
 
 ### Branding
 See [`branding/`](branding) — brand identity, logo guidelines, color palette, typography, tone of voice, brand assets.

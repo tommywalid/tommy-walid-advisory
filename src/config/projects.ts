@@ -6,6 +6,7 @@ export const PROPERTY_TYPES: PropertyType[] = [
   "1-bed",
   "2-bed",
   "3-bed",
+  "4-bed",
   "townhouse",
   "villa",
   "office",

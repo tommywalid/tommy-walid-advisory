@@ -8,6 +8,11 @@ import { StatCard } from "@/components/dashboard/stat-card";
 const reasonLabels: Record<string, string> = {
   "missing-recommendation": "Missing “Why I Recommend” note",
   "missing-cover-media": "Missing cover photo",
+  "missing-price": "Missing starting price",
+  "missing-payment-plan": "Missing payment plan",
+  "missing-handover": "Missing handover date",
+  "missing-property-type": "Missing property type",
+  "missing-developer-trust-note": "Developer missing “Why I Trust Them” note",
 };
 
 export default function DashboardOverviewPage() {
@@ -45,20 +50,22 @@ export default function DashboardOverviewPage() {
             {incomplete.map(({ project, reasons }) => (
               <li
                 key={project.slug}
-                className="flex items-center justify-between gap-4 rounded-xl border border-gold/30 bg-gold/5 px-5 py-3"
+                className="flex flex-col gap-2 rounded-xl border border-gold/30 bg-gold/5 px-5 py-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4"
               >
-                <div className="flex items-center gap-3">
-                  <AlertTriangle className="size-4 shrink-0 text-gold" />
-                  <span className="text-sm font-medium text-forest">
-                    {project.name}
-                  </span>
-                  <span className="text-xs text-ink-soft">
-                    {reasons.map((r) => reasonLabels[r]).join(" · ")}
-                  </span>
+                <div className="flex items-start gap-3">
+                  <AlertTriangle className="mt-0.5 size-4 shrink-0 text-gold" />
+                  <div>
+                    <span className="text-sm font-medium text-forest">
+                      {project.name}
+                    </span>
+                    <p className="mt-0.5 text-xs text-ink-soft">
+                      {reasons.map((r) => reasonLabels[r]).join(" · ")}
+                    </p>
+                  </div>
                 </div>
                 <Link
                   href={`/dashboard/projects`}
-                  className="text-xs font-semibold text-forest underline underline-offset-2"
+                  className="shrink-0 text-xs font-semibold text-forest underline underline-offset-2"
                 >
                   Review
                 </Link>

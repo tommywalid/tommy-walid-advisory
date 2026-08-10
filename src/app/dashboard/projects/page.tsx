@@ -6,8 +6,13 @@ import { NewItemButton } from "@/components/dashboard/new-item-button";
 import { StatusBadge } from "@/components/dashboard/status-badge";
 import { DashboardEmptyState } from "@/components/dashboard/empty-state";
 
+const tierOrder = { A: 0, B: 1, C: 2 } as const;
+
 export default function DashboardProjectsPage() {
-  const projects = getAllProjects();
+  const projects = [...getAllProjects()].sort((a, b) => {
+    const tierDiff = (tierOrder[a.tier ?? "C"] ?? 3) - (tierOrder[b.tier ?? "C"] ?? 3);
+    return tierDiff !== 0 ? tierDiff : a.name.localeCompare(b.name);
+  });
 
   return (
     <>
@@ -27,6 +32,7 @@ export default function DashboardProjectsPage() {
           <table className="w-full text-left text-sm">
             <thead className="border-b border-beige-dark/60 bg-beige/30 text-xs text-ink-soft uppercase">
               <tr>
+                <th className="px-5 py-3 font-semibold">Tier</th>
                 <th className="px-5 py-3 font-semibold">Name</th>
                 <th className="px-5 py-3 font-semibold">Developer</th>
                 <th className="px-5 py-3 font-semibold">Location</th>
@@ -37,6 +43,7 @@ export default function DashboardProjectsPage() {
             <tbody>
               {projects.map((project) => (
                 <tr key={project.slug} className="border-b border-beige-dark/40 last:border-0">
+                  <td className="px-5 py-3 text-ink-soft">{project.tier ?? "—"}</td>
                   <td className="px-5 py-3 font-medium text-forest">{project.name}</td>
                   <td className="px-5 py-3 text-ink-soft">
                     {getDeveloper(project.developerId)?.name ?? "—"}

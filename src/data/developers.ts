@@ -1,20 +1,359 @@
 import type { Developer } from "@/types/projects";
 
 /**
- * Developer entities — one entry per builder, reused across all their
- * projects (see docs/design/projects-information-architecture.md).
- *
- * Empty until real developer relationships are documented. Do not add a
- * placeholder/example entry here — an invented "why I trust them" note
- * would violate the no-fabricated-content principle this project follows
- * throughout. Add real entries only.
- *
- * To add one:
- * developers.push({
- *   id: "kebab-case-id",
- *   name: "Developer Name",
- *   logo: "/developers/slug.png", // optional
- *   whyITrustThem: { fr: "...", en: "..." },
- * });
+ * Official V1 editorial catalog — see docs/product/v1-editorial-catalog.md.
+ * Company facts researched from official/reliable sources — full sourcing
+ * and every flagged discrepancy in docs/product/v1-catalog-research-sources.md.
+ * `whyITrustThem` stays empty for every entry: that's Tommy's personal
+ * judgment, never researched or invented. No developer here is referenced
+ * by a published project until that note exists.
  */
-export const developers: Developer[] = [];
+export const developers: Developer[] = [
+  {
+    id: "emaar",
+    name: "Emaar",
+    logo: "https://www.emaar.com/_next/image?url=%2Fimages%2Fbrand-guidelines%2FEMAAR-English-Logo.png",
+    whyITrustThem: { fr: "", en: "" },
+    overview: {
+      fr: "",
+      en: "Emaar Properties is a publicly listed Dubai-based real estate developer operating across real estate development, retail/malls, hospitality, and leisure. It is best known globally as the developer of Burj Khalifa and The Dubai Mall.",
+    },
+    history: {
+      fr: "",
+      en: "Founded in 1997 by Mohamed Alabbar in Dubai. Listed on the Dubai Financial Market via IPO in 2000. Delivered Burj Khalifa, completed 2010, the world's tallest building. Alabbar stepped down as Chairman in December 2020 but remains Founder and Managing Director.",
+    },
+    vision: {
+      fr: "",
+      en: "“The constant quest to be extraordinary is what has established Emaar as a national champion company… Our goal is to be an unstoppable company that creates enormous value for our shareholders, stakeholders, and the economy.” — Mohamed Alabbar, Founder",
+    },
+    founderOrCeo: "Mohamed Alabbar (Founder); Amit Jain (Group CEO)",
+    yearFounded: 1997,
+    headquarters: "Dubai Hills Business Park, Dubai Hills Estate, Dubai, UAE",
+    keyFigures: [
+      "AED 35.5 billion revenue, +33% YoY (FY2024)",
+      "AED 18.8 billion net profit before tax, +25% YoY (FY2024)",
+      "~AED 70 billion in property sales, +72% YoY (FY2024)",
+      "AED 110+ billion revenue backlog (as of Dec 31, 2024)",
+      "118,400+ residential units delivered since 2002",
+      "62 new projects launched in 2024",
+    ],
+    signatureDevelopments: [
+      "Burj Khalifa",
+      "The Dubai Mall",
+      "Downtown Dubai",
+      "Dubai Marina",
+      "Dubai Hills Estate",
+      "Dubai Creek Harbour",
+      "Arabian Ranches",
+    ],
+    awards: [
+      "Developer of the Year — Arabian Business Achievement Awards, 2024",
+      "LEED Platinum certification for Burj Khalifa — US Green Building Council, 2024",
+      "Sustainability Prize (Dubai Hills Park) — Landscape Middle East Awards, 2024",
+    ],
+    marketPositioning: {
+      fr: "",
+      en: "One of Dubai's largest and best-capitalized listed developers, with a diversified base spanning residential development, recurring-revenue retail/mall assets, and hospitality — evidenced by AED 35.5 billion revenue and AED 70 billion in property sales for FY2024.",
+    },
+    whyStandsOut: {
+      fr: "",
+      en: "Combines scale (118,400+ residential units delivered since 2002) with a diversified, income-generating portfolio (malls at 98.5% occupancy, hospitality brands including Address, Vida, Rove) unusual among pure-play residential developers, backed by a multi-decade public listing track record.",
+    },
+    officialWebsite: "https://www.emaar.com/",
+    seoTitle: "Emaar Properties — Dubai Real Estate Developer Profile",
+    seoDescription:
+      "Emaar Properties, founded 1997, developer of Burj Khalifa & Dubai Mall. Facts, key figures and flagship projects in Dubai real estate.",
+  },
+  {
+    id: "damac",
+    name: "DAMAC",
+    logo: "https://www.damacproperties.com/assets/damac-d.svg",
+    whyITrustThem: { fr: "", en: "" },
+    overview: {
+      fr: "",
+      en: "DAMAC Properties is a Dubai-based luxury real estate developer, established in 2002 as the property development arm of the DAMAC Group. It describes itself as the largest private real estate developer in the UAE and the Middle East.",
+    },
+    history: {
+      fr: "",
+      en: "Established 2002 as DAMAC Group's property development division. Listed on the London Stock Exchange in December 2013 (the first Middle East real estate company to do so), then on the Dubai Financial Market from January 2015. Delisted and taken private by Hussain Sajwani in 2022. In December 2024, sold 3,164 units at DAMAC Islands phase 1 for a reported AED 10.2 billion in 24 hours, setting a Guinness World Record.",
+    },
+    vision: {
+      fr: "",
+      en: "“Our vision is to deliver unique, high-quality luxury products and continually disrupt markets with tech-driven innovation, keeping us ahead of the curve.” Mission: “Deliver iconic products and projects with an unmatched innovative design and approaches that stand the test of time.”",
+    },
+    founderOrCeo: "Hussain Sajwani (Founder & Chairman)",
+    yearFounded: 2002,
+    headquarters: "Executive Heights, Dubai, UAE",
+    keyFigures: [
+      "50,000+ homes delivered",
+      "54,000+ homes in progress or planning",
+      "100+ million sq ft of project area in planning and progress",
+      "8 master communities",
+      "AED 36 billion in 2025 sales, ranking first among Dubai's private developers",
+    ],
+    signatureDevelopments: [
+      "DAMAC Hills",
+      "DAMAC Hills 2",
+      "AKOYA Oxygen",
+      "DAMAC Lagoons",
+      "DAMAC Islands",
+      "AYKON City",
+      "Cavalli Tower",
+    ],
+    awards: [
+      "#1 on Forbes Global 2000 List of Growth Champions, 2017",
+      "Guinness World Record — highest revenue generated by a real estate launch in 24 hours (DAMAC Islands phase 1, ~AED 10.2bn), December 2024",
+    ],
+    marketPositioning: {
+      fr: "",
+      en: "Positions itself as the largest private real estate developer in the UAE and Middle East, competing in the luxury/branded-residences segment through partnerships with international lifestyle and fashion brands rather than purely unbranded residential stock.",
+    },
+    whyStandsOut: {
+      fr: "",
+      en: "Its volume of branded-residence partnerships (Chelsea FC, Roberto Cavalli, de GRISOGONO) combined with large-scale themed master communities has produced two Guinness World Records for single-launch sales revenue in the past two years.",
+    },
+    officialWebsite: "https://www.damacproperties.com/",
+    seoTitle: "DAMAC Properties: Dubai Developer Since 2002",
+    seoDescription:
+      "DAMAC Properties is a Dubai luxury real estate developer founded in 2002, with 50,000+ homes delivered across the UAE and other markets.",
+  },
+  {
+    id: "ellington",
+    name: "Ellington",
+    logo: "https://ellingtonproperties.ae/wp-content/uploads/Ellington-Logo_Black-2-300x116.png",
+    whyITrustThem: { fr: "", en: "" },
+    overview: {
+      fr: "",
+      en: "Ellington Properties is a design-led Dubai real estate developer specializing in residential and mixed-use developments across premium Dubai communities.",
+    },
+    history: {
+      fr: "",
+      en: "Founded in 2014 by Elie Naaman, Robert D. Booth, Joseph Thomas and Nitin Bhatnagar. Co-founder Robert D. Booth was formerly Managing Director at Emaar Properties.",
+    },
+    vision: {
+      fr: "",
+      en: "“We build residences for those who truly appreciate design from the first principles to the last detail.”",
+    },
+    founderOrCeo: "Elie Naaman (Co-Founder & CEO – International); Robert D. Booth (Co-Founder & Managing Director)",
+    yearFounded: 2014,
+    headquarters: "Burlington Tower, Business Bay, Dubai, UAE",
+    keyFigures: [],
+    signatureDevelopments: [
+      "DT1 (Downtown Dubai)",
+      "Ocean House (Palm Jumeirah)",
+      "Ellington House (Dubai Hills Estate)",
+      "One River Point",
+      "Mercer House",
+      "Belgravia III",
+      "Kensington Waters",
+    ],
+    awards: [
+      "Best Luxury Project (DT1) — Arabian Business Awards, 2019",
+      "5 accolades — International Property Awards, 2023",
+      "Wins across all 7 entered categories — International Property Awards, 2024",
+      "Best Luxury Real Estate Developer in Dubai — Luxury Lifestyle Awards, 2025",
+    ],
+    marketPositioning: {
+      fr: "",
+      en: "Operates in Dubai's design-led/boutique segment rather than mass-market volume development, concentrating on premium residential communities and, with its Meriva Collection launch, expanding into hospitality-integrated residential product.",
+    },
+    whyStandsOut: {
+      fr: "",
+      en: "Repeated placements at the International Property Awards (2023, 2024, 2024–2025) and the Arabian Business Awards (2019) reflect sustained recognition within the design/architecture category of the Dubai developer market.",
+    },
+    officialWebsite: "https://ellingtonproperties.ae/en",
+    seoTitle: "Ellington Properties — Dubai Real Estate Developer",
+    seoDescription:
+      "Ellington Properties is a design-led Dubai developer founded in 2014, known for premium residential projects across Downtown Dubai, Palm Jumeirah and more.",
+  },
+  {
+    id: "binghatti",
+    name: "Binghatti",
+    logo: "https://binghattiweb.imgix.net/logo.svg",
+    whyITrustThem: { fr: "", en: "" },
+    overview: {
+      fr: "",
+      en: "Binghatti is a private Emirati real estate developer headquartered in Dubai, operating across real estate, hospitality, and construction, known for branded luxury residential collaborations and a distinctive geometric architectural style.",
+    },
+    history: {
+      fr: "",
+      en: "Founded in 2008 by Dr. Hussain Binghatti. In 2024 the company raised $500 million through Islamic bonds and has since issued further sukuk including a USD 500 million Green Sukuk.",
+    },
+    vision: {
+      fr: "",
+      en: "States its mission as creating “a real estate brand rooted in innovative design,” with a stated commitment to delivering developments ahead of schedule and setting new industry standards.",
+    },
+    founderOrCeo: "Dr. Hussain Binghatti (Founder); Muhammad BinGhatti (Chairman); Katralnada BinGhatti (CEO)",
+    yearFounded: 2008,
+    headquarters: "Sheikh Zayed Road, Dubai, UAE",
+    keyFigures: [
+      "AED 1.83 billion net profit, +152% YoY (FY2024)",
+      "AED 11.6 billion total sales (FY2024)",
+      "AED 6.3 billion revenue (FY2024)",
+      "11,000+ units delivered, ~20,000 units under construction (as of Feb 2025)",
+      "AED 1.43 billion net profit, +52% revenue growth (Q1 2026)",
+    ],
+    signatureDevelopments: [
+      "Burj Binghatti Jacob & Co Residences",
+      "Bugatti Residences",
+      "Mercedes-Benz Places by Binghatti",
+      "Binghatti Skyrise",
+    ],
+    awards: [
+      "GlobalCapital CEEMEA Corporate Bond Issuance of the Year (2030 Sukuk)",
+      "First developer globally with branded partnerships across Bugatti, Mercedes-Benz and Jacob & Co",
+    ],
+    marketPositioning: {
+      fr: "",
+      en: "A high-volume off-plan developer concentrated in Business Bay and adjacent growth corridors, combining a recognizable geometric architectural signature with exclusive branded partnerships that position it at the luxury end of the market.",
+    },
+    whyStandsOut: {
+      fr: "",
+      en: "First developer to secure branded residential partnerships simultaneously with Bugatti, Mercedes-Benz, and Jacob & Co, and is building what is marketed as the world's tallest residential tower.",
+    },
+    officialWebsite: "https://www.binghatti.com/",
+    seoTitle: "Binghatti Dubai — Developer Profile & Key Facts",
+    seoDescription:
+      "Binghatti: Dubai real estate developer founded 2008, known for Bugatti, Mercedes-Benz & Jacob & Co branded towers. Verified company facts & figures.",
+  },
+  {
+    id: "imtiaz",
+    name: "Imtiaz",
+    logo: "https://imtiaz.ae/layout/image/logo_new_png.svg",
+    whyITrustThem: { fr: "", en: "" },
+    overview: {
+      fr: "",
+      en: "Imtiaz Developments is a privately held, Dubai-headquartered real estate developer active across Dubai Islands, JVC, Dubailand/DLRC, Meydan, Al Furjan, and Downtown Jebel Ali, managing design, construction and after-sales in-house.",
+    },
+    history: {
+      fr: "",
+      en: "Founded in 1993. Company states it evolved from a modest construction endeavor into one of the UAE's respected real estate development companies.",
+    },
+    vision: {
+      fr: "",
+      en: "“A Legacy of Excellence: Redefining Landscapes, Elevating Lives.” CEO Masih Imtiaz: “We are here to build developments that represent who we are: disciplined, design-driven, and future-focused.”",
+    },
+    founderOrCeo: "Masih Ullah Imtiaz (Founder & CEO)",
+    yearFounded: 1993,
+    headquarters: "Park Heights Square 1, Dubai Hills, Dubai, UAE",
+    keyFigures: [
+      "40+ active projects, AED 10 billion+ development value",
+      "Largest private portfolio on Dubai Islands: 15–16+ projects, AED 6 billion+",
+      "AED 3 billion Meydan portfolio",
+    ],
+    signatureDevelopments: [
+      "The Archive",
+      "Raw District I & II",
+      "The Symphony (with Zaha Hadid Architects)",
+      "Cove series",
+      "Beach Walk series",
+    ],
+    awards: [
+      "Rising Star Developer of the Year — Bayut Awards, 2024",
+      "Mohammed bin Rashid Al Maktoum Medal for Philanthropy (CEO Masih Imtiaz), 2025",
+      "Rising Developer of the Year — Construction Week Awards, 2024",
+      "Top 50 GCC Developers, 2023",
+    ],
+    marketPositioning: {
+      fr: "",
+      en: "A mid-sized, privately held, fully-integrated Dubai developer with a stated AED 10 billion+ pipeline across 40+ projects, targeting the mid-to-upper design-led residential segment.",
+    },
+    whyStandsOut: {
+      fr: "",
+      en: "Fully integrated in-house model (design, construction, joinery, and after-sales) across a concentrated footprint in Dubai Islands, DLRC, and Meydan, with select higher-end projects such as The Symphony designed by Zaha Hadid Architects.",
+    },
+    officialWebsite: "https://imtiaz.ae/",
+    seoTitle: "Imtiaz Developments — Dubai Developer Profile",
+    seoDescription:
+      "Imtiaz Developments: Dubai-based developer founded 1993, AED 10B+ pipeline across 40+ projects including The Archive, Raw District, Enre Residence.",
+  },
+  {
+    id: "object-1",
+    name: "Object 1",
+    whyITrustThem: { fr: "", en: "" },
+    overview: {
+      fr: "",
+      en: "Object One Real Estate Development LLC (“Object 1”) is a Dubai-based real estate developer focused on contemporary residential towers primarily in JVC, JVT, Al Furjan and Dubai Sports City, with recent expansion into Abu Dhabi.",
+    },
+    history: {
+      fr: "",
+      en: "Founding date is genuinely unresolved across sources: some tie the company to TSZ Group's 2010 origins, others to founder Egor Maslennikov establishing Object 1 in Dubai in 2022; DLD developer registration is dated March 2024. Left unset rather than picking one figure.",
+    },
+    vision: {
+      fr: "",
+      en: "“To lead the evolution of urban living by setting new standards in smart, artful, and sustainable real estate.”",
+    },
+    founderOrCeo: "Egor Maslennikov (Founder & CEO)",
+    headquarters: "Emaar Square Building 3, Downtown Dubai, UAE",
+    keyFigures: [
+      "Over 2,200 units launched across 13 projects, total value surpassing $586 million (2025)",
+      "2,680+ units sold; ranked top 15 Dubai developers by DLD (2025)",
+      "Team of 350+ professionals, ~12 active projects (2025)",
+    ],
+    signatureDevelopments: ["LUM1NAR Towers", "EVERGR1N House", "Elaris Sky", "RA1N Residence"],
+    awards: ["Emerging Urban Developer of the Year — UAE Realty Awards, 2025"],
+    marketPositioning: {
+      fr: "",
+      en: "A fast-growing mid-sized developer (self-reported top-15-to-top-20 ranking by DLD in 2025), concentrated in JVC and JVT with newer expansion into Dubai Sports City and Abu Dhabi.",
+    },
+    whyStandsOut: {
+      fr: "",
+      en: "Reports rapid growth from a 2022 Dubai market entry to a self-reported top-15-to-20 ranked developer by 2025, with award recognition (UAE Realty Awards 2025) for its JVT/JVC-concentrated, design-focused residential towers.",
+    },
+    officialWebsite: "https://object-1.com/",
+    seoTitle: "Object 1 Dubai — Developer Profile | JVT & Sports City",
+    seoDescription:
+      "Object 1 (Object One Real Estate Development LLC) is a Dubai developer active in JVC, JVT, Al Furjan and Dubai Sports City, led by founder Egor Maslennikov.",
+  },
+  {
+    id: "samana",
+    name: "Samana",
+    logo: "https://www.samanadevelopers.com/assets/img/updated-logo/black.png",
+    whyITrustThem: { fr: "", en: "" },
+    overview: {
+      fr: "",
+      en: "SAMANA Developers describes itself as the fastest growing private developer in the UAE, currently ranked 5th largest real estate developer in Dubai, part of the SAMANA Group of Companies, known for resort-style branded residential towers.",
+    },
+    history: {
+      fr: "",
+      en: "First project, SAMANA Greens (Arjan), launched September 2018. By 2023, had launched 12 new projects with reported 600% sales growth. Reached a “50 projects” milestone in May 2026. (Founding year of the development entity itself is unresolved — see research notes.)",
+    },
+    vision: {
+      fr: "",
+      en: "“Pioneering Lifestyles” — every SAMANA property is framed as a transformative living experience blending design, comfort, innovation and elegance.",
+    },
+    founderOrCeo: "Imran Farooq (Founder & CEO)",
+    headquarters: "Bay Square, Business Bay, Dubai, UAE",
+    keyFigures: [
+      "5th largest off-plan seller in Dubai (H1 2025)",
+      "$1.9 billion gross sales (2025)",
+      "16 new projects launched in 2025",
+      "50 projects milestone reached (May 2026)",
+    ],
+    signatureDevelopments: [
+      "SAMANA Greens",
+      "SAMANA Hills",
+      "SAMANA Barari Heights",
+      "SAMANA Manhattan",
+      "SAMANA Ocean Views (Maldives, interiors by Elie Saab)",
+    ],
+    awards: [
+      "Real Estate Developer of the Year — Arabian Business Awards, 2020",
+      "Sustainable Residential Project of the Year (SAMANA Greens) — Construction Innovation Awards, 2019",
+      "Innovative Real Estate Developer of the Year — Pillars of Real Estate Awards, 2024",
+      "Real Estate CEO of the Year 2025 (Imran Farooq) — Khaleej Times/Finance World UAE Realty Awards",
+    ],
+    marketPositioning: {
+      fr: "",
+      en: "Operates in Dubai's affordable-to-mid luxury off-plan segment, differentiated by resort-style branded amenities (private pools, internationally-themed towers) at lower entry price points than premium developers.",
+    },
+    whyStandsOut: {
+      fr: "",
+      en: "High-density delivery of amenity-heavy, internationally-themed branded residences (Maldives, Miami, Santorini, Rome, Ibiza-named towers) at accessible studio/1–2BR price points, with an aggressive launch cadence of 16 projects in 2025 alone.",
+    },
+    officialWebsite: "https://www.samanadevelopers.com",
+    seoTitle: "Samana Developers Dubai — Profile, Projects & History",
+    seoDescription:
+      "Factual profile of Samana Developers: Dubai-based real estate developer led by CEO Imran Farooq, known for resort-style branded residential towers.",
+  },
+];
