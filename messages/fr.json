@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "title": "Tommy Walid — Conseil en investissement immobilier à Dubaï",
+    "description": "J'accompagne des investisseurs internationaux dans la sélection, la structuration et la gestion de leurs investissements immobiliers à Dubaï, avec la rigueur d'un family office."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "projects": "Projets",
+    "process": "Mon approche",
+    "blog": "Journal",
+    "contact": "Contact",
+    "bookCall": "Prendre rendez-vous"
+  },
+  "notFound": {
+    "kicker": "Erreur 404",
+    "title": "Cette page n'existe pas.",
+    "description": "La page que vous recherchez a peut-être été déplacée ou n'existe plus.",
+    "cta": "Retour à l'accueil"
+  },
+  "footer": {
+    "tagline": "J'accompagne des investisseurs internationaux exigeants dans leurs projets immobiliers à Dubaï.",
+    "navTitle": "Navigation",
+    "legalTitle": "Légal",
+    "contactTitle": "Contact",
+    "privacyPolicy": "Politique de confidentialité",
+    "emailLabel": "Email",
+    "rights": "Tous droits réservés.",
+    "disclaimer": "Investir dans l'immobilier comporte des risques, y compris la perte en capital. Les informations présentées sur ce site sont fournies à titre général et ne constituent pas un conseil en investissement personnalisé."
+  },
+  "home": {
+    "hero": {
+      "kicker": "Conseil en investissement immobilier — Dubaï",
+      "title": "L'immobilier à Dubaï, pensé comme un patrimoine.",
+      "subtitle": "J'accompagne des investisseurs internationaux dans la sélection, la structuration et la gestion de leurs actifs immobiliers à Dubaï, avec une approche fondée sur l'analyse, la transparence et la création de valeur à long terme.",
+      "ctaPrimary": "Prendre rendez-vous",
+      "ctaSecondary": "Découvrir mon approche"
+    },
+    "whyTommy": {
+      "kicker": "Pourquoi Tommy Walid",
+      "title": "Pourquoi me confier l'une des décisions financières les plus importantes de votre vie ?",
+      "subtitle": "Pas de discours commercial. Seulement ce que vous devez savoir avant de vous engager.",
+      "items": [
+        {
+          "question": "Pourquoi travailler avec moi",
+          "answer": "Vous gardez un seul interlocuteur, du premier échange à la gestion de votre actif dans la durée. Votre stratégie, la sélection des opportunités et la négociation sont pilotées personnellement — puis l'ensemble de l'écosystème (structuration, visa, banque, gestion locative) est coordonné pour vous avec un réseau de partenaires de confiance. Vous n'êtes jamais transféré à une autre société."
+        },
+        {
+          "question": "Ma philosophie d'investissement",
+          "answer": "Aucune opportunité ne vous sera présentée simplement parce qu'elle est disponible. Chaque recommandation repose sur une analyse rigoureuse de sa valeur à long terme — jamais sur l'urgence du marché. Mon rôle n'est pas de vous vendre un bien, mais de vous aider à décider en toute connaissance de cause, au rythme qui correspond à vos objectifs."
+        },
+        {
+          "question": "Comment je vous accompagne",
+          "answer": "Chaque échange commence par la compréhension de vos objectifs, pas par la présentation d'un bien. Vous recevez une explication claire de chaque option — fiscale, juridique, financière — avant de décider. Et l'accompagnement ne s'arrête pas à la signature : je reste à vos côtés pour la gestion locative, la revente ou l'optimisation de votre portefeuille, des années après l'acquisition."
+        },
+        {
+          "question": "Ce que vous pouvez attendre de moi",
+          "answer": "Une réponse personnelle sous 24 à 48h. Une transparence totale sur les coûts, les risques et les alternatives. Aucune pression commerciale. Et un interlocuteur unique, disponible bien après la remise des clés."
+        }
+      ]
+    },
+    "process": {
+      "kicker": "Mon approche",
+      "title": "Un accompagnement structuré, de bout en bout",
+      "subtitle": "Cinq étapes claires, du premier échange à la gestion durable de votre actif.",
+      "steps": [
+        { "title": "Entretien de cadrage", "description": "Comprendre vos objectifs patrimoniaux, votre horizon d'investissement et vos contraintes." },
+        { "title": "Sélection ciblée", "description": "Identification des actifs correspondant à votre stratégie sur le marché dubaïote." },
+        { "title": "Structuration", "description": "Montage juridique, fiscal et financier adapté à votre situation personnelle." },
+        { "title": "Acquisition accompagnée", "description": "Due diligence, négociation et signature, avec un suivi à chaque étape." },
+        { "title": "Gestion & valorisation", "description": "Suivi locatif et pilotage de la performance de votre actif dans la durée." }
+      ]
+    },
+    "whyDubai": {
+      "kicker": "Pourquoi Dubaï",
+      "title": "Une place forte pour l'investissement immobilier",
+      "items": [
+        { "title": "Fiscalité attractive", "description": "Aucune imposition sur les revenus locatifs ni sur les plus-values immobilières pour les particuliers aux Émirats arabes unis." },
+        { "title": "Marché encadré", "description": "Un cadre légal structuré par la RERA et le Dubai Land Department, pensé pour rassurer les investisseurs étrangers." },
+        { "title": "Éligibilité au Golden Visa", "description": "Sous conditions de montant, un investissement immobilier peut ouvrir droit à un visa de résidence longue durée." },
+        { "title": "Hub mondial", "description": "Une ville stable, connectée et tournée vers l'international, portée par une économie diversifiée." }
+      ]
+    },
+    "services": {
+      "kicker": "Votre parcours d'investissement",
+      "title": "Un accompagnement pensé comme une relation, pas une transaction.",
+      "subtitle": "Quatre étapes, un seul interlocuteur, une relation qui continue bien après la signature.",
+      "directLabel": "Géré personnellement",
+      "partnerLabel": "Via un partenaire de confiance",
+      "phases": [
+        {
+          "title": "Comprenez vos objectifs",
+          "description": "Avant toute chose, je clarifie avec vous ce que vous cherchez réellement à accomplir — pas ce qui est disponible sur le marché. Vous repartez avec une stratégie claire et une sélection de projets qui vous correspond.",
+          "tags": [
+            { "label": "Conseil en investissement", "mode": "direct" },
+            { "label": "Analyse de marché", "mode": "direct" },
+            { "label": "Sélection de projets", "mode": "direct" }
+          ]
+        },
+        {
+          "title": "Sécurisez votre investissement",
+          "description": "De la négociation à la structuration juridique, fiscale et financière, chaque étape est coordonnée pour que votre acquisition soit sécurisée — sans que vous ayez à gérer cinq prestataires différents vous-même.",
+          "tags": [
+            { "label": "Négociation", "mode": "direct" },
+            { "label": "Structuration juridique & fiscale", "mode": "partner" },
+            { "label": "Financement & prêt hypothécaire", "mode": "partner" },
+            { "label": "Création de société", "mode": "partner" },
+            { "label": "Investor Visa & Golden Visa", "mode": "partner" },
+            { "label": "Ouverture de compte bancaire", "mode": "partner" }
+          ]
+        },
+        {
+          "title": "Profitez de votre investissement",
+          "description": "Une fois propriétaire, l'accompagnement ne s'arrête pas. Gestion locative, gestion immobilière, ameublement et installation sont pris en charge, pour que tout fonctionne, où que vous soyez dans le monde.",
+          "tags": [
+            { "label": "Gestion immobilière", "mode": "partner" },
+            { "label": "Gestion locative", "mode": "partner" },
+            { "label": "Décoration d'intérieur & ameublement", "mode": "partner" },
+            { "label": "Services de relocation", "mode": "partner" }
+          ]
+        },
+        {
+          "title": "Développez votre patrimoine",
+          "description": "Des années plus tard, je reste à vos côtés — pour suivre la performance de votre actif, optimiser votre portefeuille, et vous accompagner dans une revente le moment venu.",
+          "tags": [
+            { "label": "Suivi & optimisation de portefeuille", "mode": "direct" },
+            { "label": "Revente", "mode": "partner" }
+          ]
+        }
+      ],
+      "commitment": "Je reste votre interlocuteur unique, du premier échange jusqu'à plusieurs années après l'investissement — je coordonne chaque partenaire, vous n'êtes jamais transféré à une autre société."
+    },
+    "selectedProjects": {
+      "kicker": "Sélection",
+      "title": "Quelques opportunités que je recommande actuellement",
+      "subtitle": "Je ne montre pas tout ce qui existe sur le marché — seulement ce que je choisis personnellement de présenter à mes clients.",
+      "cta": "Voir toutes les opportunités"
+    },
+    "testimonials": {
+      "kicker": "Témoignages",
+      "title": "Ce que mes clients diront de moi",
+      "notice": "Mes premiers témoignages clients seront publiés ici prochainement.",
+      "items": [
+        { "quote": "Un accompagnement rigoureux et transparent, à l'image de ce qu'on attend d'un family office.", "attribution": "Témoignage client — à venir" },
+        { "quote": "Un interlocuteur unique, disponible en français, à chaque étape du projet.", "attribution": "Témoignage client — à venir" },
+        { "quote": "Une structuration pensée pour s'intégrer à l'ensemble de mon patrimoine.", "attribution": "Témoignage client — à venir" }
+      ]
+    },
+    "faq": {
+      "kicker": "Questions fréquentes",
+      "title": "Ce que mes clients me demandent",
+      "items": [
+        { "question": "Un non-résident peut-il acheter un bien à Dubaï ?", "answer": "Oui. Dans les zones dites freehold, les étrangers peuvent acquérir un bien immobilier en pleine propriété, sans condition de résidence." },
+        { "question": "Quelle fiscalité s'applique à mes revenus locatifs et à la revente ?", "answer": "Aux Émirats arabes unis, les revenus locatifs et les plus-values immobilières des particuliers ne sont pas imposés. Votre situation fiscale dans votre pays de résidence reste à examiner avec votre conseil fiscal." },
+        { "question": "Puis-je financer mon acquisition ?", "answer": "Des solutions de financement existent, pour les résidents comme pour les non-résidents. Leurs conditions varient selon votre profil et sont étudiées au cas par cas." },
+        { "question": "L'investissement immobilier donne-t-il accès à un visa ?", "answer": "Sous certaines conditions de montant, un investissement immobilier à Dubaï peut ouvrir droit à un visa de résidence, notamment le Golden Visa." },
+        { "question": "Votre accompagnement est-il disponible en français ?", "answer": "Oui. L'ensemble de mon accompagnement, du premier échange à la gestion de votre actif, se fait en français." },
+        { "question": "Comment démarrer ?", "answer": "Un premier échange, sans engagement, permet de cadrer vos objectifs et de déterminer si mon accompagnement est pertinent pour vous." }
+      ]
+    },
+    "contactCta": {
+      "title": "Discutons de votre projet d'investissement à Dubaï.",
+      "subtitle": "Un premier échange, sans engagement, pour cadrer vos objectifs et vos questions.",
+      "cta": "Prendre rendez-vous"
+    }
+  },
+  "projects": {
+    "index": {
+      "kicker": "Projets",
+      "title": "Une sélection, pas un catalogue",
+      "intro": "Je ne montre pas tout ce qui existe sur le marché — seulement ce que je choisis personnellement de présenter à mes clients. Dites-moi ce que vous cherchez à accomplir, et je vous montre ce qui correspond.",
+      "allLabel": "Tout voir",
+      "propertyTypeLabel": "Type de bien",
+      "locationLabel": "Emplacement",
+      "anyLabel": "Indifférent",
+      "emptyStateBody": "Rien de disponible dans cette catégorie pour l'instant — c'est exactement le type de décision que j'accompagne directement.",
+      "emptyStateCta": "Dites-moi ce que vous recherchez",
+      "noProjectsYetTitle": "Je constitue actuellement ma première sélection",
+      "noProjectsYetBody": "Les opportunités que je recommande personnellement seront publiées ici prochainement. En attendant, parlons directement de votre projet.",
+      "noProjectsYetCta": "Discuter de mon projet",
+      "closingTitle": "Pas sûr de ce qui correspond ?",
+      "closingCta": "Demandez-moi."
+    },
+    "card": {
+      "startingFromLabel": "À partir de",
+      "primaryCta": "Obtenir mon avis",
+      "secondaryCta": "Voir les détails"
+    },
+    "detail": {
+      "backLabel": "Retour aux projets",
+      "developerLabel": "Promoteur",
+      "locationLabel": "Emplacement",
+      "propertyTypesLabel": "Types de biens",
+      "startingPriceLabel": "Prix de départ",
+      "handoverLabel": "Livraison",
+      "paymentPlanLabel": "Plan de paiement",
+      "whyIRecommendTitle": "Pourquoi je recommande ce projet",
+      "bestForTitle": "Idéal pour",
+      "highlightsTitle": "Points forts",
+      "whyTrustDeveloperTitle": "Pourquoi je fais confiance à ce promoteur",
+      "whyLocationMattersTitle": "Pourquoi cet emplacement compte",
+      "gatedTitle": "Ce que je partage lors de notre échange",
+      "gatedBody": "Vous voulez mon avis sur les chiffres ? Je vous présente le prix complet, les plans et les disponibilités lors de notre échange.",
+      "gatedCta": "Obtenir mon avis",
+      "primaryCta": "Obtenir mon avis honnête sur ce projet",
+      "relatedTitle": "D'autres opportunités qui pourraient vous correspondre"
+    },
+    "propertyTypes": {
+      "studio": "Studio",
+      "1-bed": "1 chambre",
+      "2-bed": "2 chambres",
+      "3-bed": "3 chambres",
+      "townhouse": "Maison de ville",
+      "villa": "Villa",
+      "office": "Bureau",
+      "retail": "Commerce"
+    },
+    "bestForTags": {
+      "first-investment": "Premier investissement",
+      "capital-appreciation": "Valorisation du capital",
+      "rental-income": "Revenus locatifs",
+      "golden-visa": "Golden Visa",
+      "family-living": "Résidence familiale",
+      "end-user": "Résidence principale"
+    },
+    "highlightTags": {
+      "waterfront": "Front de mer",
+      "metro-access": "Accès métro",
+      "branded-residence": "Résidence de marque",
+      "beach-access": "Accès plage",
+      "golf-community": "Communauté golf",
+      "smart-home": "Domotique",
+      "fully-furnished": "Entièrement meublé"
+    },
+    "mediaTypes": {
+      "photo": "Photo",
+      "render": "Rendu du promoteur",
+      "masterplan": "Plan masse",
+      "aerial": "Vue aérienne"
+    }
+  },
+  "pages": {
+    "about": {
+      "kicker": "À propos",
+      "title": "Vingt ans de vente m'ont appris ce qu'il ne fallait pas faire.",
+      "intro": "Je suis Tommy Walid, conseiller en investissement immobilier basé à Dubaï. Avant d'accompagner mes clients, j'ai passé près de vingt ans dans la vente — assez longtemps pour savoir exactement ce que je ne voulais pas devenir.",
+      "licenseNote": "Conseiller en investissement immobilier, j'exerce sous l'égide d'un courtage agréé RERA à Dubaï.",
+      "videoLabel": "Une présentation vidéo arrivera prochainement.",
+      "sections": [
+        {
+          "title": "Le parcours",
+          "body": "Originaire de La Réunion, j'ai passé près de vingt ans dans la vente et le développement commercial avant de me spécialiser dans l'immobilier. Mon passage chez Eagle Hills au Maroc m'a rapproché pour la première fois de l'univers de Dubaï. Un voyage personnel a scellé la décision : l'ambition de la ville, mais surtout la transparence du processus d'achat, à l'opposé de ce que j'avais connu jusque-là."
+        },
+        {
+          "title": "Le déclic",
+          "body": "Ce n'est pas un mauvais patron qui a façonné ma façon de travailler — c'est un schéma que j'ai vu se répéter, poste après poste, année après année : des clients poussés vers de mauvaises décisions pour une commission. J'ai décidé de faire l'inverse : éduquer d'abord, conseiller ensuite, vendre en dernier lieu."
+        },
+        {
+          "title": "Pourquoi Dubaï, pour moi",
+          "body": "Dubaï continue de m'étonner par son ambition et par la diversité des personnes qui y bâtissent leur vie — investisseurs, entrepreneurs, familles venus du monde entier. C'est une ville où la rigueur et la transparence du marché rendent possible ce qui semblerait ailleurs plus incertain."
+        },
+        {
+          "title": "Où je veux aller",
+          "body": "Je ne cherche pas à construire une grande structure. Je préfère rester à taille humaine — connaître chacun de mes clients personnellement plutôt que gérer un volume. Le jour où je ne pourrai plus répondre moi-même à chaque message, j'aurai grandi dans la mauvaise direction."
+        }
+      ],
+      "quote": "Mon objectif est simple : que mes clients dorment tranquilles, sachant que leur patrimoine est investi intelligemment.",
+      "quoteAttribution": "Tommy Walid",
+      "closingCta": "Prendre rendez-vous"
+    },
+    "services": {
+      "kicker": "Mes services",
+      "title": "Un accompagnement pensé comme une relation",
+      "intro": "Pas une liste de prestations — la manière dont je vous accompagne à chaque étape, de la première conversation à la croissance de votre patrimoine.",
+      "notice": "Une présentation détaillée de chaque partenaire sera publiée prochainement."
+    },
+    "investmentProcess": {
+      "kicker": "Mon approche",
+      "title": "Un accompagnement structuré, de bout en bout",
+      "intro": "Cinq étapes claires, du premier échange à la gestion durable de votre actif.",
+      "notice": "Le détail de chaque étape sera enrichi prochainement."
+    },
+    "blog": {
+      "kicker": "Journal",
+      "title": "Perspectives sur l'investissement à Dubaï",
+      "intro": "Analyses, actualités réglementaires et repères pratiques pour investir sereinement à Dubaï.",
+      "emptyState": "Nos premiers articles seront publiés prochainement."
+    },
+    "contact": {
+      "kicker": "Contact",
+      "title": "Discutons de votre projet",
+      "intro": "Un premier échange, sans engagement, pour cadrer vos objectifs et déterminer si mon accompagnement est pertinent pour vous.",
+      "formTitle": "Démarrons la conversation",
+      "formSubtitle": "Cinq questions, moins d'une minute. Le reste se discute directement avec vous.",
+      "nameLabel": "Nom complet",
+      "whatsappLabel": "Numéro WhatsApp",
+      "goalLabel": "Objectif d'investissement",
+      "goalPlaceholder": "Sélectionnez votre objectif",
+      "goalLabels": {
+        "rental": "Investissement locatif",
+        "second-home": "Résidence secondaire",
+        "golden-visa": "Golden Visa / résidence longue durée",
+        "diversification": "Diversification patrimoniale",
+        "other": "Autre"
+      },
+      "budgetLabel": "Budget envisagé",
+      "budgetPlaceholder": "Sélectionnez une fourchette",
+      "budgetLabels": {
+        "under-1m": "Moins de 1 M AED",
+        "1m-2m": "1 M – 2 M AED",
+        "2m-5m": "2 M – 5 M AED",
+        "5m-plus": "Plus de 5 M AED"
+      },
+      "messageLabel": "Message (facultatif)",
+      "submit": "Démarrer la conversation",
+      "formNotice": "Ce message s'ouvrira dans votre messagerie habituelle. Je réponds personnellement sous 24 à 48h.",
+      "projectInterestMessage": "J'aimerais avoir votre avis sur {name}.",
+      "directTitle": "Me contacter directement"
+    },
+    "privacyPolicy": {
+      "kicker": "Légal",
+      "title": "Politique de confidentialité",
+      "intro": "Cette page présente la structure de ma politique de confidentialité. Son contenu définitif sera rédigé avec un conseil juridique spécialisé avant la mise en ligne publique du site.",
+      "sections": [
+        { "title": "Introduction", "body": "Contenu à finaliser." },
+        { "title": "Données collectées", "body": "Contenu à finaliser." },
+        { "title": "Finalités du traitement", "body": "Contenu à finaliser." },
+        { "title": "Cookies et technologies similaires", "body": "Contenu à finaliser." },
+        { "title": "Partage des données", "body": "Contenu à finaliser." },
+        { "title": "Vos droits", "body": "Contenu à finaliser." },
+        { "title": "Conservation des données", "body": "Contenu à finaliser." },
+        { "title": "Contact", "body": "Contenu à finaliser." }
+      ]
+    }
+  }
+}

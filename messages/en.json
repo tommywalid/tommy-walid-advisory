@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "title": "Tommy Walid — Dubai Real Estate Investment Advisor",
+    "description": "I guide international investors through the selection, structuring and management of their real estate investments in Dubai, with the rigor of a family office."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "process": "My Approach",
+    "blog": "Journal",
+    "contact": "Contact",
+    "bookCall": "Book a Call"
+  },
+  "notFound": {
+    "kicker": "404 Error",
+    "title": "This page doesn't exist.",
+    "description": "The page you're looking for may have been moved or no longer exists.",
+    "cta": "Back to home"
+  },
+  "footer": {
+    "tagline": "I guide discerning international investors through their Dubai real estate projects.",
+    "navTitle": "Navigation",
+    "legalTitle": "Legal",
+    "contactTitle": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "emailLabel": "Email",
+    "rights": "All rights reserved.",
+    "disclaimer": "Real estate investing involves risk, including the potential loss of capital. Information on this site is provided for general purposes only and does not constitute personalized investment advice."
+  },
+  "home": {
+    "hero": {
+      "kicker": "Real Estate Investment Advisory — Dubai",
+      "title": "Dubai real estate, approached like a legacy.",
+      "subtitle": "I guide international investors through the selection, structuring and management of their real estate assets in Dubai, with an approach grounded in analysis, transparency and long-term value creation.",
+      "ctaPrimary": "Book a Call",
+      "ctaSecondary": "Discover My Approach"
+    },
+    "whyTommy": {
+      "kicker": "Why Tommy Walid",
+      "title": "Why trust me with one of the biggest financial decisions of your life?",
+      "subtitle": "No sales pitch. Just what you need to know before you commit.",
+      "items": [
+        {
+          "question": "Why work with me",
+          "answer": "You keep a single point of contact, from the first conversation to the long-term management of your asset. Your strategy, opportunity selection and negotiation are handled personally — then the full ecosystem (structuring, visas, banking, rental management) is coordinated for you through a trusted partner network. You are never handed off to another company."
+        },
+        {
+          "question": "My investment philosophy",
+          "answer": "No opportunity is presented to you simply because it's available. Every recommendation is grounded in a rigorous assessment of its long-term value — never in market urgency. My role isn't to sell you a property, but to help you make an informed decision, at the pace that fits your objectives."
+        },
+        {
+          "question": "How I guide clients",
+          "answer": "Every conversation starts with understanding your objectives, not presenting a property. You get a clear explanation of every option — tax, legal, financial — before you decide. And the guidance doesn't stop at signing: I stay by your side for rental management, resale, or portfolio optimization, years after the acquisition."
+        },
+        {
+          "question": "What you can expect from me",
+          "answer": "A personal reply within 24–48 hours. Full transparency on costs, risks and alternatives. No sales pressure. And a single point of contact, available long after the handover."
+        }
+      ]
+    },
+    "process": {
+      "kicker": "My Approach",
+      "title": "A structured, end-to-end process",
+      "subtitle": "Five clear steps, from the first conversation to the long-term management of your asset.",
+      "steps": [
+        { "title": "Scoping conversation", "description": "Understanding your wealth objectives, investment horizon and constraints." },
+        { "title": "Targeted selection", "description": "Identifying assets that match your strategy across the Dubai market." },
+        { "title": "Structuring", "description": "Legal, tax and financial setup tailored to your personal situation." },
+        { "title": "Guided acquisition", "description": "Due diligence, negotiation and signing, with support at every step." },
+        { "title": "Management & value creation", "description": "Rental follow-up and performance oversight of your asset over time." }
+      ]
+    },
+    "whyDubai": {
+      "kicker": "Why Dubai",
+      "title": "A leading destination for real estate investment",
+      "items": [
+        { "title": "Attractive taxation", "description": "No tax on rental income or capital gains for individuals in the United Arab Emirates." },
+        { "title": "A regulated market", "description": "A legal framework structured by RERA and the Dubai Land Department, designed to reassure foreign investors." },
+        { "title": "Golden Visa eligibility", "description": "Subject to investment thresholds, a real estate purchase can qualify for a long-term residency visa." },
+        { "title": "Global hub", "description": "A stable, connected, internationally-minded city, backed by a diversified economy." }
+      ]
+    },
+    "services": {
+      "kicker": "Your investment journey",
+      "title": "Support designed as a relationship, not a transaction.",
+      "subtitle": "Four stages, one point of contact, a relationship that continues long after signing.",
+      "directLabel": "Handled personally",
+      "partnerLabel": "Via a trusted partner",
+      "phases": [
+        {
+          "title": "Understand Your Goals",
+          "description": "Before anything else, I clarify with you what you actually want to achieve — not what's available on the market. You leave with a clear strategy and a shortlist that fits you.",
+          "tags": [
+            { "label": "Investment advisory", "mode": "direct" },
+            { "label": "Market analysis", "mode": "direct" },
+            { "label": "Project selection", "mode": "direct" }
+          ]
+        },
+        {
+          "title": "Secure Your Investment",
+          "description": "From negotiation to legal, tax and financial structuring, every step is coordinated so your acquisition is secured — without you having to manage five different providers yourself.",
+          "tags": [
+            { "label": "Negotiation", "mode": "direct" },
+            { "label": "Legal & tax structuring", "mode": "partner" },
+            { "label": "Financing & mortgage", "mode": "partner" },
+            { "label": "Company formation", "mode": "partner" },
+            { "label": "Investor Visa & Golden Visa", "mode": "partner" },
+            { "label": "Bank account opening", "mode": "partner" }
+          ]
+        },
+        {
+          "title": "Enjoy Your Investment",
+          "description": "Once you own the asset, the support doesn't stop. Property management, rental management, furnishing and settling-in are all taken care of, so everything runs smoothly wherever you are in the world.",
+          "tags": [
+            { "label": "Property management", "mode": "partner" },
+            { "label": "Rental management", "mode": "partner" },
+            { "label": "Interior design & furnishing", "mode": "partner" },
+            { "label": "Relocation services", "mode": "partner" }
+          ]
+        },
+        {
+          "title": "Grow Your Wealth",
+          "description": "Years later, I'm still by your side — reviewing your asset's performance, optimizing your portfolio, and guiding you through a resale when the time is right.",
+          "tags": [
+            { "label": "Portfolio monitoring & optimization", "mode": "direct" },
+            { "label": "Resale", "mode": "partner" }
+          ]
+        }
+      ],
+      "commitment": "I remain your single point of contact, from the first conversation to years after the investment — I coordinate every partner; you are never handed off to another company."
+    },
+    "selectedProjects": {
+      "kicker": "Selected",
+      "title": "A few opportunities I currently recommend",
+      "subtitle": "I don't show everything on the market — only what I personally choose to put in front of my clients.",
+      "cta": "See all opportunities"
+    },
+    "testimonials": {
+      "kicker": "Testimonials",
+      "title": "What my clients will say about me",
+      "notice": "My first client testimonials will be published here soon.",
+      "items": [
+        { "quote": "Rigorous, transparent guidance — exactly what you'd expect from a family office.", "attribution": "Client testimonial — coming soon" },
+        { "quote": "A single point of contact, available in French, at every stage of the project.", "attribution": "Client testimonial — coming soon" },
+        { "quote": "A structuring approach designed to fit within my overall wealth strategy.", "attribution": "Client testimonial — coming soon" }
+      ]
+    },
+    "faq": {
+      "kicker": "Frequently Asked Questions",
+      "title": "What my clients ask me",
+      "items": [
+        { "question": "Can a non-resident buy property in Dubai?", "answer": "Yes. In designated freehold areas, foreigners can acquire full ownership of a property, with no residency requirement." },
+        { "question": "What taxes apply to my rental income and resale?", "answer": "In the United Arab Emirates, individuals' rental income and real estate capital gains are not taxed. Your tax situation in your country of residence should still be reviewed with your tax advisor." },
+        { "question": "Can I finance my purchase?", "answer": "Financing solutions exist for both residents and non-residents. Terms vary by profile and are assessed on a case-by-case basis." },
+        { "question": "Does a real estate investment grant access to a visa?", "answer": "Subject to certain investment thresholds, a Dubai real estate purchase can qualify for a residency visa, including the Golden Visa." },
+        { "question": "Is your service available in French?", "answer": "Yes. My entire service, from the first conversation to the management of your asset, is provided in French." },
+        { "question": "How do I get started?", "answer": "An initial, no-obligation conversation helps frame your objectives and determine whether my support is right for you." }
+      ]
+    },
+    "contactCta": {
+      "title": "Let's discuss your investment project in Dubai.",
+      "subtitle": "A first, no-obligation conversation to frame your objectives and questions.",
+      "cta": "Book a Call"
+    }
+  },
+  "projects": {
+    "index": {
+      "kicker": "Projects",
+      "title": "A selection, not a catalogue",
+      "intro": "I don't show everything on the market — only what I personally choose to put in front of my clients. Tell me what you're trying to achieve, and I'll show you what fits.",
+      "allLabel": "See everything",
+      "propertyTypeLabel": "Property type",
+      "locationLabel": "Location",
+      "anyLabel": "Any",
+      "emptyStateBody": "Nothing live in this category right now — this is exactly the kind of decision I help with directly.",
+      "emptyStateCta": "Tell me what you're looking for",
+      "noProjectsYetTitle": "I'm currently curating my first selection",
+      "noProjectsYetBody": "The opportunities I personally recommend will be published here soon. In the meantime, let's talk directly about your project.",
+      "noProjectsYetCta": "Discuss my project",
+      "closingTitle": "Not sure which fits?",
+      "closingCta": "Ask me."
+    },
+    "card": {
+      "startingFromLabel": "Starting from",
+      "primaryCta": "Get my take",
+      "secondaryCta": "See details"
+    },
+    "detail": {
+      "backLabel": "Back to projects",
+      "developerLabel": "Developer",
+      "locationLabel": "Location",
+      "propertyTypesLabel": "Property types",
+      "startingPriceLabel": "Starting price",
+      "handoverLabel": "Handover",
+      "paymentPlanLabel": "Payment plan",
+      "whyIRecommendTitle": "Why I recommend this project",
+      "bestForTitle": "Best for",
+      "highlightsTitle": "Key highlights",
+      "whyTrustDeveloperTitle": "Why I trust this developer",
+      "whyLocationMattersTitle": "Why this location matters",
+      "gatedTitle": "What I share when we talk",
+      "gatedBody": "Want my read on the numbers? I'll walk you through full pricing, floor plans and availability when we talk.",
+      "gatedCta": "Get my opinion",
+      "primaryCta": "Get my honest opinion on this one",
+      "relatedTitle": "Other opportunities that might fit you"
+    },
+    "propertyTypes": {
+      "studio": "Studio",
+      "1-bed": "1 Bedroom",
+      "2-bed": "2 Bedrooms",
+      "3-bed": "3 Bedrooms",
+      "townhouse": "Townhouse",
+      "villa": "Villa",
+      "office": "Office",
+      "retail": "Retail"
+    },
+    "bestForTags": {
+      "first-investment": "First Investment",
+      "capital-appreciation": "Capital Appreciation",
+      "rental-income": "Rental Income",
+      "golden-visa": "Golden Visa",
+      "family-living": "Family Living",
+      "end-user": "End User"
+    },
+    "highlightTags": {
+      "waterfront": "Waterfront",
+      "metro-access": "Metro Access",
+      "branded-residence": "Branded Residence",
+      "beach-access": "Beach Access",
+      "golf-community": "Golf Community",
+      "smart-home": "Smart Home",
+      "fully-furnished": "Fully Furnished"
+    },
+    "mediaTypes": {
+      "photo": "Photo",
+      "render": "Developer Render",
+      "masterplan": "Masterplan",
+      "aerial": "Aerial View"
+    }
+  },
+  "pages": {
+    "about": {
+      "kicker": "About",
+      "title": "Twenty years in sales taught me what not to do.",
+      "intro": "I'm Tommy Walid, a real estate investment advisor based in Dubai. Before guiding clients, I spent nearly twenty years in sales — long enough to know exactly what I didn't want to become.",
+      "licenseNote": "As a real estate investment advisor, I operate under a RERA-licensed brokerage in Dubai.",
+      "videoLabel": "A personal introduction video is coming soon.",
+      "sections": [
+        {
+          "title": "The Path",
+          "body": "Originally from Réunion Island, I spent nearly twenty years in sales and business development before specializing in real estate. My time at Eagle Hills in Morocco brought me close to Dubai's world for the first time. A personal trip sealed the decision — the ambition of the city, but even more, how transparent the buying process looked compared to anything I'd known before."
+        },
+        {
+          "title": "The Turning Point",
+          "body": "It wasn't one bad boss who shaped how I work — it was a pattern I watched repeat, job after job, year after year: clients pushed toward bad decisions for a commission. I decided to do the opposite: educate first, advise second, sell last."
+        },
+        {
+          "title": "Why Dubai, For Me",
+          "body": "Dubai still surprises me — its ambition, and the sheer range of people building a life here: investors, entrepreneurs, families from every corner of the world. It's a city where the market's rigor and transparency make possible what would feel far less certain elsewhere."
+        },
+        {
+          "title": "Where This Is Going",
+          "body": "I'm not trying to build a large firm. I'd rather stay small enough to know every client personally than manage volume. The day I can no longer personally answer every message is the day I'll have grown in the wrong direction."
+        }
+      ],
+      "quote": "My objective is simple: my clients should sleep well, knowing their wealth is invested intelligently.",
+      "quoteAttribution": "Tommy Walid",
+      "closingCta": "Book a Call"
+    },
+    "services": {
+      "kicker": "My Services",
+      "title": "Support designed as a relationship",
+      "intro": "Not a list of services — how I support you at every stage, from the first conversation to the growth of your wealth.",
+      "notice": "A detailed presentation of each partner will be published soon."
+    },
+    "investmentProcess": {
+      "kicker": "My Approach",
+      "title": "A structured, end-to-end process",
+      "intro": "Five clear steps, from the first conversation to the long-term management of your asset.",
+      "notice": "Further detail on each step will be added soon."
+    },
+    "blog": {
+      "kicker": "Journal",
+      "title": "Perspectives on Investing in Dubai",
+      "intro": "Analysis, regulatory updates and practical guidance for investing in Dubai with confidence.",
+      "emptyState": "My first articles will be published soon."
+    },
+    "contact": {
+      "kicker": "Contact",
+      "title": "Let's discuss your project",
+      "intro": "An initial, no-obligation conversation to frame your objectives and determine whether my support is right for you.",
+      "formTitle": "Let's start the conversation",
+      "formSubtitle": "Five questions, under a minute. I'll cover everything else directly with you.",
+      "nameLabel": "Full name",
+      "whatsappLabel": "WhatsApp number",
+      "goalLabel": "Investment goal",
+      "goalPlaceholder": "Select your goal",
+      "goalLabels": {
+        "rental": "Rental investment",
+        "second-home": "Second home",
+        "golden-visa": "Golden Visa / long-term residency",
+        "diversification": "Wealth diversification",
+        "other": "Other"
+      },
+      "budgetLabel": "Budget range",
+      "budgetPlaceholder": "Select a range",
+      "budgetLabels": {
+        "under-1m": "Under AED 1M",
+        "1m-2m": "AED 1M – 2M",
+        "2m-5m": "AED 2M – 5M",
+        "5m-plus": "AED 5M+"
+      },
+      "messageLabel": "Message (optional)",
+      "submit": "Start the conversation",
+      "formNotice": "This message will open in your default email application. I respond personally within 24–48h.",
+      "projectInterestMessage": "I'd like your opinion on {name}.",
+      "directTitle": "Contact me directly"
+    },
+    "privacyPolicy": {
+      "kicker": "Legal",
+      "title": "Privacy Policy",
+      "intro": "This page presents the structure of my privacy policy. Its final content will be drafted with specialized legal counsel before the site's public launch.",
+      "sections": [
+        { "title": "Introduction", "body": "Content to be finalized." },
+        { "title": "Data Collected", "body": "Content to be finalized." },
+        { "title": "Purpose of Processing", "body": "Content to be finalized." },
+        { "title": "Cookies & Similar Technologies", "body": "Content to be finalized." },
+        { "title": "Data Sharing", "body": "Content to be finalized." },
+        { "title": "Your Rights", "body": "Content to be finalized." },
+        { "title": "Data Retention", "body": "Content to be finalized." },
+        { "title": "Contact", "body": "Content to be finalized." }
+      ]
+    }
+  }
+}
