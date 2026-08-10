@@ -85,6 +85,10 @@ export const projects: Project[] = [
       fr: "",
       en: "A 56-storey residential tower in Dubai Creek Harbour, described by Emaar as a sophisticated landmark of contemporary living rising from a mixed-use podium, emphasizing wellbeing and connection to nature.",
     },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. Valia is a 56-storey residential tower in Dubai Creek Harbour offering 1- to 4-bedroom apartments, with handover scheduled for Q4 2030. The building features floor-to-ceiling glazing and private balconies, and sits near Central Park, the Vida Creek Harbour hotel and the Ras Al Khor Wildlife Sanctuary. Starting price and payment plan are not yet confirmed from available sources.",
+    },
     officialSourceUrl: "https://www.emaar.com/en/properties/valia-at-dubai-creek-harbour",
   }),
   draftProject({
@@ -127,6 +131,10 @@ export const projects: Project[] = [
       fr: "",
       en: "A twin-tower waterfront residential development in the Creek Beach district of Dubai Creek Harbour, marketed by Emaar as 'The Epitome of Urban Evolution.'",
     },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. AEON is a twin-tower residential development in the Creek Beach district of Dubai Creek Harbour, offering 1- to 3-bedroom apartments from AED 1,710,000, with handover scheduled for Q2 2028. The payment structure is 10% down, 80% during construction and 10% on handover. The location offers proximity to four metro stations and an RTA ferry terminal, with amenities including a clubhouse, wellness facilities, dual pools and a skate park.",
+    },
     officialSourceUrl: "https://www.emaar.com/en/properties/aeon",
   }),
   draftProject({
@@ -166,6 +174,10 @@ export const projects: Project[] = [
       fr: "",
       en: "Park Lane – Interiors by Vida is a multi-building development in Dubai Hills Estate featuring Vida-branded interior design, positioned between Downtown Dubai and Dubai Marina.",
     },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. Park Lane – Interiors by Vida is a multi-building development in Dubai Hills Estate offering 1- to 3-bedroom apartments and townhouses from AED 1,400,000, with handover scheduled for Q4 2028. Units feature Vida-branded interiors, and the development overlooks the community's 18-hole championship golf course, positioned between Downtown Dubai and Dubai Marina. Amenities include an infinity pool, fitness centre and landscaped podium deck.",
+    },
     officialSourceUrl: "https://www.emaar.com/en/properties/park-lane",
   }),
 
@@ -199,6 +211,10 @@ export const projects: Project[] = [
     overview: {
       fr: "",
       en: "The first football-branded residences developed in partnership with Chelsea Football Club — over 1,400 sea-facing apartments in Dubai Maritime City.",
+    },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. Chelsea Residences is a waterfront development in Dubai Maritime City developed in partnership with Chelsea Football Club, offering over 1,400 sea-facing 1- to 3-bedroom apartments from AED 2,300,000. The payment plan is 20% down, 40% during construction and 40% on handover, with handover scheduled for December 2029. Football-themed amenities include a private beach, a rooftop pitch and an athlete performance training centre. Qualifying purchases may be eligible for the UAE Golden Visa.",
     },
     officialSourceUrl: "https://www.damacproperties.com/en/projects/chelsea-residences/",
   }),
@@ -236,6 +252,10 @@ export const projects: Project[] = [
     overview: {
       fr: "",
       en: "Phase 2 of DAMAC's island-themed waterfront master community in Dubailand — an 'eco-luxury' community of 8 island-themed clusters, offering 4–6 bedroom townhouses and villas.",
+    },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. DAMAC Islands 2 is phase 2 of DAMAC's island-themed master community in Dubailand, offering 4- to 6-bedroom townhouses and villas across 8 island-themed clusters from AED 2,750,000. The payment plan is 20% at booking, 55% during construction and 25% on handover, with handover scheduled for Q2 2030. The developer reports a Guinness World Record for single-day launch revenue in November 2025. Amenities are nature- and wellness-focused, including an eco park, botanic garden and private beaches; qualifying purchases may be Golden Visa eligible.",
     },
     officialSourceUrl:
       "https://www.damacproperties.com/en/communities/damac-islands-2-community/projects/damac-islands-2/",
@@ -275,6 +295,10 @@ export const projects: Project[] = [
       fr: "",
       en: "Ellington's first hospitality-led development — a beachfront residential community on Island B, Dubai Islands, combining residences with an integrated hotel component.",
     },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. The Meriva Collection is Ellington Properties' first hospitality-led development, a beachfront residential community on Island B, Dubai Islands, combining 1- to 4-bedroom apartments and penthouses with an integrated hotel component. It offers direct beach access within a low-density waterfront master plan, plus a limited collection of 3- and 5-bedroom signature beachfront residences with private pools. Starting price, payment plan and handover date are not yet published.",
+    },
     officialSourceUrl:
       "https://ellingtonproperties.ae/en/property-for-sale/the-meriva-collection-dubai-islands",
   }),
@@ -312,6 +336,10 @@ export const projects: Project[] = [
       fr: "",
       en: "A 13-storey residential tower of 209 residences positioned around a crystal lagoon in Mohammed Bin Rashid City's Meydan Horizon sub-district.",
     },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. Everly Place is a 13-storey, 209-unit residential tower in Mohammed Bin Rashid City's Meydan Horizon sub-district, offering 1- to 3-bedroom apartments positioned around a crystal lagoon. Amenities include a bowling alley, fitness and yoga studios, a lagoon-facing club lounge and an outdoor cinema. Starting price, payment plan and handover date are not yet published.",
+    },
     officialSourceUrl:
       "https://ellingtonproperties.ae/en/property-for-sale/everly-place-mohammed-bin-rashid-city",
   }),
@@ -341,6 +369,10 @@ export const projects: Project[] = [
     overview: {
       fr: "",
       en: "A waterfront residential tower on the Dubai Water Canal in Business Bay, with 29 total floors and design 'inspired by the clear shores of the sea.'",
+    },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. Aquarise is a 29-floor waterfront residential tower on the Dubai Water Canal in Business Bay, offering studio to 4-bedroom apartments (plus Royal Suites) from AED 1,150,999. The payment plan is 20% on booking, 50% during construction and 30% on completion, with handover scheduled for Q1 2027. The development includes direct canal frontage and an artificial beach, along with a rooftop infinity pool, spa and co-working spaces.",
     },
     officialSourceUrl: "https://www.binghatti.com/en/projects/binghatti-aquarise",
   }),
@@ -374,6 +406,10 @@ export const projects: Project[] = [
     overview: {
       fr: "",
       en: "A residential tower in Al Jaddaf with crystalline glass façades and views toward Burj Khalifa and Dubai Frame.",
+    },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. Wraith is a residential tower in Al Jaddaf offering studio to 3-bedroom apartments from AED 799,999, with a 50% down payment and the remaining 50% due on handover, scheduled for Q4 2027. The building features crystalline glass façades and cantilevered balconies with views toward Burj Khalifa and Dubai Frame. It is a short distance from Al Jaddaf Metro Station and Dubai Healthcare City.",
     },
     officialSourceUrl: "https://www.binghatti.com/en/projects/binghatti-wraith",
   }),
@@ -409,6 +445,10 @@ export const projects: Project[] = [
     overview: {
       fr: "",
       en: "A 17-floor residential development within Dubai Land Residence Complex (DLRC), built around a library concept with a working two-storey library.",
+    },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. The Archive is a 17-floor residential development in Dubai Land Residence Complex (DLRC), built around a library concept with a working two-storey library. It offers studio to 3-bedroom, fully furnished apartments from AED 666,000, with a 50/50 payment plan (50% during construction, 50% on handover) and handover scheduled for Q3 2028. Units include BOSCH kitchen appliances and smart home technology; amenities include a water-feature lounge, mini golf and a dedicated reading lounge.",
     },
     officialSourceUrl: "https://imtiaz.ae/property/the-archive-by-imtiaz",
   }),
@@ -446,6 +486,10 @@ export const projects: Project[] = [
       fr: "",
       en: "A 10-storey residential building of ~170 units in Dubai South, launched as 'Inara Residence' and renamed 'Enre Residence.' Described by the developer as where 'contemporary architecture meets the quiet rhythm of nature.'",
     },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. Enre Residence (launched as 'Inara Residence' before being renamed) is a 10-storey building of approximately 170 studio to 2-bedroom apartments in Dubai South. The payment plan is 20% on booking, 40% during construction and 40% on handover (interest-free), with handover scheduled for Q1 2028. Units are fully furnished with Alexa-enabled smart home features. Starting price is not confirmed — available sources report conflicting figures.",
+    },
     officialSourceUrl: "https://imtiaz.ae/property/enre-residence-by-imtiaz",
   }),
   draftProject({
@@ -477,6 +521,10 @@ export const projects: Project[] = [
     overview: {
       fr: "",
       en: "A mixed-use development on Sheikh Zayed Road in Downtown Jebel Ali, pairing fully furnished residential apartments with modular offices, co-working space, and ground-floor retail. Reported sold out on launch day.",
+    },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. Raw District II is a mixed-use development on Sheikh Zayed Road in Downtown Jebel Ali, combining studio to 3-bedroom residential apartments with office and retail space, from AED 666,000. Handover is scheduled for Q2 2029; the project reports an AED 1.5 billion total value and was reported sold out on its launch day. The payment plan is not confirmed — sources report differing structures. Amenities include a family pool, hydrotherapy pool and co-working spaces.",
     },
     officialSourceUrl: "https://imtiaz.ae/property/raw-district-ii-by-imtiaz",
   }),
@@ -511,6 +559,10 @@ export const projects: Project[] = [
       fr: "",
       en: "A residential tower in Jumeirah Village Triangle (JVT), District 3, described by the developer as capturing 'the essence of air, light, and life.'",
     },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. ELAR1S Rise is a residential tower in Jumeirah Village Triangle (JVT), District 3, offering studio to 2-bedroom apartments with private balconies from AED 1,300,000. The payment plan is 20% on booking, 50% during construction and 30% on handover, with handover scheduled for Q3 2028. Amenities include a swimming pool, gym, kids' playroom and clubhouse.",
+    },
     officialSourceUrl: "https://object-1.com/project/elar1s-rise/",
   }),
   draftProject({
@@ -541,6 +593,10 @@ export const projects: Project[] = [
     overview: {
       fr: "",
       en: "A residential building in the established Dubai Sports City community offering studio to 3.5-bedroom apartments designed for an active, balanced lifestyle.",
+    },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. AUREL1A Residence is a residential building in the established Dubai Sports City community, offering studio to 3.5-bedroom apartments from AED 598,000. The payment plan is 64% during construction and 36% on handover, with handover scheduled for Q1 2028. Amenities include a swimming pool, kids' pool, gym and clubhouse.",
     },
     officialSourceUrl: "https://object-1.com/project/aurel1a-residence/",
   }),
@@ -584,6 +640,10 @@ export const projects: Project[] = [
     overview: {
       fr: "",
       en: "A six-floor residential development of 200 units in Dubai Industrial City (Dubai South), emphasizing resort-inspired amenities and modern architecture.",
+    },
+    whyIRecommend: {
+      fr: "",
+      en: "DRAFT — pending Tommy's review. SAMANA South Haven is a six-floor, 200-unit development in Dubai Industrial City (Dubai South), offering studio to 2-bedroom apartments from AED 599,000. The payment plan combines a 10–15% down payment with staged instalments (5% at month 4, 10% at month 12) followed by 1% monthly payments over 70–75 months; handover is scheduled for Q2 2029. It follows the earlier SAMANA Hills South 1, 2 and 3 projects in the same corridor. Amenities include a sauna, steam room, kids' pool and outdoor cinema.",
     },
     officialSourceUrl: "https://www.samanadevelopers.com/projects/samana-south-haven",
   }),
