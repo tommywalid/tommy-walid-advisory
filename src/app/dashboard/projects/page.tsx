@@ -4,6 +4,7 @@ import { getAllProjects, getDeveloper } from "@/lib/projects";
 import { DashboardPageHeader } from "@/components/dashboard/page-header";
 import { NewItemButton } from "@/components/dashboard/new-item-button";
 import { StatusBadge } from "@/components/dashboard/status-badge";
+import { AIBadge } from "@/components/dashboard/ai-badge";
 import { DashboardEmptyState } from "@/components/dashboard/empty-state";
 
 const tierOrder = { A: 0, B: 1, C: 2 } as const;
@@ -36,6 +37,7 @@ export default function DashboardProjectsPage() {
                 <th className="px-5 py-3 font-semibold">Name</th>
                 <th className="px-5 py-3 font-semibold">Developer</th>
                 <th className="px-5 py-3 font-semibold">Location</th>
+                <th className="px-5 py-3 font-semibold">Why I Recommend</th>
                 <th className="px-5 py-3 font-semibold">Status</th>
                 <th className="px-5 py-3 font-semibold">Featured</th>
               </tr>
@@ -49,6 +51,15 @@ export default function DashboardProjectsPage() {
                     {getDeveloper(project.developerId)?.name ?? "—"}
                   </td>
                   <td className="px-5 py-3 text-ink-soft">{project.location}</td>
+                  <td className="px-5 py-3">
+                    {project.whyIRecommendMeta?.aiAssisted && !project.whyIRecommendMeta?.aiReviewedAt ? (
+                      <AIBadge />
+                    ) : project.whyIRecommend.en.trim() ? (
+                      <span className="text-xs text-ink-soft">Written</span>
+                    ) : (
+                      <span className="text-ink-soft/40">—</span>
+                    )}
+                  </td>
                   <td className="px-5 py-3">
                     <StatusBadge published={project.published} />
                   </td>

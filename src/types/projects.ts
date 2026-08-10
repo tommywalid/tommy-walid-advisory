@@ -44,6 +44,8 @@ export type Developer = {
   logo?: string;
   /** First-person, concise — written once per developer, reused across all their projects. Empty until Tommy writes it. */
   whyITrustThem: LocalizedText;
+  /** Tracks whether whyITrustThem started as an AI draft — see AIAssistMeta. */
+  whyITrustThemMeta?: AIAssistMeta;
 
   /** 2-3 sentence factual overview. */
   overview?: LocalizedText;

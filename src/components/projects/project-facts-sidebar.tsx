@@ -1,6 +1,6 @@
 import type { Developer, Project, PropertyType } from "@/types/projects";
 import { Link } from "@/i18n/navigation";
-import { formatStartingPrice } from "@/lib/projects";
+import { formatStartingPriceOrPending, factOrPending, localizedText } from "@/lib/projects";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
@@ -57,16 +57,16 @@ export function ProjectFactsSidebar({
           />
           <Fact
             label={labels.startingPrice}
-            value={formatStartingPrice(project.startingPrice, locale)}
+            value={formatStartingPriceOrPending(project.startingPrice, locale)}
           />
-          <Fact label={labels.handover} value={project.handover} />
+          <Fact label={labels.handover} value={factOrPending(project.handover)} />
         </dl>
 
         <Separator className="my-5" />
 
         <p className="text-sm leading-relaxed text-ink-soft">
           <span className="font-medium text-forest">{labels.paymentPlan}:</span>{" "}
-          {locale === "fr" ? project.paymentPlan.fr : project.paymentPlan.en}
+          {localizedText(project.paymentPlan, locale)}
         </p>
 
         <Button asChild className="mt-6 w-full">

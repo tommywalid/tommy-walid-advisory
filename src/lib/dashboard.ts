@@ -28,11 +28,13 @@ export function getDashboardStats() {
 
 export type IncompleteProjectReason =
   | "missing-recommendation"
+  | "recommendation-ai-draft-pending-review"
   | "missing-cover-media"
   | "missing-price"
   | "missing-payment-plan"
   | "missing-handover"
   | "missing-developer-trust-note"
+  | "developer-trust-note-ai-draft-pending-review"
   | "missing-property-type";
 
 /**
@@ -47,7 +49,11 @@ export function getIncompleteProjects() {
   return getAllProjects()
     .map((project) => {
       const reasons: IncompleteProjectReason[] = [];
-      if (!project.whyIRecommend.en.trim() || !project.whyIRecommend.fr.trim()) {
+      if (!project.whyIRecommend.en.trim()) {
+        reasons.push("missing-recommendation");
+      } else if (project.whyIRecommendMeta?.aiAssisted && !project.whyIRecommendMeta?.aiReviewedAt) {
+        reasons.push("recommendation-ai-draft-pending-review");
+      } else if (!project.whyIRecommend.fr.trim()) {
         reasons.push("missing-recommendation");
       }
       if (!project.media.cover.url) {
@@ -66,7 +72,11 @@ export function getIncompleteProjects() {
         reasons.push("missing-property-type");
       }
       const developer = getDeveloper(project.developerId);
-      if (!developer || !developer.whyITrustThem.en.trim() || !developer.whyITrustThem.fr.trim()) {
+      if (!developer || !developer.whyITrustThem.en.trim()) {
+        reasons.push("missing-developer-trust-note");
+      } else if (developer.whyITrustThemMeta?.aiAssisted && !developer.whyITrustThemMeta?.aiReviewedAt) {
+        reasons.push("developer-trust-note-ai-draft-pending-review");
+      } else if (!developer.whyITrustThem.fr.trim()) {
         reasons.push("missing-developer-trust-note");
       }
       return { project, reasons };

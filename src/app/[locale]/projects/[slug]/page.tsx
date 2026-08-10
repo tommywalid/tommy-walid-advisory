@@ -10,6 +10,8 @@ import {
   getProjectBySlug,
   getDeveloper,
   getRelatedProjects,
+  localizedText,
+  localizedTextOrEmpty,
 } from "@/lib/projects";
 import { ProjectHero } from "@/components/projects/project-hero";
 import { ProjectFactsSidebar } from "@/components/projects/project-facts-sidebar";
@@ -50,7 +52,7 @@ export default async function ProjectDetailPage({
   const developer = getDeveloper(project.developerId);
   const related = getRelatedProjects(project);
   const t = await getTranslations("projects");
-  const isFr = locale === "fr";
+  const locationNote = localizedTextOrEmpty(project.whyThisLocationMatters, locale);
 
   const propertyTypeDict = t.raw("propertyTypes") as Record<PropertyType, string>;
   const bestForDict = t.raw("bestForTags") as Record<string, string>;
@@ -77,7 +79,7 @@ export default async function ProjectDetailPage({
 
             <AdvisorInsight
               title={t("detail.whyIRecommendTitle")}
-              text={isFr ? project.whyIRecommend.fr : project.whyIRecommend.en}
+              text={localizedText(project.whyIRecommend, locale)}
               size="lg"
             />
 
@@ -98,18 +100,22 @@ export default async function ProjectDetailPage({
               ) : null}
             </Reveal>
 
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-              {developer ? (
-                <AdvisorInsight
-                  title={t("detail.whyTrustDeveloperTitle")}
-                  text={isFr ? developer.whyITrustThem.fr : developer.whyITrustThem.en}
-                />
-              ) : null}
-              <AdvisorInsight
-                title={t("detail.whyLocationMattersTitle")}
-                text={isFr ? project.whyThisLocationMatters.fr : project.whyThisLocationMatters.en}
-              />
-            </div>
+            {developer || locationNote ? (
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                {developer ? (
+                  <AdvisorInsight
+                    title={t("detail.whyTrustDeveloperTitle")}
+                    text={localizedText(developer.whyITrustThem, locale)}
+                  />
+                ) : null}
+                {locationNote ? (
+                  <AdvisorInsight
+                    title={t("detail.whyLocationMattersTitle")}
+                    text={locationNote}
+                  />
+                ) : null}
+              </div>
+            ) : null}
 
             <GatedContentPanel
               title={t("detail.gatedTitle")}

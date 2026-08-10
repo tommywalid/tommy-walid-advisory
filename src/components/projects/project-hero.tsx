@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import type { Project, MediaType } from "@/types/projects";
+import { MediaCover } from "@/components/projects/media-cover";
 
 /**
  * Media is honestly labeled (Photo / Developer Render / Masterplan / Aerial)
@@ -19,17 +20,12 @@ export function ProjectHero({
   return (
     <div className="bg-forest">
       <div className="relative aspect-[16/9] w-full sm:aspect-[21/9]">
-        <Image
-          src={cover.url}
-          alt={project.name}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <span className="absolute top-4 left-4 rounded-full bg-forest/80 px-3 py-1 text-xs font-semibold text-cream backdrop-blur">
-          {mediaTypeLabels[cover.type]}
-        </span>
+        <MediaCover url={cover.url} alt={project.name} priority sizes="100vw" />
+        {cover.url ? (
+          <span className="absolute top-4 left-4 rounded-full bg-forest/80 px-3 py-1 text-xs font-semibold text-cream backdrop-blur">
+            {mediaTypeLabels[cover.type]}
+          </span>
+        ) : null}
       </div>
 
       {gallery.length > 0 ? (

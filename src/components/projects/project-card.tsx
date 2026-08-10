@@ -1,12 +1,12 @@
-import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
 import type { Project } from "@/types/projects";
-import { formatStartingPrice } from "@/lib/projects";
+import { formatStartingPriceOrPending, localizedText } from "@/lib/projects";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { TagList } from "@/components/projects/tag-list";
+import { MediaCover } from "@/components/projects/media-cover";
 import { Reveal } from "@/components/motion/reveal";
 
 /**
@@ -33,12 +33,10 @@ export async function ProjectCard({
           href={`/projects/${project.slug}`}
           className="relative aspect-[4/3] w-full overflow-hidden bg-beige"
         >
-          <Image
-            src={project.media.cover.url}
+          <MediaCover
+            url={project.media.cover.url}
             alt={project.name}
-            fill
             sizes="(min-width: 1024px) 33vw, 100vw"
-            className="object-cover"
           />
         </Link>
 
@@ -51,7 +49,7 @@ export async function ProjectCard({
           </h3>
 
           <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-ink-soft">
-            {locale === "fr" ? project.whyIRecommend.fr : project.whyIRecommend.en}
+            {localizedText(project.whyIRecommend, locale)}
           </p>
 
           <TagList
@@ -65,7 +63,7 @@ export async function ProjectCard({
             <span className="text-sm text-ink-soft">
               {t("card.startingFromLabel")}{" "}
               <span className="font-semibold text-forest">
-                {formatStartingPrice(project.startingPrice, locale)}
+                {formatStartingPriceOrPending(project.startingPrice, locale)}
               </span>
             </span>
           </div>

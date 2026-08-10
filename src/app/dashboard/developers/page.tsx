@@ -2,6 +2,7 @@ import { developers } from "@/data/developers";
 import { getAllProjects } from "@/lib/projects";
 import { DashboardPageHeader } from "@/components/dashboard/page-header";
 import { NewItemButton } from "@/components/dashboard/new-item-button";
+import { AIBadge } from "@/components/dashboard/ai-badge";
 import { DashboardEmptyState } from "@/components/dashboard/empty-state";
 
 export default function DashboardDevelopersPage() {
@@ -27,6 +28,7 @@ export default function DashboardDevelopersPage() {
               <tr>
                 <th className="px-5 py-3 font-semibold">Name</th>
                 <th className="px-5 py-3 font-semibold">Used by</th>
+                <th className="px-5 py-3 font-semibold">Why I Trust Them</th>
               </tr>
             </thead>
             <tbody>
@@ -36,6 +38,15 @@ export default function DashboardDevelopersPage() {
                   <td className="px-5 py-3 text-ink-soft">
                     {allProjects.filter((p) => p.developerId === developer.id).length}{" "}
                     project(s)
+                  </td>
+                  <td className="px-5 py-3">
+                    {developer.whyITrustThemMeta?.aiAssisted && !developer.whyITrustThemMeta?.aiReviewedAt ? (
+                      <AIBadge />
+                    ) : developer.whyITrustThem.en.trim() ? (
+                      <span className="text-xs text-ink-soft">Written</span>
+                    ) : (
+                      <span className="text-ink-soft/40">—</span>
+                    )}
                   </td>
                 </tr>
               ))}
