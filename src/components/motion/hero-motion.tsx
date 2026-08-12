@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { motion, type Variants } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 
 const container: Variants = {
   hidden: {},
@@ -19,7 +19,14 @@ const item: Variants = {
   },
 };
 
+/** Respects `prefers-reduced-motion: reduce` — renders children in place, unanimated. */
 export function HeroMotion({ children }: { children: React.ReactNode }) {
+  const shouldReduceMotion = useReducedMotion();
+
+  if (shouldReduceMotion) {
+    return <div>{children}</div>;
+  }
+
   return (
     <motion.div initial="hidden" animate="visible" variants={container}>
       {children}
@@ -34,6 +41,12 @@ export function HeroMotionItem({
   children: React.ReactNode;
   className?: string;
 }) {
+  const shouldReduceMotion = useReducedMotion();
+
+  if (shouldReduceMotion) {
+    return <div className={className}>{children}</div>;
+  }
+
   return (
     <motion.div variants={item} className={className}>
       {children}

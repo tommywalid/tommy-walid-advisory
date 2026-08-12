@@ -52,7 +52,9 @@ export function Header() {
         <div className="hidden items-center gap-6 lg:flex">
           <LocaleSwitcher />
           <Button asChild size="sm">
-            <Link href="/contact">{t("bookCall")}</Link>
+            <a href={company.calendlyUrl} target="_blank" rel="noopener noreferrer">
+              {t("bookCall")}
+            </a>
           </Button>
         </div>
 
@@ -62,7 +64,7 @@ export function Header() {
             <SheetTrigger asChild>
               <button
                 type="button"
-                aria-label="Ouvrir le menu"
+                aria-label={t("openMenu")}
                 className="rounded-full p-2 text-forest hover:bg-beige"
               >
                 <Menu className="size-6" />
@@ -86,7 +88,9 @@ export function Header() {
               </nav>
               <SheetClose asChild>
                 <Button asChild className="mt-auto">
-                  <Link href="/contact">{t("bookCall")}</Link>
+                  <a href={company.calendlyUrl} target="_blank" rel="noopener noreferrer">
+                    {t("bookCall")}
+                  </a>
                 </Button>
               </SheetClose>
             </SheetContent>

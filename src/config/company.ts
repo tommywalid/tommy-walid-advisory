@@ -24,11 +24,11 @@ export const company = {
    */
   url: "https://tommywalidadvisory.com",
 
-  email: "contact@tommywalidadvisory.com",
-  phone: null as string | null,
-  /** E.164 format once available, e.g. "+971501234567". */
-  whatsapp: null as string | null,
-  calendlyUrl: null as string | null,
+  email: "TommyWalid01@gmail.com",
+  phone: "+971 58 530 4481",
+  /** E.164-derivable — getWhatsAppLink() strips formatting when building the wa.me link. */
+  whatsapp: "+971 58 530 4481",
+  calendlyUrl: "https://calendly.com/tommywalid01/30min",
 
   address: {
     line1: null as string | null,
@@ -38,8 +38,11 @@ export const company = {
   googleMapsUrl: null as string | null,
 
   social: {
-    linkedin: "#",
-    instagram: "#",
+    linkedin: "https://www.linkedin.com/in/walid-toumi-4a87535",
+    instagram: "https://www.instagram.com/tommy_walid_01/",
+    facebook: "https://www.facebook.com/search/top?q=tommy%20dubai%20real%20estate",
+    tiktok: "https://www.tiktok.com/@walid.tommy7",
+    youtube: "https://www.youtube.com/@WalidTOMMY01",
   },
 
   /**

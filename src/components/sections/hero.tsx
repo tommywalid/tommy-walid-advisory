@@ -1,6 +1,7 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
-import { Link } from "@/i18n/navigation";
+import { company } from "@/config/company";
 import { Button } from "@/components/ui/button";
 import { HeroMotion, HeroMotionItem } from "@/components/motion/hero-motion";
 
@@ -38,7 +39,7 @@ export async function Hero() {
         </g>
       </svg>
 
-      <div className="relative mx-auto flex max-w-7xl flex-col gap-8 px-6 pt-28 pb-24 sm:pt-36 sm:pb-32 lg:px-10">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 pt-28 pb-24 sm:pt-36 sm:pb-32 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:px-10">
         <HeroMotion>
           <HeroMotionItem>
             <span className="inline-flex items-center rounded-full border border-gold/40 px-4 py-1.5 text-xs font-semibold tracking-[0.24em] text-gold-light uppercase">
@@ -46,23 +47,45 @@ export async function Hero() {
             </span>
           </HeroMotionItem>
 
-          <HeroMotionItem className="mt-7 max-w-3xl text-balance font-heading text-4xl leading-[1.08] text-cream sm:text-5xl lg:text-6xl">
+          <HeroMotionItem className="mt-7 max-w-3xl text-balance whitespace-pre-line font-heading text-4xl leading-[1.08] text-cream sm:text-5xl lg:text-6xl">
             {t("title")}
           </HeroMotionItem>
 
-          <HeroMotionItem className="mt-6 max-w-xl text-balance text-lg leading-relaxed text-cream/75">
+          <HeroMotionItem className="mt-6 max-w-xl text-balance whitespace-pre-line text-lg leading-relaxed text-cream/75">
             {t("subtitle")}
           </HeroMotionItem>
 
           <HeroMotionItem className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Button asChild variant="gold" size="lg">
-              <Link href="/contact">{t("ctaPrimary")}</Link>
+              <a href={company.calendlyUrl} target="_blank" rel="noopener noreferrer">
+                {t("ctaPrimary")}
+              </a>
             </Button>
             <Button asChild variant="outlineLight" size="lg">
-              <a href="#process">{t("ctaSecondary")}</a>
+              <a href="#services">{t("ctaSecondary")}</a>
             </Button>
           </HeroMotionItem>
         </HeroMotion>
+
+        {/*
+          TODO: hero-main.png is an AI-generated placeholder, not a real
+          photograph — it MUST be replaced with real, commissioned
+          photography of Tommy before this site goes live (see
+          docs/design/visual-experience-roadmap.md: "prioritize commissioning
+          real photography over any AI-generated alternative wherever a real
+          asset is feasible"; a generated face should never ship as a
+          genuine portrait).
+        */}
+        <div className="relative aspect-[2/3] w-full max-w-sm justify-self-center overflow-hidden rounded-2xl bg-forest lg:max-w-none lg:justify-self-end">
+          <Image
+            src="/images/hero/hero-main.png"
+            alt={company.name}
+            fill
+            priority
+            sizes="(min-width: 1024px) 45vw, 384px"
+            className="object-cover"
+          />
+        </div>
       </div>
     </section>
   );

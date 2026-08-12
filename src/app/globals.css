@@ -13,6 +13,11 @@
   --color-forest-light: #1f3a2a;
   --color-gold: #ad8a3f;
   --color-gold-light: #d8bd7f;
+  /* Darkened gold for text on light (cream/beige/white) surfaces — #ad8a3f
+     fails WCAG AA at small sizes (~3:1); this variant clears 4.5:1 against
+     cream, beige and white. Decorative uses of --color-gold (buttons, dots,
+     icons) are unaffected. */
+  --color-gold-text: #7e652e;
   --color-ink: #201f1a;
   --color-ink-soft: #5c5a50;
   --color-white: #ffffff;
@@ -28,6 +33,7 @@
   --color-forest-light: var(--color-forest-light);
   --color-gold: var(--color-gold);
   --color-gold-light: var(--color-gold-light);
+  --color-gold-text: var(--color-gold-text);
   --color-ink: var(--color-ink);
   --color-ink-soft: var(--color-ink-soft);
   --color-white: var(--color-white);

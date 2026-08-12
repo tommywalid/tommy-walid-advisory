@@ -11,7 +11,8 @@
     "process": "Mon approche",
     "blog": "Journal",
     "contact": "Contact",
-    "bookCall": "Prendre rendez-vous"
+    "bookCall": "Prendre rendez-vous",
+    "openMenu": "Ouvrir le menu"
   },
   "notFound": {
     "kicker": "Erreur 404",
@@ -31,32 +32,32 @@
   },
   "home": {
     "hero": {
-      "kicker": "Conseil en investissement immobilier — Dubaï",
-      "title": "L'immobilier à Dubaï, pensé comme un patrimoine.",
-      "subtitle": "J'accompagne des investisseurs internationaux dans la sélection, la structuration et la gestion de leurs actifs immobiliers à Dubaï, avec une approche fondée sur l'analyse, la transparence et la création de valeur à long terme.",
+      "kicker": "Conseil indépendant en investissement immobilier — Dubaï",
+      "title": "Vous n'avez pas besoin d'un broker de plus.\nVous avez besoin d'une personne en qui vous pouvez avoir confiance.",
+      "subtitle": "Investir à Dubaï est une décision importante.\n\nMon rôle n'est pas de vous vendre le projet du moment.\n\nJe prends le temps de comprendre vos objectifs, de sélectionner les meilleures opportunités et de vous accompagner bien après la signature.\n\nEnsemble, nous construisons un patrimoine immobilier pensé pour le long terme.",
       "ctaPrimary": "Prendre rendez-vous",
-      "ctaSecondary": "Découvrir mon approche"
+      "ctaSecondary": "Comment je vous accompagne"
     },
     "whyTommy": {
       "kicker": "Pourquoi Tommy Walid",
-      "title": "Pourquoi me confier l'une des décisions financières les plus importantes de votre vie ?",
-      "subtitle": "Pas de discours commercial. Seulement ce que vous devez savoir avant de vous engager.",
+      "title": "Pourquoi des investisseurs me font confiance.",
+      "subtitle": "Vous pouvez acheter un bien immobilier auprès de milliers de brokers à Dubaï.\n\nVous choisissez un conseiller parce que vous lui faites confiance.",
       "items": [
         {
-          "question": "Pourquoi travailler avec moi",
-          "answer": "Vous gardez un seul interlocuteur, du premier échange à la gestion de votre actif dans la durée. Votre stratégie, la sélection des opportunités et la négociation sont pilotées personnellement — puis l'ensemble de l'écosystème (structuration, visa, banque, gestion locative) est coordonné pour vous avec un réseau de partenaires de confiance. Vous n'êtes jamais transféré à une autre société."
+          "question": "Vous ne serez jamais poussé à décider dans l'urgence.",
+          "answer": "Vous entendrez parfois qu'il ne reste plus qu'une unité, qu'une offre expire dans quelques heures ou qu'il faut réserver immédiatement.\n\nLorsque l'urgence est réelle, je vous l'explique avec des faits.\n\nLorsqu'elle ne l'est pas, je vous laisse le temps de prendre une décision réfléchie."
         },
         {
-          "question": "Ma philosophie d'investissement",
-          "answer": "Aucune opportunité ne vous sera présentée simplement parce qu'elle est disponible. Chaque recommandation repose sur une analyse rigoureuse de sa valeur à long terme — jamais sur l'urgence du marché. Mon rôle n'est pas de vous vendre un bien, mais de vous aider à décider en toute connaissance de cause, au rythme qui correspond à vos objectifs."
+          "question": "Je ne vous recommanderai jamais un projet pour toucher une commission.",
+          "answer": "Chaque recommandation est faite parce que je pense qu'elle correspond réellement à votre stratégie patrimoniale.\n\nSi un projet ne vous convient pas, je préfère vous le dire plutôt que de conclure une vente."
         },
         {
-          "question": "Comment je vous accompagne",
-          "answer": "Chaque échange commence par la compréhension de vos objectifs, pas par la présentation d'un bien. Vous recevez une explication claire de chaque option — fiscale, juridique, financière — avant de décider. Et l'accompagnement ne s'arrête pas à la signature : je reste à vos côtés pour la gestion locative, la revente ou l'optimisation de votre portefeuille, des années après l'acquisition."
+          "question": "Je ne disparais pas après la signature.",
+          "answer": "Pour beaucoup, la vente marque la fin de la relation.\n\nPour moi, elle marque le début.\n\nJe reste disponible pour répondre à vos questions, suivre votre investissement et vous accompagner dans les années qui suivent."
         },
         {
-          "question": "Ce que vous pouvez attendre de moi",
-          "answer": "Une réponse personnelle sous 24 à 48h. Une transparence totale sur les coûts, les risques et les alternatives. Aucune pression commerciale. Et un interlocuteur unique, disponible bien après la remise des clés."
+          "question": "Vous pouvez attendre de moi une totale transparence.",
+          "answer": "Je vous expliquerai les avantages d'un investissement, mais aussi ses limites, ses risques et les alternatives possibles.\n\nJe préfère perdre une vente que perdre votre confiance."
         }
       ]
     },
@@ -162,7 +163,8 @@
     "contactCta": {
       "title": "Discutons de votre projet d'investissement à Dubaï.",
       "subtitle": "Un premier échange, sans engagement, pour cadrer vos objectifs et vos questions.",
-      "cta": "Prendre rendez-vous"
+      "cta": "Prendre rendez-vous",
+      "whatsappCta": "Ou écrivez-moi sur WhatsApp"
     }
   },
   "projects": {
@@ -239,6 +241,11 @@
       "render": "Rendu du promoteur",
       "masterplan": "Plan masse",
       "aerial": "Vue aérienne"
+    },
+    "gallery": {
+      "previous": "Photo précédente",
+      "next": "Photo suivante",
+      "viewPhoto": "Voir la photo {number}"
     }
   },
   "pages": {
@@ -317,7 +324,10 @@
       "submit": "Démarrer la conversation",
       "formNotice": "Ce message s'ouvrira dans votre messagerie habituelle. Je réponds personnellement sous 24 à 48h.",
       "projectInterestMessage": "J'aimerais avoir votre avis sur {name}.",
-      "directTitle": "Me contacter directement"
+      "directTitle": "Me contacter directement",
+      "whatsappCta": "M'écrire sur WhatsApp",
+      "calendlyCta": "Réserver un appel",
+      "socialTitle": "Me suivre"
     },
     "privacyPolicy": {
       "kicker": "Légal",

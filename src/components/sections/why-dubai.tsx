@@ -1,6 +1,8 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Percent, Landmark, Award, Globe2 } from "lucide-react";
 
+import { company } from "@/config/company";
 import { Reveal } from "@/components/motion/reveal";
 import { SectionHeading } from "@/components/sections/section-heading";
 
@@ -15,7 +17,19 @@ export async function WhyDubai() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading kicker={t("kicker")} title={t("title")} dark />
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <Reveal className="mt-12">
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-forest">
+            <Image
+              src="/images/why-dubai/skyline.jpg"
+              alt={company.name}
+              fill
+              sizes="(min-width: 1280px) 1200px, 100vw"
+              className="object-cover"
+            />
+          </div>
+        </Reveal>
+
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {items.map((item, i) => {
             const Icon = icons[i % icons.length]!;
             return (

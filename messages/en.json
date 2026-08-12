@@ -11,7 +11,8 @@
     "process": "My Approach",
     "blog": "Journal",
     "contact": "Contact",
-    "bookCall": "Book a Call"
+    "bookCall": "Book a Call",
+    "openMenu": "Open menu"
   },
   "notFound": {
     "kicker": "404 Error",
@@ -162,7 +163,8 @@
     "contactCta": {
       "title": "Let's discuss your investment project in Dubai.",
       "subtitle": "A first, no-obligation conversation to frame your objectives and questions.",
-      "cta": "Book a Call"
+      "cta": "Book a Call",
+      "whatsappCta": "Or message me on WhatsApp"
     }
   },
   "projects": {
@@ -239,6 +241,11 @@
       "render": "Developer Render",
       "masterplan": "Masterplan",
       "aerial": "Aerial View"
+    },
+    "gallery": {
+      "previous": "Previous photo",
+      "next": "Next photo",
+      "viewPhoto": "View photo {number}"
     }
   },
   "pages": {
@@ -317,7 +324,10 @@
       "submit": "Start the conversation",
       "formNotice": "This message will open in your default email application. I respond personally within 24–48h.",
       "projectInterestMessage": "I'd like your opinion on {name}.",
-      "directTitle": "Contact me directly"
+      "directTitle": "Contact me directly",
+      "whatsappCta": "Message me on WhatsApp",
+      "calendlyCta": "Book a call",
+      "socialTitle": "Follow me"
     },
     "privacyPolicy": {
       "kicker": "Legal",

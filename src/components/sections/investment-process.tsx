@@ -8,7 +8,7 @@ export async function InvestmentProcessSection({ id }: { id?: string }) {
   const steps = t.raw("steps") as { title: string; description: string }[];
 
   return (
-    <section id={id} className="bg-cream py-24 sm:py-28">
+    <section id={id} className="scroll-mt-24 bg-cream py-24 sm:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
           kicker={t("kicker")}

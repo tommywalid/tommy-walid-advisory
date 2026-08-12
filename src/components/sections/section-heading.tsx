@@ -29,7 +29,7 @@ export function SectionHeading({
       <span
         className={cn(
           "text-xs font-semibold tracking-[0.28em] uppercase",
-          dark ? "text-gold-light" : "text-gold",
+          dark ? "text-gold-light" : "text-gold-text",
         )}
       >
         {kicker}

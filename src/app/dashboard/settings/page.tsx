@@ -44,6 +44,9 @@ export default function DashboardSettingsPage() {
           <Field label="Timezone" value={company.timezone} />
           <Field label="LinkedIn" value={company.social.linkedin} />
           <Field label="Instagram" value={company.social.instagram} />
+          <Field label="Facebook" value={company.social.facebook} />
+          <Field label="TikTok" value={company.social.tiktok} />
+          <Field label="YouTube" value={company.social.youtube} />
         </div>
       </Card>
     </>

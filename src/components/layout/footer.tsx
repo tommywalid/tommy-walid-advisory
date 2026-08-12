@@ -1,14 +1,31 @@
 import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
-import { company } from "@/config/company";
+import { company, getWhatsAppLink } from "@/config/company";
 import { navigation } from "@/config/navigation";
 import { Logo } from "@/components/brand/logo";
+import {
+  LinkedinIcon,
+  InstagramIcon,
+  FacebookIcon,
+  YoutubeIcon,
+  TiktokIcon,
+  WhatsappIcon,
+} from "@/components/brand/social-icons";
+
+const socialLinks = [
+  { href: company.social.linkedin, label: "LinkedIn", Icon: LinkedinIcon },
+  { href: company.social.instagram, label: "Instagram", Icon: InstagramIcon },
+  { href: company.social.facebook, label: "Facebook", Icon: FacebookIcon },
+  { href: company.social.youtube, label: "YouTube", Icon: YoutubeIcon },
+  { href: company.social.tiktok, label: "TikTok", Icon: TiktokIcon },
+];
 
 export async function Footer() {
   const t = await getTranslations("footer");
   const tNav = await getTranslations("nav");
   const year = new Date().getFullYear();
+  const whatsappHref = getWhatsAppLink();
 
   return (
     <footer className="border-t border-cream/10 bg-forest text-cream">
@@ -19,19 +36,19 @@ export async function Footer() {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/70">
               {t("tagline")}
             </p>
-            <div className="mt-6 flex items-center gap-5 text-xs font-semibold tracking-[0.14em] uppercase">
-              <a
-                href={company.social.linkedin}
-                className="text-cream/60 transition-colors hover:text-gold-light"
-              >
-                LinkedIn
-              </a>
-              <a
-                href={company.social.instagram}
-                className="text-cream/60 transition-colors hover:text-gold-light"
-              >
-                Instagram
-              </a>
+            <div className="mt-6 flex items-center gap-4">
+              {socialLinks.map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="text-cream/60 transition-colors hover:text-gold-light"
+                >
+                  <Icon className="size-4" />
+                </a>
+              ))}
             </div>
           </div>
 
@@ -81,6 +98,17 @@ export async function Footer() {
                 {company.email}
               </a>
             </p>
+            {whatsappHref ? (
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-2 text-sm text-cream/75 transition-colors hover:text-cream"
+              >
+                <WhatsappIcon className="size-4" />
+                {company.phone}
+              </a>
+            ) : null}
           </div>
         </div>
 

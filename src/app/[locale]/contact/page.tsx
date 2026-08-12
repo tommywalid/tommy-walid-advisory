@@ -1,15 +1,31 @@
 import type { Metadata } from "next";
-import { Mail } from "lucide-react";
+import { Mail, CalendarDays } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import type { AppLocale } from "@/i18n/routing";
-import { company } from "@/config/company";
+import { company, getWhatsAppLink } from "@/config/company";
 import { mapBestForToGoal } from "@/config/projects";
 import { getProjectBySlug } from "@/lib/projects";
 import { PageHeader } from "@/components/sections/page-header";
 import { Reveal } from "@/components/motion/reveal";
 import { Card } from "@/components/ui/card";
 import { ContactForm } from "@/components/contact/contact-form";
+import {
+  WhatsappIcon,
+  LinkedinIcon,
+  InstagramIcon,
+  FacebookIcon,
+  YoutubeIcon,
+  TiktokIcon,
+} from "@/components/brand/social-icons";
+
+const socialLinks = [
+  { href: company.social.linkedin, label: "LinkedIn", Icon: LinkedinIcon },
+  { href: company.social.instagram, label: "Instagram", Icon: InstagramIcon },
+  { href: company.social.facebook, label: "Facebook", Icon: FacebookIcon },
+  { href: company.social.youtube, label: "YouTube", Icon: YoutubeIcon },
+  { href: company.social.tiktok, label: "TikTok", Icon: TiktokIcon },
+];
 
 export async function generateMetadata({
   params,
@@ -41,6 +57,7 @@ export default async function ContactPage({
   const initialMessage = project
     ? t("projectInterestMessage", { name: project.name })
     : "";
+  const whatsappHref = getWhatsAppLink();
 
   return (
     <>
@@ -51,15 +68,64 @@ export default async function ContactPage({
           <h2 className="font-heading text-xl text-forest">
             {t("directTitle")}
           </h2>
-          <a
-            href={`mailto:${company.email}`}
-            className="mt-4 inline-flex items-center gap-3 text-sm text-ink-soft transition-colors hover:text-forest"
-          >
-            <span className="inline-flex size-9 items-center justify-center rounded-full bg-beige text-forest">
-              <Mail className="size-4" />
-            </span>
-            {company.email}
-          </a>
+
+          <div className="mt-4 flex flex-col gap-4">
+            <a
+              href={`mailto:${company.email}`}
+              className="inline-flex items-center gap-3 text-sm text-ink-soft transition-colors hover:text-forest"
+            >
+              <span className="inline-flex size-9 items-center justify-center rounded-full bg-beige text-forest">
+                <Mail className="size-4" />
+              </span>
+              {company.email}
+            </a>
+
+            {whatsappHref ? (
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 text-sm text-ink-soft transition-colors hover:text-forest"
+              >
+                <span className="inline-flex size-9 items-center justify-center rounded-full bg-beige text-forest">
+                  <WhatsappIcon className="size-4" />
+                </span>
+                {t("whatsappCta")}
+              </a>
+            ) : null}
+
+            <a
+              href={company.calendlyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 text-sm text-ink-soft transition-colors hover:text-forest"
+            >
+              <span className="inline-flex size-9 items-center justify-center rounded-full bg-beige text-forest">
+                <CalendarDays className="size-4" />
+              </span>
+              {t("calendlyCta")}
+            </a>
+          </div>
+
+          <div className="mt-10 border-t border-beige-dark/60 pt-6">
+            <h3 className="text-xs font-semibold tracking-[0.14em] text-ink-soft uppercase">
+              {t("socialTitle")}
+            </h3>
+            <div className="mt-4 flex items-center gap-4">
+              {socialLinks.map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="text-ink-soft transition-colors hover:text-forest"
+                >
+                  <Icon className="size-4" />
+                </a>
+              ))}
+            </div>
+          </div>
         </Reveal>
 
         <Reveal delay={0.08}>

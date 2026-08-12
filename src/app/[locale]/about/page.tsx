@@ -3,7 +3,7 @@ import { ShieldCheck } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import type { AppLocale } from "@/i18n/routing";
-import { Link } from "@/i18n/navigation";
+import { company } from "@/config/company";
 import { PageHeader } from "@/components/sections/page-header";
 import { VideoPlaceholder } from "@/components/sections/video-placeholder";
 import { PullQuote } from "@/components/sections/pull-quote";
@@ -66,7 +66,9 @@ export default async function AboutPage({
 
       <div className="bg-cream py-16 text-center">
         <Button asChild size="lg">
-          <Link href="/contact">{t("closingCta")}</Link>
+          <a href={company.calendlyUrl} target="_blank" rel="noopener noreferrer">
+            {t("closingCta")}
+          </a>
         </Button>
       </div>
     </>

@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
+import { company } from "@/config/company";
 import { Reveal } from "@/components/motion/reveal";
 
 export async function WhyTommy({ id }: { id?: string }) {
@@ -11,13 +13,23 @@ export async function WhyTommy({ id }: { id?: string }) {
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.4fr)] lg:gap-16">
           <Reveal className="lg:sticky lg:top-28 lg:h-fit">
-            <span className="text-xs font-semibold tracking-[0.28em] text-gold uppercase">
+            <div className="relative mb-6 aspect-[4/5] w-full max-w-xs overflow-hidden rounded-2xl bg-forest">
+              <Image
+                src="/images/why-tommy/portrait.jpg"
+                alt={company.name}
+                fill
+                sizes="(min-width: 480px) 320px, 90vw"
+                className="object-cover"
+              />
+            </div>
+
+            <span className="text-xs font-semibold tracking-[0.28em] text-gold-text uppercase">
               {t("kicker")}
             </span>
             <h2 className="mt-4 max-w-sm text-balance font-heading text-3xl text-forest sm:text-4xl">
               {t("title")}
             </h2>
-            <p className="mt-4 max-w-sm text-balance leading-relaxed text-ink-soft">
+            <p className="mt-4 max-w-sm text-balance whitespace-pre-line leading-relaxed text-ink-soft">
               {t("subtitle")}
             </p>
           </Reveal>
@@ -33,7 +45,7 @@ export async function WhyTommy({ id }: { id?: string }) {
                     <h3 className="font-heading text-xl text-forest sm:text-2xl">
                       {item.question}
                     </h3>
-                    <p className="mt-3 leading-relaxed text-ink-soft">
+                    <p className="mt-3 whitespace-pre-line leading-relaxed text-ink-soft">
                       {item.answer}
                     </p>
                   </div>

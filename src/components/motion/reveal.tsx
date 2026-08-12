@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { motion, type Variants } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 
 const variants: Variants = {
   hidden: { opacity: 0, y: 28 },
@@ -15,8 +15,19 @@ type RevealProps = {
   as?: "div" | "li";
 };
 
-/** Scroll-triggered fade-up reveal, used for below-the-fold content. */
+/**
+ * Scroll-triggered fade-up reveal, used for below-the-fold content.
+ * Renders content in place with no animation when the visitor has
+ * requested reduced motion (`prefers-reduced-motion: reduce`).
+ */
 export function Reveal({ children, delay = 0, className, as = "div" }: RevealProps) {
+  const shouldReduceMotion = useReducedMotion();
+
+  if (shouldReduceMotion) {
+    const Tag = as;
+    return <Tag className={className}>{children}</Tag>;
+  }
+
   const MotionTag = as === "li" ? motion.li : motion.div;
 
   return (
