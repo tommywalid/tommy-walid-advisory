@@ -3,8 +3,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import type { AppLocale } from "@/i18n/routing";
 import { PageHeader } from "@/components/sections/page-header";
+import { ServicesRadial, type ServicesRadialIconKey, type ServicesRadialNode } from "@/components/sections/services-radial";
 import { Services } from "@/components/sections/services";
-import { NoticePanel } from "@/components/sections/notice-panel";
+import { ServicesCta } from "@/components/sections/services-cta";
 
 export async function generateMetadata({
   params,
@@ -16,6 +17,24 @@ export async function generateMetadata({
   return { title: t("title") };
 }
 
+// Icons are design-level metadata, not translatable copy, so they're kept
+// out of messages/*.json and zipped onto the translated nodes here, in the
+// same order as pages.services.radial.nodes in both locale files.
+const NODE_ICONS: ServicesRadialIconKey[] = [
+  "target",
+  "sliders",
+  "search",
+  "handshake",
+  "scale",
+  "landmark",
+  "signature",
+  "payments",
+  "key",
+  "sofa",
+  "trending",
+  "refresh",
+];
+
 export default async function ServicesPage({
   params,
 }: {
@@ -24,12 +43,22 @@ export default async function ServicesPage({
   const { locale } = await params;
   setRequestLocale(locale as AppLocale);
   const t = await getTranslations("pages.services");
+  const tRadial = await getTranslations("pages.services.radial");
+  const nodes = (tRadial.raw("nodes") as ServicesRadialNode[]).map((node, i) => ({
+    ...node,
+    icon: NODE_ICONS[i],
+  }));
 
   return (
     <>
-      <PageHeader kicker={t("kicker")} title={t("title")} intro={t("intro")} />
+      <PageHeader title={t("title")} />
+      <ServicesRadial
+        centerTitle={tRadial("centerTitle")}
+        centerSubtitle={tRadial("centerSubtitle")}
+        nodes={nodes}
+      />
       <Services showHeading={false} />
-      <NoticePanel>{t("notice")}</NoticePanel>
+      <ServicesCta />
     </>
   );
 }

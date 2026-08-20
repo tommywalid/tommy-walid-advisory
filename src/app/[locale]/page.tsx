@@ -4,7 +4,7 @@ import type { AppLocale } from "@/i18n/routing";
 import { Hero } from "@/components/sections/hero";
 import { WhyTommy } from "@/components/sections/why-tommy";
 import { WhyDubai } from "@/components/sections/why-dubai";
-import { Services } from "@/components/sections/services";
+import { ServicesSummary } from "@/components/sections/services-summary";
 import { SelectedProjects } from "@/components/sections/selected-projects";
 import { Faq } from "@/components/sections/faq";
 import { ContactCta } from "@/components/sections/contact-cta";
@@ -22,7 +22,7 @@ export default async function HomePage({
       <Hero />
       <WhyTommy id="why-tommy" />
       <WhyDubai />
-      <Services id="services" />
+      <ServicesSummary id="services" />
       <SelectedProjects id="projects" />
       <Faq />
       <ContactCta />

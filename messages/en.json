@@ -75,12 +75,26 @@
     },
     "whyDubai": {
       "kicker": "Why Dubai",
-      "title": "A leading destination for real estate investment",
-      "items": [
-        { "title": "Attractive taxation", "description": "No tax on rental income or capital gains for individuals in the United Arab Emirates." },
-        { "title": "A regulated market", "description": "A legal framework structured by RERA and the Dubai Land Department, designed to reassure foreign investors." },
-        { "title": "Golden Visa eligibility", "description": "Subject to investment thresholds, a real estate purchase can qualify for a long-term residency visa." },
-        { "title": "Global hub", "description": "A stable, connected, internationally-minded city, backed by a diversified economy." }
+      "title": "Pourquoi Dubaï",
+      "investorColumnTitle": "Si vous êtes investisseur",
+      "investorItems": [
+        { "title": "Fiscalité attractive", "description": "Aucune imposition sur les revenus locatifs ni sur les plus-values immobilières pour les particuliers aux Émirats arabes unis." },
+        { "title": "Marché encadré", "description": "Un cadre légal structuré par la RERA et le Dubai Land Department." },
+        { "title": "Marché en croissance", "description": "Une dynamique immobilière soutenue par la croissance économique et démographique de Dubaï." },
+        { "title": "Demande locative", "description": "Une demande portée par la croissance de la population." },
+        { "title": "Diversification patrimoniale", "description": "Une exposition à un marché immobilier international." },
+        { "title": "Création de société", "description": "Un environnement favorable aux entrepreneurs et aux investisseurs internationaux." },
+        { "title": "Ouverture de compte bancaire", "description": "Un écosystème financier adapté aux résidents et investisseurs internationaux." }
+      ],
+      "expatColumnTitle": "Si vous comptez vous expatrier",
+      "expatItems": [
+        { "title": "Sécurité", "description": "Un environnement reconnu pour son niveau de sécurité." },
+        { "title": "Qualité de vie", "description": "Un cadre de vie international et de nombreux services." },
+        { "title": "Infrastructures", "description": "Des infrastructures modernes et développées." },
+        { "title": "Connexions internationales", "description": "Une ville connectée aux principales destinations mondiales." },
+        { "title": "Fiscalité attractive", "description": "Pas d'impôt sur le revenu des personnes physiques." },
+        { "title": "Services", "description": "Un accès à des services internationaux dans l'éducation, la santé et le quotidien." },
+        { "title": "Programmes de résidence", "description": "Différents dispositifs de résidence selon votre situation." }
       ]
     },
     "services": {
@@ -131,6 +145,29 @@
         }
       ],
       "commitment": "I remain your single point of contact, from the first conversation to years after the investment — I coordinate every partner; you are never handed off to another company."
+    },
+    "servicesRadial": {
+      "title": "Pas une liste de prestations, un accompagnement de la première conversation à la croissance de votre patrimoine.",
+      "centerTitle": "Tommy Walid",
+      "centerSubtitle": "Interlocuteur unique",
+      "categories": [
+        {
+          "title": "Conseil immobilier",
+          "items": ["Sélection & stratégie", "Négociation & acquisition", "Financement & structuration"]
+        },
+        {
+          "title": "Après la signature",
+          "items": ["Suivi des paiements", "Obtention de la résidence", "Ouverture de compte bancaire", "Contrôle qualité & livraison"]
+        },
+        {
+          "title": "Après la livraison",
+          "items": ["Mise en service", "Ameublement", "Gestion locative / location long terme"]
+        },
+        {
+          "title": "Développer votre patrimoine",
+          "items": ["Suivi du portefeuille", "Optimisation", "Revente"]
+        }
+      ]
     },
     "selectedProjects": {
       "kicker": "Selected",
@@ -278,10 +315,83 @@
       "closingCta": "Book a Call"
     },
     "services": {
-      "kicker": "My Services",
-      "title": "Support designed as a relationship",
-      "intro": "Not a list of services — how I support you at every stage, from the first conversation to the growth of your wealth.",
-      "notice": "A detailed presentation of each partner will be published soon."
+      "title": "Pas une liste de prestations, un accompagnement de la première conversation à la croissance de votre patrimoine.",
+      "radial": {
+        "centerTitle": "Tommy Walid",
+        "centerSubtitle": "Interlocuteur unique",
+        "nodes": [
+          {
+            "title": "Critères de choix",
+            "description": "Définir ensemble le type de bien, le budget, la localisation, le rendement recherché et votre horizon d'investissement."
+          },
+          {
+            "title": "Priorités",
+            "description": "Classer vos critères pour distinguer ce qui est essentiel de ce qui peut être négocié."
+          },
+          {
+            "title": "Sélection",
+            "description": "Comparer les opportunités selon vos critères plutôt que de choisir simplement parmi les projets disponibles."
+          },
+          {
+            "title": "Offres",
+            "description": "Présenter les opportunités retenues et vous accompagner dans la négociation des conditions d'acquisition."
+          },
+          {
+            "title": "Structuration",
+            "description": "Coordonner les aspects juridiques et fiscaux avec les partenaires concernés."
+          },
+          {
+            "title": "Financement",
+            "description": "Vous accompagner dans la recherche et la mise en place d'une solution de financement adaptée."
+          },
+          {
+            "title": "Signature",
+            "description": "Coordonner les différentes étapes jusqu'à la signature de l'acquisition."
+          },
+          {
+            "title": "Suivi des paiements",
+            "description": "Suivre votre échéancier et vous accompagner tout au long du plan de paiement."
+          },
+          {
+            "title": "Livraison & levée des réserves",
+            "description": "Vous accompagner lors de la livraison et dans l'identification des éventuelles réserves."
+          },
+          {
+            "title": "Ameublement & gestion locative",
+            "description": "Coordonner la préparation du bien et sa mise en location avec les partenaires concernés."
+          },
+          {
+            "title": "Suivi de portefeuille",
+            "description": "Suivre l'évolution de votre patrimoine et identifier les opportunités d'optimisation."
+          },
+          {
+            "title": "Revente",
+            "description": "Vous accompagner dans la définition de la stratégie de sortie et la revente du bien."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Où en êtes-vous aujourd'hui ?",
+        "choices": [
+          {
+            "title": "Je prépare mon investissement",
+            "description": "Définir ma stratégie et identifier les bonnes opportunités."
+          },
+          {
+            "title": "J'ai déjà acheté",
+            "description": "Être accompagné après la signature."
+          },
+          {
+            "title": "Je souhaite développer mon patrimoine",
+            "description": "Suivi, optimisation ou revente."
+          },
+          {
+            "title": "Je ne sais pas encore par où commencer",
+            "description": "Échanger sur ma situation."
+          }
+        ],
+        "cta": "Démarrer une conversation"
+      }
     },
     "investmentProcess": {
       "kicker": "My Approach",

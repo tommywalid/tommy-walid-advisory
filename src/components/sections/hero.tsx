@@ -51,10 +51,6 @@ export async function Hero() {
             {t("title")}
           </HeroMotionItem>
 
-          <HeroMotionItem className="mt-6 max-w-xl text-balance whitespace-pre-line text-lg leading-relaxed text-cream/75">
-            {t("subtitle")}
-          </HeroMotionItem>
-
           <HeroMotionItem className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Button asChild variant="gold" size="lg">
               <a href={company.calendlyUrl} target="_blank" rel="noopener noreferrer">

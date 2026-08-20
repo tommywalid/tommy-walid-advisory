@@ -34,30 +34,25 @@
     "hero": {
       "kicker": "Conseil indépendant en investissement immobilier — Dubaï",
       "title": "Vous n'avez pas besoin d'un broker de plus.\nVous avez besoin d'une personne en qui vous pouvez avoir confiance.",
-      "subtitle": "Investir à Dubaï est une décision importante.\n\nMon rôle n'est pas de vous vendre le projet du moment.\n\nJe prends le temps de comprendre vos objectifs, de sélectionner les meilleures opportunités et de vous accompagner bien après la signature.\n\nEnsemble, nous construisons un patrimoine immobilier pensé pour le long terme.",
       "ctaPrimary": "Prendre rendez-vous",
       "ctaSecondary": "Comment je vous accompagne"
     },
     "whyTommy": {
       "kicker": "Pourquoi Tommy Walid",
       "title": "Pourquoi des investisseurs me font confiance.",
-      "subtitle": "Vous pouvez acheter un bien immobilier auprès de milliers de brokers à Dubaï.\n\nVous choisissez un conseiller parce que vous lui faites confiance.",
+      "subtitle": "Certifié par l'autorité de régulation immobilière de Dubaï, je vous accompagne dans vos décisions immobilières avec une approche indépendante et orientée long terme.",
       "items": [
         {
-          "question": "Vous ne serez jamais poussé à décider dans l'urgence.",
-          "answer": "Vous entendrez parfois qu'il ne reste plus qu'une unité, qu'une offre expire dans quelques heures ou qu'il faut réserver immédiatement.\n\nLorsque l'urgence est réelle, je vous l'explique avec des faits.\n\nLorsqu'elle ne l'est pas, je vous laisse le temps de prendre une décision réfléchie."
+          "question": "Vous ne serez jamais poussé à décider dans l'urgence."
         },
         {
-          "question": "Je ne vous recommanderai jamais un projet pour toucher une commission.",
-          "answer": "Chaque recommandation est faite parce que je pense qu'elle correspond réellement à votre stratégie patrimoniale.\n\nSi un projet ne vous convient pas, je préfère vous le dire plutôt que de conclure une vente."
+          "question": "L'intérêt de votre investissement est la priorité, pas la commission."
         },
         {
-          "question": "Je ne disparais pas après la signature.",
-          "answer": "Pour beaucoup, la vente marque la fin de la relation.\n\nPour moi, elle marque le début.\n\nJe reste disponible pour répondre à vos questions, suivre votre investissement et vous accompagner dans les années qui suivent."
+          "question": "Vous pouvez attendre de moi une totale transparence."
         },
         {
-          "question": "Vous pouvez attendre de moi une totale transparence.",
-          "answer": "Je vous expliquerai les avantages d'un investissement, mais aussi ses limites, ses risques et les alternatives possibles.\n\nJe préfère perdre une vente que perdre votre confiance."
+          "question": "Je ne disparais pas après la signature."
         }
       ]
     },
@@ -75,12 +70,26 @@
     },
     "whyDubai": {
       "kicker": "Pourquoi Dubaï",
-      "title": "Une place forte pour l'investissement immobilier",
-      "items": [
+      "title": "Pourquoi Dubaï",
+      "investorColumnTitle": "Si vous êtes investisseur",
+      "investorItems": [
         { "title": "Fiscalité attractive", "description": "Aucune imposition sur les revenus locatifs ni sur les plus-values immobilières pour les particuliers aux Émirats arabes unis." },
-        { "title": "Marché encadré", "description": "Un cadre légal structuré par la RERA et le Dubai Land Department, pensé pour rassurer les investisseurs étrangers." },
-        { "title": "Éligibilité au Golden Visa", "description": "Sous conditions de montant, un investissement immobilier peut ouvrir droit à un visa de résidence longue durée." },
-        { "title": "Hub mondial", "description": "Une ville stable, connectée et tournée vers l'international, portée par une économie diversifiée." }
+        { "title": "Marché encadré", "description": "Un cadre légal structuré par la RERA et le Dubai Land Department." },
+        { "title": "Marché en croissance", "description": "Une dynamique immobilière soutenue par la croissance économique et démographique de Dubaï." },
+        { "title": "Demande locative", "description": "Une demande portée par la croissance de la population." },
+        { "title": "Diversification patrimoniale", "description": "Une exposition à un marché immobilier international." },
+        { "title": "Création de société", "description": "Un environnement favorable aux entrepreneurs et aux investisseurs internationaux." },
+        { "title": "Ouverture de compte bancaire", "description": "Un écosystème financier adapté aux résidents et investisseurs internationaux." }
+      ],
+      "expatColumnTitle": "Si vous comptez vous expatrier",
+      "expatItems": [
+        { "title": "Sécurité", "description": "Un environnement reconnu pour son niveau de sécurité." },
+        { "title": "Qualité de vie", "description": "Un cadre de vie international et de nombreux services." },
+        { "title": "Infrastructures", "description": "Des infrastructures modernes et développées." },
+        { "title": "Connexions internationales", "description": "Une ville connectée aux principales destinations mondiales." },
+        { "title": "Fiscalité attractive", "description": "Pas d'impôt sur le revenu des personnes physiques." },
+        { "title": "Services", "description": "Un accès à des services internationaux dans l'éducation, la santé et le quotidien." },
+        { "title": "Programmes de résidence", "description": "Différents dispositifs de résidence selon votre situation." }
       ]
     },
     "services": {
@@ -131,6 +140,29 @@
         }
       ],
       "commitment": "Je reste votre interlocuteur unique, du premier échange jusqu'à plusieurs années après l'investissement — je coordonne chaque partenaire, vous n'êtes jamais transféré à une autre société."
+    },
+    "servicesRadial": {
+      "title": "Pas une liste de prestations, un accompagnement de la première conversation à la croissance de votre patrimoine.",
+      "centerTitle": "Tommy Walid",
+      "centerSubtitle": "Interlocuteur unique",
+      "categories": [
+        {
+          "title": "Conseil immobilier",
+          "items": ["Sélection & stratégie", "Négociation & acquisition", "Financement & structuration"]
+        },
+        {
+          "title": "Après la signature",
+          "items": ["Suivi des paiements", "Obtention de la résidence", "Ouverture de compte bancaire", "Contrôle qualité & livraison"]
+        },
+        {
+          "title": "Après la livraison",
+          "items": ["Mise en service", "Ameublement", "Gestion locative / location long terme"]
+        },
+        {
+          "title": "Développer votre patrimoine",
+          "items": ["Suivi du portefeuille", "Optimisation", "Revente"]
+        }
+      ]
     },
     "selectedProjects": {
       "kicker": "Sélection",
@@ -278,10 +310,83 @@
       "closingCta": "Prendre rendez-vous"
     },
     "services": {
-      "kicker": "Mes services",
-      "title": "Un accompagnement pensé comme une relation",
-      "intro": "Pas une liste de prestations — la manière dont je vous accompagne à chaque étape, de la première conversation à la croissance de votre patrimoine.",
-      "notice": "Une présentation détaillée de chaque partenaire sera publiée prochainement."
+      "title": "Pas une liste de prestations, un accompagnement de la première conversation à la croissance de votre patrimoine.",
+      "radial": {
+        "centerTitle": "Tommy Walid",
+        "centerSubtitle": "Interlocuteur unique",
+        "nodes": [
+          {
+            "title": "Critères de choix",
+            "description": "Définir ensemble le type de bien, le budget, la localisation, le rendement recherché et votre horizon d'investissement."
+          },
+          {
+            "title": "Priorités",
+            "description": "Classer vos critères pour distinguer ce qui est essentiel de ce qui peut être négocié."
+          },
+          {
+            "title": "Sélection",
+            "description": "Comparer les opportunités selon vos critères plutôt que de choisir simplement parmi les projets disponibles."
+          },
+          {
+            "title": "Offres",
+            "description": "Présenter les opportunités retenues et vous accompagner dans la négociation des conditions d'acquisition."
+          },
+          {
+            "title": "Structuration",
+            "description": "Coordonner les aspects juridiques et fiscaux avec les partenaires concernés."
+          },
+          {
+            "title": "Financement",
+            "description": "Vous accompagner dans la recherche et la mise en place d'une solution de financement adaptée."
+          },
+          {
+            "title": "Signature",
+            "description": "Coordonner les différentes étapes jusqu'à la signature de l'acquisition."
+          },
+          {
+            "title": "Suivi des paiements",
+            "description": "Suivre votre échéancier et vous accompagner tout au long du plan de paiement."
+          },
+          {
+            "title": "Livraison & levée des réserves",
+            "description": "Vous accompagner lors de la livraison et dans l'identification des éventuelles réserves."
+          },
+          {
+            "title": "Ameublement & gestion locative",
+            "description": "Coordonner la préparation du bien et sa mise en location avec les partenaires concernés."
+          },
+          {
+            "title": "Suivi de portefeuille",
+            "description": "Suivre l'évolution de votre patrimoine et identifier les opportunités d'optimisation."
+          },
+          {
+            "title": "Revente",
+            "description": "Vous accompagner dans la définition de la stratégie de sortie et la revente du bien."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Où en êtes-vous aujourd'hui ?",
+        "choices": [
+          {
+            "title": "Je prépare mon investissement",
+            "description": "Définir ma stratégie et identifier les bonnes opportunités."
+          },
+          {
+            "title": "J'ai déjà acheté",
+            "description": "Être accompagné après la signature."
+          },
+          {
+            "title": "Je souhaite développer mon patrimoine",
+            "description": "Suivi, optimisation ou revente."
+          },
+          {
+            "title": "Je ne sais pas encore par où commencer",
+            "description": "Échanger sur ma situation."
+          }
+        ],
+        "cta": "Démarrer une conversation"
+      }
     },
     "investmentProcess": {
       "kicker": "Mon approche",

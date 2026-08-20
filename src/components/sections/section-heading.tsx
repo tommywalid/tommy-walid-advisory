@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/motion/reveal";
 
 type SectionHeadingProps = {
-  kicker: string;
+  kicker?: string;
   title: string;
   subtitle?: string;
   align?: "left" | "center";
@@ -26,14 +26,16 @@ export function SectionHeading({
         className,
       )}
     >
-      <span
-        className={cn(
-          "text-xs font-semibold tracking-[0.28em] uppercase",
-          dark ? "text-gold-light" : "text-gold-text",
-        )}
-      >
-        {kicker}
-      </span>
+      {kicker ? (
+        <span
+          className={cn(
+            "text-xs font-semibold tracking-[0.28em] uppercase",
+            dark ? "text-gold-light" : "text-gold-text",
+          )}
+        >
+          {kicker}
+        </span>
+      ) : null}
       <h2
         className={cn(
           "max-w-2xl text-balance font-heading text-3xl sm:text-4xl",
