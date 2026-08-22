@@ -94,7 +94,11 @@ export function WhyDubaiChoices({
 
   return (
     <div className="mt-12">
-      <div role="group" aria-label={investorLabel + " / " + expatLabel} className="flex flex-wrap gap-3 sm:gap-4">
+      <div
+        role="group"
+        aria-label={investorLabel + " / " + expatLabel}
+        className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-10"
+      >
         {groups.map((group, i) => (
           <button
             key={group.label}
@@ -102,10 +106,8 @@ export function WhyDubaiChoices({
             aria-expanded={active === i}
             onClick={() => setActive(i as 0 | 1)}
             className={cn(
-              "rounded-full border px-5 py-2.5 text-sm font-medium transition-colors",
-              active === i
-                ? "border-gold/60 bg-gold/10 text-cream"
-                : "border-cream/15 text-cream/60 hover:border-cream/30 hover:text-cream/80",
+              "border-b-2 pb-2 text-center font-heading text-2xl transition-colors sm:text-3xl",
+              active === i ? "border-gold text-cream" : "border-transparent text-cream/40 hover:text-cream/70",
             )}
           >
             {group.label}

@@ -1,24 +1,29 @@
 import Image from "next/image";
 
+import { cn } from "@/lib/utils";
+
 /**
  * Renders a project's cover media, or a branded placeholder when none has
  * been added yet. next/image throws on an empty `src`, and several V1
  * catalog entries genuinely have no media yet (see
  * docs/product/v1-catalog-research-sources.md) — this is the honest "no
  * photo yet" state (brand-native, no stock imagery), not a broken image icon.
- * Used by both ProjectCard (4:3 grid thumbnail) and ProjectHero (wide detail
- * banner) so the fallback looks identical everywhere it can appear.
+ * Currently used only by ProjectCard (16:9 grid thumbnail); `className` lets
+ * that caller layer its own hover treatment without this component needing
+ * to know about it.
  */
 export function MediaCover({
   url,
   alt,
   priority,
   sizes,
+  className,
 }: {
   url: string;
   alt: string;
   priority?: boolean;
   sizes: string;
+  className?: string;
 }) {
   if (!url) {
     return (
@@ -37,7 +42,7 @@ export function MediaCover({
       fill
       priority={priority}
       sizes={sizes}
-      className="object-cover"
+      className={cn("object-cover", className)}
     />
   );
 }

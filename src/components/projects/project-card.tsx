@@ -28,7 +28,7 @@ export async function ProjectCard({
 
   return (
     <Reveal delay={delay}>
-      <Card className="flex h-full flex-col overflow-hidden bg-white p-0">
+      <Card className="group flex h-full flex-col overflow-hidden bg-white p-0 transition-colors hover:border-gold/40">
         <Link
           href={`/projects/${project.slug}`}
           className="relative aspect-video w-full overflow-hidden bg-beige"
@@ -37,6 +37,7 @@ export async function ProjectCard({
             url={project.media.cover.url}
             alt={project.name}
             sizes="(min-width: 1024px) 33vw, 100vw"
+            className="transition-transform duration-500 ease-out group-hover:scale-[1.03]"
           />
         </Link>
 

@@ -16,7 +16,7 @@ export async function ServicesCta() {
   const choices = t.raw("choices") as { title: string; description: string }[];
 
   return (
-    <section className="bg-cream py-24 sm:py-28">
+    <section className="bg-cream py-16 sm:py-20">
       <div className="mx-auto max-w-4xl px-6 lg:px-10">
         <SectionHeading title={t("title")} subtitle={t("subtitle")} />
 

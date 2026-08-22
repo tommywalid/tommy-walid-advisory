@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { company } from "@/config/company";
@@ -42,26 +43,30 @@ export async function ServicesSummary({ id }: { id?: string }) {
           <div className="flex flex-col">
             <h2 className="text-balance font-heading text-3xl text-forest sm:text-4xl">{t("title")}</h2>
 
-            <div className="mt-8 flex flex-col">
+            {/* Four independent entry points, not a list: each category
+                stands on its own (no connecting divider lines), separated
+                by negative space so the eye reads "four doors" rather than
+                "four rows." */}
+            <div className="mt-10 grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 sm:gap-y-12">
               {categories.map((category, i) => (
-                <Link
-                  key={category.title}
-                  href="/services"
-                  className="group flex gap-6 border-t border-beige-dark py-6 first:border-t-0 first:pt-0 sm:gap-10"
-                >
-                  <span className="shrink-0 font-heading text-3xl text-beige-dark transition-colors group-hover:text-gold-text">
+                <Link key={category.title} href="/services" className="group flex flex-col items-start gap-3">
+                  <span className="font-heading text-4xl text-beige-dark transition-colors group-hover:text-gold-text">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <div>
-                    <h3 className="font-heading text-xl text-forest transition-colors group-hover:text-gold-text sm:text-2xl">
+                  <span className="inline-flex items-center gap-1.5">
+                    <h3 className="font-heading text-xl text-forest transition-colors group-hover:text-gold-text">
                       {category.title}
                     </h3>
-                    <ul className="mt-2 flex flex-col gap-1 text-sm leading-relaxed text-ink-soft">
-                      {category.items.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
+                    <ArrowRight
+                      aria-hidden="true"
+                      className="size-4 shrink-0 -translate-x-1 text-gold-text opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
+                    />
+                  </span>
+                  <ul className="flex flex-col gap-1 text-sm leading-relaxed text-ink-soft">
+                    {category.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
                 </Link>
               ))}
             </div>

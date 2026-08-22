@@ -39,8 +39,8 @@ export function Header() {
                 key={item.key}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium tracking-wide transition-colors",
-                  active ? "text-forest" : "text-ink-soft hover:text-forest",
+                  "border-b-2 pb-1 text-sm font-medium tracking-wide transition-colors",
+                  active ? "border-gold text-forest" : "border-transparent text-ink-soft hover:text-forest",
                 )}
               >
                 {t(item.key)}
@@ -75,16 +75,24 @@ export function Header() {
                 <Logo />
               </SheetTitle>
               <nav className="flex flex-col gap-1">
-                {navigation.map((item) => (
-                  <SheetClose asChild key={item.key}>
-                    <Link
-                      href={item.href}
-                      className="rounded-lg px-3 py-3 font-heading text-lg text-forest hover:bg-beige"
-                    >
-                      {t(item.key)}
-                    </Link>
-                  </SheetClose>
-                ))}
+                {navigation.map((item) => {
+                  const active = pathname === item.href;
+                  return (
+                    <SheetClose asChild key={item.key}>
+                      <Link
+                        href={item.href}
+                        className={cn(
+                          "rounded-lg border-l-2 px-3 py-3 font-heading text-lg transition-colors",
+                          active
+                            ? "border-gold bg-beige/60 text-forest"
+                            : "border-transparent text-forest hover:bg-beige",
+                        )}
+                      >
+                        {t(item.key)}
+                      </Link>
+                    </SheetClose>
+                  );
+                })}
               </nav>
               <SheetClose asChild>
                 <Button asChild className="mt-auto">

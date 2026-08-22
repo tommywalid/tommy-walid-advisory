@@ -217,7 +217,7 @@ export function ServicesRadial({
   const fadeProps = shouldReduceMotion ? {} : { variants: fadeVariants };
 
   return (
-    <section id={id} className="scroll-mt-24 bg-beige/50 py-24 sm:py-28">
+    <section id={id} className="scroll-mt-24 bg-beige/50 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
         <Container
           {...(shouldReduceMotion
