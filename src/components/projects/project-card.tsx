@@ -31,7 +31,7 @@ export async function ProjectCard({
       <Card className="flex h-full flex-col overflow-hidden bg-white p-0">
         <Link
           href={`/projects/${project.slug}`}
-          className="relative aspect-[4/3] w-full overflow-hidden bg-beige"
+          className="relative aspect-video w-full overflow-hidden bg-beige"
         >
           <MediaCover
             url={project.media.cover.url}

@@ -33,7 +33,7 @@
   "home": {
     "hero": {
       "kicker": "Conseil indépendant en investissement immobilier — Dubaï",
-      "title": "Vous n'avez pas besoin d'un broker de plus.\nVous avez besoin d'une personne en qui vous pouvez avoir confiance.",
+      "title": "Vous n'avez pas besoin d'un agent immobilier de plus.\nVous avez besoin d'une personne en qui vous pouvez avoir confiance.",
       "ctaPrimary": "Prendre rendez-vous",
       "ctaSecondary": "Comment je vous accompagne"
     },
@@ -56,22 +56,11 @@
         }
       ]
     },
-    "process": {
-      "kicker": "Mon approche",
-      "title": "Un accompagnement structuré, de bout en bout",
-      "subtitle": "Cinq étapes claires, du premier échange à la gestion durable de votre actif.",
-      "steps": [
-        { "title": "Entretien de cadrage", "description": "Comprendre vos objectifs patrimoniaux, votre horizon d'investissement et vos contraintes." },
-        { "title": "Sélection ciblée", "description": "Identification des actifs correspondant à votre stratégie sur le marché dubaïote." },
-        { "title": "Structuration", "description": "Montage juridique, fiscal et financier adapté à votre situation personnelle." },
-        { "title": "Acquisition accompagnée", "description": "Due diligence, négociation et signature, avec un suivi à chaque étape." },
-        { "title": "Gestion & valorisation", "description": "Suivi locatif et pilotage de la performance de votre actif dans la durée." }
-      ]
-    },
     "whyDubai": {
       "kicker": "Pourquoi Dubaï",
       "title": "Pourquoi Dubaï",
-      "investorColumnTitle": "Si vous êtes investisseur",
+      "intro": "Les raisons ne sont pas les mêmes pour tout le monde. On peut toutefois les regrouper en deux grandes situations.",
+      "investorColumnTitle": "Vous envisagez un investissement",
       "investorItems": [
         { "title": "Fiscalité attractive", "description": "Aucune imposition sur les revenus locatifs ni sur les plus-values immobilières pour les particuliers aux Émirats arabes unis." },
         { "title": "Marché encadré", "description": "Un cadre légal structuré par la RERA et le Dubai Land Department." },
@@ -81,7 +70,7 @@
         { "title": "Création de société", "description": "Un environnement favorable aux entrepreneurs et aux investisseurs internationaux." },
         { "title": "Ouverture de compte bancaire", "description": "Un écosystème financier adapté aux résidents et investisseurs internationaux." }
       ],
-      "expatColumnTitle": "Si vous comptez vous expatrier",
+      "expatColumnTitle": "Vous envisagez un déménagement",
       "expatItems": [
         { "title": "Sécurité", "description": "Un environnement reconnu pour son niveau de sécurité." },
         { "title": "Qualité de vie", "description": "Un cadre de vie international et de nombreux services." },
@@ -367,6 +356,7 @@
       },
       "cta": {
         "title": "Où en êtes-vous aujourd'hui ?",
+        "subtitle": "Choisissez votre situation et démarrez une conversation avec moi.",
         "choices": [
           {
             "title": "Je prépare mon investissement",
@@ -389,10 +379,30 @@
       }
     },
     "investmentProcess": {
-      "kicker": "Mon approche",
-      "title": "Un accompagnement structuré, de bout en bout",
-      "intro": "Cinq étapes claires, du premier échange à la gestion durable de votre actif.",
-      "notice": "Le détail de chaque étape sera enrichi prochainement."
+      "title": "Une méthode, pas un argumentaire de vente.",
+      "intro": "Chaque client est différent. La façon dont je travaille avec lui, non.",
+      "principles": [
+        {
+          "title": "Écouter avant de conseiller",
+          "description": "Avant de vous montrer quoi que ce soit, je prends le temps de comprendre votre situation réelle — vos objectifs, vos contraintes, votre horizon. Pas un questionnaire type : une vraie conversation."
+        },
+        {
+          "title": "Sélectionner avec discipline",
+          "description": "Je ne vous montre pas tout ce qui existe sur le marché. J'écarte moi-même ce qui ne correspond pas, pour ne vous présenter que ce qui mérite votre attention."
+        },
+        {
+          "title": "Des options comparées, jamais une solution unique",
+          "description": "Vous ne recevez jamais un projet unique présenté comme la solution. Je vous montre plusieurs opportunités, avec leurs avantages et leurs limites — la décision reste la vôtre."
+        },
+        {
+          "title": "Je coordonne les bonnes personnes",
+          "description": "Avocats, banques, promoteurs, gestionnaires : je coordonne les différents intervenants et reste votre point de contact tout au long du projet."
+        },
+        {
+          "title": "Une stratégie qui évolue avec vous",
+          "description": "Votre situation change, vos objectifs aussi. Je reste votre interlocuteur pour ajuster la stratégie dans la durée — pas seulement au moment de l'achat."
+        }
+      ]
     },
     "blog": {
       "kicker": "Journal",

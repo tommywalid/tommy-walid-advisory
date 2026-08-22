@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import type { AppLocale } from "@/i18n/routing";
 import { PageHeader } from "@/components/sections/page-header";
-import { NoticePanel } from "@/components/sections/notice-panel";
+import { ApproachPrinciples } from "@/components/sections/approach-principles";
 
 export async function generateMetadata({
   params,
@@ -26,8 +26,8 @@ export default async function InvestmentProcessPage({
 
   return (
     <>
-      <PageHeader kicker={t("kicker")} title={t("title")} intro={t("intro")} />
-      <NoticePanel>{t("notice")}</NoticePanel>
+      <PageHeader title={t("title")} intro={t("intro")} />
+      <ApproachPrinciples />
     </>
   );
 }

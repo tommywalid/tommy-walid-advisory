@@ -18,7 +18,7 @@ export async function ServicesCta() {
   return (
     <section className="bg-cream py-24 sm:py-28">
       <div className="mx-auto max-w-4xl px-6 lg:px-10">
-        <SectionHeading title={t("title")} />
+        <SectionHeading title={t("title")} subtitle={t("subtitle")} />
 
         <Reveal>
           <ServicesCtaChoices choices={choices} groupLabel={t("title")} />
