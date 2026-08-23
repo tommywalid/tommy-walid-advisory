@@ -35,6 +35,10 @@ export type MediaAsset = {
   url: string;
   type: MediaType;
   caption?: LocalizedText;
+  /** CSS `object-position` value (e.g. "50% 85%") for `object-fit: cover`
+   * crops of this asset — a framing fix, never a substitute for cropping
+   * the source file. Optional; omit to keep the default "50% 50%". */
+  objectPosition?: string;
 };
 
 export type Developer = {

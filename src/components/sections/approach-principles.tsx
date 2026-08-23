@@ -1,17 +1,17 @@
 import { getTranslations } from "next-intl/server";
 
-import { Reveal } from "@/components/motion/reveal";
+import { ApproachExperience } from "@/components/sections/approach-experience";
 
 type Principle = { title: string; description: string };
 
 /**
- * "Mon approche" — 5 working principles, presented as an editorial grid of
- * independent statements, deliberately NOT as a numbered 01→05 journey
- * (that visual language already belongs to /services, both the radial and
- * the 4-step parcours). No cards, no borders, no icons: typography and
- * whitespace alone carry the "premium, editorial" read the brief asks for,
- * and keep this visually distinct from every numbered list elsewhere on
- * the site.
+ * "Mon approche" — the page's entire content: title, intro and the 5
+ * working principles, now paired with an abstract trajectory graphic
+ * (ApproachVisual) synchronized to whichever principle is hovered/focused/
+ * tapped (ApproachExperience). This replaces the page's previous
+ * PageHeader-banner-then-grid structure — title and intro moved here so
+ * they can sit in the same two-column layout as the graphic, instead of
+ * being restated twice.
  */
 export async function ApproachPrinciples() {
   const t = await getTranslations("pages.investmentProcess");
@@ -19,17 +19,8 @@ export async function ApproachPrinciples() {
 
   return (
     <section className="bg-cream py-24 sm:py-28">
-      <div className="mx-auto max-w-5xl px-6 lg:px-10">
-        <div className="grid grid-cols-1 gap-x-12 gap-y-12 sm:grid-cols-2 sm:gap-y-14">
-          {principles.map((principle, i) => (
-            <Reveal key={principle.title} delay={i * 0.06}>
-              <h2 className="font-heading text-xl text-forest sm:text-2xl">{principle.title}</h2>
-              <p className="mt-3 max-w-md text-balance leading-relaxed text-ink-soft">
-                {principle.description}
-              </p>
-            </Reveal>
-          ))}
-        </div>
+      <div className="mx-auto max-w-6xl px-6 lg:px-10">
+        <ApproachExperience title={t("title")} intro={t("intro")} principles={principles} />
       </div>
     </section>
   );

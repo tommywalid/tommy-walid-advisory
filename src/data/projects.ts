@@ -219,7 +219,15 @@ export const projects: Project[] = [
     tier: "B",
     featured: true,
     media: {
-      cover: { url: "/images/projects/chelsea-residences/1.jpg", type: "render" },
+      cover: {
+        url: "/images/projects/chelsea-residences/1.jpg",
+        type: "render",
+        // Source is a tall aerial shot dominated by open sea; the pool/beach
+        // deck (the actual identifiable amenity) only appears in the lower
+        // portion — shifting down keeps a hint of sea/beach context while
+        // making the deck the dominant subject instead of empty water.
+        objectPosition: "50% 85%",
+      },
       gallery: [
         { url: "/images/projects/chelsea-residences/2.jpg", type: "render" },
         { url: "/images/projects/chelsea-residences/3.jpg", type: "render" },
@@ -429,7 +437,15 @@ export const projects: Project[] = [
     tier: "B",
     featured: true,
     media: {
-      cover: { url: "/images/projects/aquarise/1.jpg", type: "render" },
+      cover: {
+        url: "/images/projects/aquarise/1.jpg",
+        type: "render",
+        // Source is a tall skyline shot; the building itself only starts
+        // well below center, with the default crop showing mostly sky and
+        // the distant Burj Khalifa. Shifting down brings the actual tower
+        // — its full curved silhouette down to the podium/pool — into frame.
+        objectPosition: "50% 90%",
+      },
       gallery: [
         { url: "/images/projects/aquarise/2.jpg", type: "render" },
         { url: "/images/projects/aquarise/3.jpg", type: "render" },
@@ -678,7 +694,15 @@ export const projects: Project[] = [
     tier: "C",
     featured: true,
     media: {
-      cover: { url: "/images/projects/elar1s-rise/1.jpg", type: "render" },
+      cover: {
+        url: "/images/projects/elar1s-rise/1.jpg",
+        type: "render",
+        // Source is a full-height tower shot; the default center crop shows
+        // only generic mid-floors. Shifting up keeps the crown (the "Object
+        // 1" signage) uncut while still reaching the distinctive pool
+        // terrace band lower on the facade.
+        objectPosition: "50% 20%",
+      },
       gallery: [
         { url: "/images/projects/elar1s-rise/2.jpg", type: "render" },
         { url: "/images/projects/elar1s-rise/3.jpg", type: "render" },

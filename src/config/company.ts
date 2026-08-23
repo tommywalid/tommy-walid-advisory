@@ -17,12 +17,7 @@ export const company = {
   name: "Tommy Walid",
   /** Canonical, non-localized fallback (used in metadata/structured data only). */
   tagline: "Dubai real estate investment advisor for international investors.",
-  /**
-   * Domain unchanged pending a decision on whether it moves off
-   * "tommywalidadvisory.com" now that the brand is a personal name — flagged,
-   * not assumed. Update here once a real domain/inbox decision is made.
-   */
-  url: "https://tommywalidadvisory.com",
+  url: "https://www.tommywalid.com",
 
   email: "TommyWalid01@gmail.com",
   phone: "+971 58 530 4481",

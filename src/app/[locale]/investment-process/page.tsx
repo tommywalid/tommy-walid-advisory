@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import type { AppLocale } from "@/i18n/routing";
-import { PageHeader } from "@/components/sections/page-header";
 import { ApproachPrinciples } from "@/components/sections/approach-principles";
 
 export async function generateMetadata({
@@ -22,12 +21,6 @@ export default async function InvestmentProcessPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale as AppLocale);
-  const t = await getTranslations("pages.investmentProcess");
 
-  return (
-    <>
-      <PageHeader title={t("title")} intro={t("intro")} />
-      <ApproachPrinciples />
-    </>
-  );
+  return <ApproachPrinciples />;
 }

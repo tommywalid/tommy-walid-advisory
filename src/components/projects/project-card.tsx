@@ -37,6 +37,7 @@ export async function ProjectCard({
             url={project.media.cover.url}
             alt={project.name}
             sizes="(min-width: 1024px) 33vw, 100vw"
+            objectPosition={project.media.cover.objectPosition}
             className="transition-transform duration-500 ease-out group-hover:scale-[1.03]"
           />
         </Link>

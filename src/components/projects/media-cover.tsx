@@ -18,12 +18,16 @@ export function MediaCover({
   priority,
   sizes,
   className,
+  objectPosition,
 }: {
   url: string;
   alt: string;
   priority?: boolean;
   sizes: string;
   className?: string;
+  /** CSS `object-position` (e.g. "50% 85%") — a per-asset framing fix, see
+   * `MediaAsset.objectPosition`. Defaults to the browser's "50% 50%". */
+  objectPosition?: string;
 }) {
   if (!url) {
     return (
@@ -42,6 +46,7 @@ export function MediaCover({
       fill
       priority={priority}
       sizes={sizes}
+      style={objectPosition ? { objectPosition } : undefined}
       className={cn("object-cover", className)}
     />
   );

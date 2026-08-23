@@ -63,27 +63,27 @@
     },
     "whyDubai": {
       "kicker": "Why Dubai",
-      "title": "Pourquoi Dubaï",
-      "intro": "Les raisons ne sont pas les mêmes pour tout le monde. On peut toutefois les regrouper en deux grandes situations.",
-      "investorColumnTitle": "Vous envisagez un investissement",
+      "title": "Why Dubai",
+      "intro": "The reasons aren't the same for everyone. They can, however, be grouped into two broad situations.",
+      "investorColumnTitle": "You're considering an investment",
       "investorItems": [
-        { "title": "Fiscalité attractive", "description": "Aucune imposition sur les revenus locatifs ni sur les plus-values immobilières pour les particuliers aux Émirats arabes unis." },
-        { "title": "Marché encadré", "description": "Un cadre légal structuré par la RERA et le Dubai Land Department." },
-        { "title": "Marché en croissance", "description": "Une dynamique immobilière soutenue par la croissance économique et démographique de Dubaï." },
-        { "title": "Demande locative", "description": "Une demande portée par la croissance de la population." },
-        { "title": "Diversification patrimoniale", "description": "Une exposition à un marché immobilier international." },
-        { "title": "Création de société", "description": "Un environnement favorable aux entrepreneurs et aux investisseurs internationaux." },
-        { "title": "Ouverture de compte bancaire", "description": "Un écosystème financier adapté aux résidents et investisseurs internationaux." }
+        { "title": "Attractive taxation", "description": "No tax on rental income or capital gains for individuals in the United Arab Emirates." },
+        { "title": "A regulated market", "description": "A legal framework structured by RERA and the Dubai Land Department." },
+        { "title": "A growing market", "description": "Real estate momentum driven by Dubai's economic and population growth." },
+        { "title": "Rental demand", "description": "Demand driven by population growth." },
+        { "title": "Wealth diversification", "description": "Exposure to an international real estate market." },
+        { "title": "Company formation", "description": "An environment favorable to entrepreneurs and international investors." },
+        { "title": "Bank account opening", "description": "A financial ecosystem suited to residents and international investors." }
       ],
-      "expatColumnTitle": "Vous envisagez un déménagement",
+      "expatColumnTitle": "You're considering relocating",
       "expatItems": [
-        { "title": "Sécurité", "description": "Un environnement reconnu pour son niveau de sécurité." },
-        { "title": "Qualité de vie", "description": "Un cadre de vie international et de nombreux services." },
-        { "title": "Infrastructures", "description": "Des infrastructures modernes et développées." },
-        { "title": "Connexions internationales", "description": "Une ville connectée aux principales destinations mondiales." },
-        { "title": "Fiscalité attractive", "description": "Pas d'impôt sur le revenu des personnes physiques." },
-        { "title": "Services", "description": "Un accès à des services internationaux dans l'éducation, la santé et le quotidien." },
-        { "title": "Programmes de résidence", "description": "Différents dispositifs de résidence selon votre situation." }
+        { "title": "Safety", "description": "An environment recognized for its level of security." },
+        { "title": "Quality of life", "description": "An international living environment with a wide range of services." },
+        { "title": "Infrastructure", "description": "Modern, well-developed infrastructure." },
+        { "title": "International connections", "description": "A city connected to the world's major destinations." },
+        { "title": "Attractive taxation", "description": "No personal income tax." },
+        { "title": "Services", "description": "Access to international-standard education, healthcare and everyday services." },
+        { "title": "Residence programs", "description": "Different residence options depending on your situation." }
       ]
     },
     "services": {
@@ -136,25 +136,25 @@
       "commitment": "I remain your single point of contact, from the first conversation to years after the investment — I coordinate every partner; you are never handed off to another company."
     },
     "servicesRadial": {
-      "title": "Pas une liste de prestations, un accompagnement de la première conversation à la croissance de votre patrimoine.",
+      "title": "Not a list of services — support from the first conversation to the growth of your wealth.",
       "centerTitle": "Tommy Walid",
-      "centerSubtitle": "Interlocuteur unique",
+      "centerSubtitle": "Single point of contact",
       "categories": [
         {
-          "title": "Conseil immobilier",
-          "items": ["Sélection & stratégie", "Négociation & acquisition", "Financement & structuration"]
+          "title": "Real estate advisory",
+          "items": ["Selection & strategy", "Negotiation & acquisition", "Financing & structuring"]
         },
         {
-          "title": "Après la signature",
-          "items": ["Suivi des paiements", "Obtention de la résidence", "Ouverture de compte bancaire", "Contrôle qualité & livraison"]
+          "title": "After signing",
+          "items": ["Payment follow-up", "Residence visa", "Bank account opening", "Quality control & handover"]
         },
         {
-          "title": "Après la livraison",
-          "items": ["Mise en service", "Ameublement", "Gestion locative / location long terme"]
+          "title": "After handover",
+          "items": ["Move-in setup", "Furnishing", "Property management / long-term rental"]
         },
         {
-          "title": "Développer votre patrimoine",
-          "items": ["Suivi du portefeuille", "Optimisation", "Revente"]
+          "title": "Growing your wealth",
+          "items": ["Portfolio tracking", "Optimization", "Resale"]
         }
       ]
     },
@@ -304,108 +304,108 @@
       "closingCta": "Book a Call"
     },
     "services": {
-      "title": "Pas une liste de prestations, un accompagnement de la première conversation à la croissance de votre patrimoine.",
+      "title": "Not a list of services — support from the first conversation to the growth of your wealth.",
       "radial": {
         "centerTitle": "Tommy Walid",
-        "centerSubtitle": "Interlocuteur unique",
+        "centerSubtitle": "Single point of contact",
         "nodes": [
           {
-            "title": "Critères de choix",
-            "description": "Définir ensemble le type de bien, le budget, la localisation, le rendement recherché et votre horizon d'investissement."
+            "title": "Selection criteria",
+            "description": "Defining together the property type, budget, location, target yield and your investment horizon."
           },
           {
-            "title": "Priorités",
-            "description": "Classer vos critères pour distinguer ce qui est essentiel de ce qui peut être négocié."
+            "title": "Priorities",
+            "description": "Ranking your criteria to separate what's essential from what can be negotiated."
           },
           {
-            "title": "Sélection",
-            "description": "Comparer les opportunités selon vos critères plutôt que de choisir simplement parmi les projets disponibles."
+            "title": "Selection",
+            "description": "Comparing opportunities against your criteria, rather than simply picking from what's available."
           },
           {
-            "title": "Offres",
-            "description": "Présenter les opportunités retenues et vous accompagner dans la négociation des conditions d'acquisition."
+            "title": "Offers",
+            "description": "Presenting the shortlisted opportunities and supporting you through negotiating the acquisition terms."
           },
           {
-            "title": "Structuration",
-            "description": "Coordonner les aspects juridiques et fiscaux avec les partenaires concernés."
+            "title": "Structuring",
+            "description": "Coordinating the legal and tax aspects with the relevant partners."
           },
           {
-            "title": "Financement",
-            "description": "Vous accompagner dans la recherche et la mise en place d'une solution de financement adaptée."
+            "title": "Financing",
+            "description": "Supporting you in finding and setting up a financing solution suited to your situation."
           },
           {
-            "title": "Signature",
-            "description": "Coordonner les différentes étapes jusqu'à la signature de l'acquisition."
+            "title": "Signing",
+            "description": "Coordinating every step through to the signing of the acquisition."
           },
           {
-            "title": "Suivi des paiements",
-            "description": "Suivre votre échéancier et vous accompagner tout au long du plan de paiement."
+            "title": "Payment follow-up",
+            "description": "Tracking your schedule and supporting you throughout the payment plan."
           },
           {
-            "title": "Livraison & levée des réserves",
-            "description": "Vous accompagner lors de la livraison et dans l'identification des éventuelles réserves."
+            "title": "Handover & snag list",
+            "description": "Supporting you at handover and in identifying any snagging issues."
           },
           {
-            "title": "Ameublement & gestion locative",
-            "description": "Coordonner la préparation du bien et sa mise en location avec les partenaires concernés."
+            "title": "Furnishing & property management",
+            "description": "Coordinating the property's preparation and its rental with the relevant partners."
           },
           {
-            "title": "Suivi de portefeuille",
-            "description": "Suivre l'évolution de votre patrimoine et identifier les opportunités d'optimisation."
+            "title": "Portfolio tracking",
+            "description": "Tracking how your wealth evolves and identifying opportunities to optimize it."
           },
           {
-            "title": "Revente",
-            "description": "Vous accompagner dans la définition de la stratégie de sortie et la revente du bien."
+            "title": "Resale",
+            "description": "Supporting you in defining your exit strategy and reselling the property."
           }
         ]
       },
       "cta": {
-        "title": "Où en êtes-vous aujourd'hui ?",
-        "subtitle": "Choisissez votre situation et démarrez une conversation avec moi.",
+        "title": "Where are you today?",
+        "subtitle": "Choose your situation and start a conversation with me.",
         "choices": [
           {
-            "title": "Je prépare mon investissement",
-            "description": "Définir ma stratégie et identifier les bonnes opportunités."
+            "title": "I'm preparing my investment",
+            "description": "Defining my strategy and identifying the right opportunities."
           },
           {
-            "title": "J'ai déjà acheté",
-            "description": "Être accompagné après la signature."
+            "title": "I've already purchased",
+            "description": "Being supported after signing."
           },
           {
-            "title": "Je souhaite développer mon patrimoine",
-            "description": "Suivi, optimisation ou revente."
+            "title": "I want to grow my wealth",
+            "description": "Tracking, optimization or resale."
           },
           {
-            "title": "Je ne sais pas encore par où commencer",
-            "description": "Échanger sur ma situation."
+            "title": "I don't know where to start yet",
+            "description": "Talking through my situation."
           }
         ],
-        "cta": "Démarrer une conversation"
+        "cta": "Start a conversation"
       }
     },
     "investmentProcess": {
-      "title": "Une méthode, pas un argumentaire de vente.",
-      "intro": "Chaque client est différent. La façon dont je travaille avec lui, non.",
+      "title": "A method, not a sales pitch.",
+      "intro": "Every client is different. The way I work with them isn't.",
       "principles": [
         {
-          "title": "Écouter avant de conseiller",
-          "description": "Avant de vous montrer quoi que ce soit, je prends le temps de comprendre votre situation réelle — vos objectifs, vos contraintes, votre horizon. Pas un questionnaire type : une vraie conversation."
+          "title": "Listening before advising",
+          "description": "Before showing you anything, I take the time to understand your real situation — your objectives, your constraints, your horizon. Not a standard questionnaire: a real conversation."
         },
         {
-          "title": "Sélectionner avec discipline",
-          "description": "Je ne vous montre pas tout ce qui existe sur le marché. J'écarte moi-même ce qui ne correspond pas, pour ne vous présenter que ce qui mérite votre attention."
+          "title": "Selecting with discipline",
+          "description": "I don't show you everything that exists on the market. I filter out what doesn't fit myself, so I only present what deserves your attention."
         },
         {
-          "title": "Des options comparées, jamais une solution unique",
-          "description": "Vous ne recevez jamais un projet unique présenté comme la solution. Je vous montre plusieurs opportunités, avec leurs avantages et leurs limites — la décision reste la vôtre."
+          "title": "Compared options, never a single solution",
+          "description": "You never receive a single project presented as the solution. I show you several opportunities, with their strengths and their limits — the decision stays yours."
         },
         {
-          "title": "Je coordonne les bonnes personnes",
-          "description": "Avocats, banques, promoteurs, gestionnaires : je coordonne les différents intervenants et reste votre point de contact tout au long du projet."
+          "title": "I coordinate the right people",
+          "description": "Lawyers, banks, developers, property managers: I coordinate the different parties involved and remain your point of contact throughout the project."
         },
         {
-          "title": "Une stratégie qui évolue avec vous",
-          "description": "Votre situation change, vos objectifs aussi. Je reste votre interlocuteur pour ajuster la stratégie dans la durée — pas seulement au moment de l'achat."
+          "title": "A strategy that evolves with you",
+          "description": "Your situation changes, and so do your objectives. I remain your point of contact to adjust the strategy over time — not just at the moment of purchase."
         }
       ]
     },
