@@ -22,10 +22,7 @@ export async function WhyTommy({ id }: { id?: string }) {
           </div>
 
           <div className="flex flex-col">
-            <span className="text-xs font-semibold tracking-[0.28em] text-gold-text uppercase">
-              {t("kicker")}
-            </span>
-            <h2 className="mt-4 max-w-xl text-balance font-heading text-3xl text-forest sm:text-4xl">
+            <h2 className="max-w-xl text-balance font-heading text-3xl text-forest sm:text-4xl">
               {t("title")}
             </h2>
             <p className="mt-4 max-w-xl text-balance leading-relaxed text-ink-soft">

@@ -39,25 +39,13 @@
     },
     "whyTommy": {
       "kicker": "Why Tommy Walid",
-      "title": "Why trust me with one of the biggest financial decisions of your life?",
-      "subtitle": "No sales pitch. Just what you need to know before you commit.",
+      "title": "Why investors trust me.",
+      "subtitle": "Certified by Dubai's real estate regulatory authority, I guide you through your property decisions with an independent, long-term approach.",
       "items": [
-        {
-          "question": "Why work with me",
-          "answer": "You keep a single point of contact, from the first conversation to the long-term management of your asset. Your strategy, opportunity selection and negotiation are handled personally, then the full ecosystem (structuring, visas, banking, rental management) is coordinated for you through a trusted partner network. You are never handed off to another company."
-        },
-        {
-          "question": "My investment philosophy",
-          "answer": "No opportunity is presented to you simply because it's available. Every recommendation is grounded in a rigorous assessment of its long-term value, never in market urgency. My role isn't to sell you a property, but to help you make an informed decision, at the pace that fits your objectives."
-        },
-        {
-          "question": "How I guide clients",
-          "answer": "Every conversation starts with understanding your objectives, not presenting a property. You get a clear explanation of every option (tax, legal, financial) before you decide. And the guidance doesn't stop at signing: I stay by your side for rental management, resale, or portfolio optimization, years after the acquisition."
-        },
-        {
-          "question": "What you can expect from me",
-          "answer": "A personal reply within 24–48 hours. Full transparency on costs, risks and alternatives. No sales pressure. And a single point of contact, available long after the handover."
-        }
+        { "question": "You will never be pushed into a rushed decision." },
+        { "question": "Your investment's interest is the priority, not the commission." },
+        { "question": "You can expect complete transparency from me." },
+        { "question": "I don't disappear after signing." }
       ]
     },
     "whyDubai": {
