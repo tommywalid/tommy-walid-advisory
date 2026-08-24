@@ -58,13 +58,15 @@ export async function getMarketInsights(): Promise<MarketInsight[]> {
 }
 
 /**
- * FR falls back to EN and vice versa if one is somehow empty — same rule
- * as localizedText() in src/lib/projects.ts, kept as a local copy rather
- * than a shared import so this file has no dependency on the Projects
- * domain. AR is intentionally not part of this lookup — see MarketInsight.
+ * Requested locale first, falling back to EN then FR if that one is empty —
+ * same rule as localizedText() in src/lib/projects.ts, kept as a local copy
+ * rather than a shared import so this file has no dependency on the
+ * Projects domain. `ar` is optional on LocalizedText (Make doesn't always
+ * populate `message_complet_ar`), so an `ar` request without one falls back
+ * to `en` exactly like a missing `fr` field always has.
  */
 export function localizedMessage(message: LocalizedText, locale: string): string {
-  const primary = locale === "fr" ? message.fr : message.en;
-  const fallback = locale === "fr" ? message.en : message.fr;
-  return primary.trim() || fallback.trim() || "—";
+  const byLocale: Record<string, string | undefined> = { fr: message.fr, en: message.en, ar: message.ar };
+  const primary = byLocale[locale] ?? message.en;
+  return primary.trim() || message.en.trim() || message.fr.trim() || "—";
 }
