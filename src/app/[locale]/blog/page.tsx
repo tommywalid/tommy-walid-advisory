@@ -38,7 +38,7 @@ export default async function BlogPage({
 
   return (
     <>
-      <PageHeader kicker={t("kicker")} title={t("title")} intro={t("intro")} />
+      <PageHeader title={t("title")} intro={t("intro")} />
 
       {insights.length === 0 ? (
         <div className="mx-auto max-w-4xl px-6 py-24 lg:px-10">

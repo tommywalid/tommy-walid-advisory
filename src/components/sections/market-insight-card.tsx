@@ -4,6 +4,7 @@ import type { MarketInsight } from "@/types/market-insights";
 import { localizedMessage } from "@/lib/market-insights";
 import { Card } from "@/components/ui/card";
 import { Reveal } from "@/components/motion/reveal";
+import { cn } from "@/lib/utils";
 
 /**
  * Make currently writes `media_url` as a Google Drive
@@ -36,11 +37,13 @@ function resolveMediaUrl(url: string): string {
 
 /**
  * One Market Insight, in the same card language as ProjectCard (Card,
- * p-0 + inner padding, aspect-[4/3] cover). Cover is an <img> or a
- * <video> depending on `mediaType` — plain HTML elements rather than
- * next/image for the image case: `mediaUrl` comes from Make/Supabase,
- * whose host isn't known ahead of time, and next/image throws on an
- * unconfigured remote hostname — see next.config.ts.
+ * p-0 + inner padding). Cover is an <img> or a <video> depending on
+ * `mediaType` — plain HTML elements rather than next/image for the image
+ * case: `mediaUrl` comes from Make/Supabase, whose host isn't known ahead
+ * of time, and next/image throws on an unconfigured remote hostname — see
+ * next.config.ts. The cover's aspect ratio follows the same split: 4:5
+ * (portrait) for images, 16:9 for video, matching how each was actually
+ * shot rather than forcing one ratio on both.
  */
 export async function MarketInsightCard({
   insight,
@@ -63,7 +66,12 @@ export async function MarketInsightCard({
   return (
     <Reveal delay={delay}>
       <Card className="flex h-full flex-col overflow-hidden bg-white p-0">
-        <div className="relative aspect-[4/3] w-full overflow-hidden bg-beige">
+        <div
+          className={cn(
+            "relative w-full overflow-hidden bg-beige",
+            insight.mediaType === "video" ? "aspect-video" : "aspect-[4/5]",
+          )}
+        >
           {insight.mediaType === "video" ? (
             <video
               src={mediaUrl}
@@ -83,7 +91,7 @@ export async function MarketInsightCard({
         </div>
 
         <div className="flex flex-1 flex-col p-6">
-          <p className="line-clamp-4 leading-relaxed text-ink-soft">
+          <p className="leading-relaxed text-ink-soft">
             {localizedMessage(insight.message, locale)}
           </p>
 
