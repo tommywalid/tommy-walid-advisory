@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Tommy Walid — Dubai Real Estate Investment Advisor",
+    "title": "Tommy Walid: Dubai Real Estate Investment Advisor",
     "description": "I guide international investors through the selection, structuring and management of their real estate investments in Dubai, with the rigor of a family office."
   },
   "nav": {
@@ -32,7 +32,7 @@
   },
   "home": {
     "hero": {
-      "kicker": "Real Estate Investment Advisory — Dubai",
+      "kicker": "Real Estate Investment Advisory, Dubai",
       "title": "You don't need another real estate broker.\nYou need someone you can trust.",
       "ctaPrimary": "Book a Call",
       "ctaSecondary": "Discover My Approach"
@@ -44,15 +44,15 @@
       "items": [
         {
           "question": "Why work with me",
-          "answer": "You keep a single point of contact, from the first conversation to the long-term management of your asset. Your strategy, opportunity selection and negotiation are handled personally — then the full ecosystem (structuring, visas, banking, rental management) is coordinated for you through a trusted partner network. You are never handed off to another company."
+          "answer": "You keep a single point of contact, from the first conversation to the long-term management of your asset. Your strategy, opportunity selection and negotiation are handled personally, then the full ecosystem (structuring, visas, banking, rental management) is coordinated for you through a trusted partner network. You are never handed off to another company."
         },
         {
           "question": "My investment philosophy",
-          "answer": "No opportunity is presented to you simply because it's available. Every recommendation is grounded in a rigorous assessment of its long-term value — never in market urgency. My role isn't to sell you a property, but to help you make an informed decision, at the pace that fits your objectives."
+          "answer": "No opportunity is presented to you simply because it's available. Every recommendation is grounded in a rigorous assessment of its long-term value, never in market urgency. My role isn't to sell you a property, but to help you make an informed decision, at the pace that fits your objectives."
         },
         {
           "question": "How I guide clients",
-          "answer": "Every conversation starts with understanding your objectives, not presenting a property. You get a clear explanation of every option — tax, legal, financial — before you decide. And the guidance doesn't stop at signing: I stay by your side for rental management, resale, or portfolio optimization, years after the acquisition."
+          "answer": "Every conversation starts with understanding your objectives, not presenting a property. You get a clear explanation of every option (tax, legal, financial) before you decide. And the guidance doesn't stop at signing: I stay by your side for rental management, resale, or portfolio optimization, years after the acquisition."
         },
         {
           "question": "What you can expect from me",
@@ -94,7 +94,7 @@
       "phases": [
         {
           "title": "Understand Your Goals",
-          "description": "Before anything else, I clarify with you what you actually want to achieve — not what's available on the market. You leave with a clear strategy and a shortlist that fits you.",
+          "description": "Before anything else, I clarify with you what you actually want to achieve, not what's available on the market. You leave with a clear strategy and a shortlist that fits you.",
           "tags": [
             { "label": "Investment advisory", "mode": "direct" },
             { "label": "Market analysis", "mode": "direct" },
@@ -103,7 +103,7 @@
         },
         {
           "title": "Secure Your Investment",
-          "description": "From negotiation to legal, tax and financial structuring, every step is coordinated so your acquisition is secured — without you having to manage five different providers yourself.",
+          "description": "From negotiation to legal, tax and financial structuring, every step is coordinated so your acquisition is secured, without you having to manage five different providers yourself.",
           "tags": [
             { "label": "Negotiation", "mode": "direct" },
             { "label": "Legal & tax structuring", "mode": "partner" },
@@ -125,17 +125,17 @@
         },
         {
           "title": "Grow Your Wealth",
-          "description": "Years later, I'm still by your side — reviewing your asset's performance, optimizing your portfolio, and guiding you through a resale when the time is right.",
+          "description": "Years later, I'm still by your side, reviewing your asset's performance, optimizing your portfolio, and guiding you through a resale when the time is right.",
           "tags": [
             { "label": "Portfolio monitoring & optimization", "mode": "direct" },
             { "label": "Resale", "mode": "partner" }
           ]
         }
       ],
-      "commitment": "I remain your single point of contact, from the first conversation to years after the investment — I coordinate every partner; you are never handed off to another company."
+      "commitment": "I remain your single point of contact, from the first conversation to years after the investment. I coordinate every partner; you are never handed off to another company."
     },
     "servicesRadial": {
-      "title": "Not a list of services — support from the first conversation to the growth of your wealth.",
+      "title": "Not a list of services: support from the first conversation to the growth of your wealth.",
       "centerTitle": "Tommy Walid",
       "centerSubtitle": "Single point of contact",
       "categories": [
@@ -160,7 +160,7 @@
     "selectedProjects": {
       "kicker": "Selected",
       "title": "A few opportunities I currently recommend",
-      "subtitle": "I don't show everything on the market — only what I personally choose to put in front of my clients.",
+      "subtitle": "I don't show everything on the market, only what I personally choose to put in front of my clients.",
       "cta": "See all opportunities"
     },
     "testimonials": {
@@ -168,9 +168,9 @@
       "title": "What my clients will say about me",
       "notice": "My first client testimonials will be published here soon.",
       "items": [
-        { "quote": "Rigorous, transparent guidance — exactly what you'd expect from a family office.", "attribution": "Client testimonial — coming soon" },
-        { "quote": "A single point of contact, available in French, at every stage of the project.", "attribution": "Client testimonial — coming soon" },
-        { "quote": "A structuring approach designed to fit within my overall wealth strategy.", "attribution": "Client testimonial — coming soon" }
+        { "quote": "Rigorous, transparent guidance: exactly what you'd expect from a family office.", "attribution": "Client testimonial (coming soon)" },
+        { "quote": "A single point of contact, available in French, at every stage of the project.", "attribution": "Client testimonial (coming soon)" },
+        { "quote": "A structuring approach designed to fit within my overall wealth strategy.", "attribution": "Client testimonial (coming soon)" }
       ]
     },
     "faq": {
@@ -196,12 +196,12 @@
     "index": {
       "kicker": "Projects",
       "title": "A selection, not a catalogue",
-      "intro": "I don't show everything on the market — only what I personally choose to put in front of my clients. Tell me what you're trying to achieve, and I'll show you what fits.",
+      "intro": "I don't show everything on the market, only what I personally choose to put in front of my clients. Tell me what you're trying to achieve, and I'll show you what fits.",
       "allLabel": "See everything",
       "propertyTypeLabel": "Property type",
       "locationLabel": "Location",
       "anyLabel": "Any",
-      "emptyStateBody": "Nothing live in this category right now — this is exactly the kind of decision I help with directly.",
+      "emptyStateBody": "Nothing live in this category right now: this is exactly the kind of decision I help with directly.",
       "emptyStateCta": "Tell me what you're looking for",
       "noProjectsYetTitle": "I'm currently curating my first selection",
       "noProjectsYetBody": "The opportunities I personally recommend will be published here soon. In the meantime, let's talk directly about your project.",
@@ -277,21 +277,21 @@
     "about": {
       "kicker": "About",
       "title": "Twenty years in sales taught me what not to do.",
-      "intro": "I'm Tommy Walid, a real estate investment advisor based in Dubai. Before guiding clients, I spent nearly twenty years in sales — long enough to know exactly what I didn't want to become.",
+      "intro": "I'm Tommy Walid, a real estate investment advisor based in Dubai. Before guiding clients, I spent nearly twenty years in sales, long enough to know exactly what I didn't want to become.",
       "licenseNote": "As a real estate investment advisor, I operate under a RERA-licensed brokerage in Dubai.",
       "videoLabel": "A personal introduction video is coming soon.",
       "sections": [
         {
           "title": "The Path",
-          "body": "Originally from Réunion Island, I spent nearly twenty years in sales and business development before specializing in real estate. My time at Eagle Hills in Morocco brought me close to Dubai's world for the first time. A personal trip sealed the decision — the ambition of the city, but even more, how transparent the buying process looked compared to anything I'd known before."
+          "body": "Originally from Réunion Island, I spent nearly twenty years in sales and business development before specializing in real estate. My time at Eagle Hills in Morocco brought me close to Dubai's world for the first time. A personal trip sealed the decision: the ambition of the city, but even more, how transparent the buying process looked compared to anything I'd known before."
         },
         {
           "title": "The Turning Point",
-          "body": "It wasn't one bad boss who shaped how I work — it was a pattern I watched repeat, job after job, year after year: clients pushed toward bad decisions for a commission. I decided to do the opposite: educate first, advise second, sell last."
+          "body": "It wasn't one bad boss who shaped how I work. It was a pattern I watched repeat, job after job, year after year: clients pushed toward bad decisions for a commission. I decided to do the opposite: educate first, advise second, sell last."
         },
         {
           "title": "Why Dubai, For Me",
-          "body": "Dubai still surprises me — its ambition, and the sheer range of people building a life here: investors, entrepreneurs, families from every corner of the world. It's a city where the market's rigor and transparency make possible what would feel far less certain elsewhere."
+          "body": "Dubai still surprises me: its ambition, and the sheer range of people building a life here: investors, entrepreneurs, families from every corner of the world. It's a city where the market's rigor and transparency make possible what would feel far less certain elsewhere."
         },
         {
           "title": "Where This Is Going",
@@ -303,7 +303,7 @@
       "closingCta": "Book a Call"
     },
     "services": {
-      "title": "Not a list of services — support from the first conversation to the growth of your wealth.",
+      "title": "Not a list of services: support from the first conversation to the growth of your wealth.",
       "radial": {
         "centerTitle": "Tommy Walid",
         "centerSubtitle": "Single point of contact",
@@ -388,7 +388,7 @@
       "principles": [
         {
           "title": "Listening before advising",
-          "description": "Before showing you anything, I take the time to understand your real situation — your objectives, your constraints, your horizon. Not a standard questionnaire: a real conversation."
+          "description": "Before showing you anything, I take the time to understand your real situation: your objectives, your constraints, your horizon. Not a standard questionnaire: a real conversation."
         },
         {
           "title": "Selecting with discipline",
@@ -396,7 +396,7 @@
         },
         {
           "title": "Compared options, never a single solution",
-          "description": "You never receive a single project presented as the solution. I show you several opportunities, with their strengths and their limits — the decision stays yours."
+          "description": "You never receive a single project presented as the solution. I show you several opportunities, with their strengths and their limits, the decision stays yours."
         },
         {
           "title": "I coordinate the right people",
@@ -404,7 +404,7 @@
         },
         {
           "title": "A strategy that evolves with you",
-          "description": "Your situation changes, and so do your objectives. I remain your point of contact to adjust the strategy over time — not just at the moment of purchase."
+          "description": "Your situation changes, and so do your objectives. I remain your point of contact to adjust the strategy over time, not just at the moment of purchase."
         }
       ]
     },

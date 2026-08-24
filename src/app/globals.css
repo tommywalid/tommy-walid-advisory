@@ -25,6 +25,15 @@
   --radius: 0.75rem;
 }
 
+/* Arabic pages resolve --font-sans/--font-heading to the Arabic-script
+   fonts instead (see src/lib/fonts.ts) — same variables every component
+   already uses, so no component needs to know which script is active.
+   FR/EN never match this selector and keep Fraunces/Inter unchanged. */
+:root[lang="ar"] {
+  --font-sans: var(--font-sans-ar);
+  --font-heading: var(--font-heading-ar);
+}
+
 @theme inline {
   --color-cream: var(--color-cream);
   --color-beige: var(--color-beige);
@@ -40,6 +49,11 @@
 
   --font-sans: var(--font-sans);
   --font-heading: var(--font-heading);
+
+  /* Arabic-script font variables (see src/lib/fonts.ts). Only referenced by
+     the `:root[lang="ar"]` override below — FR/EN never resolve these. */
+  --font-sans-ar: var(--font-sans-ar);
+  --font-heading-ar: var(--font-heading-ar);
 
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 0.25rem);

@@ -9,7 +9,7 @@ function Fact({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-start justify-between gap-4">
       <dt className="text-ink-soft">{label}</dt>
-      <dd className="text-right font-medium text-forest">{value}</dd>
+      <dd className="text-end font-medium text-forest">{value}</dd>
     </div>
   );
 }

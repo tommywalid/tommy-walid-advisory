@@ -11,7 +11,7 @@ export default function DashboardMediaPage() {
     <>
       <DashboardPageHeader
         title="Media"
-        description="A shared library — type (photo/render/masterplan/aerial/logo) and captions are required at upload, not added later."
+        description="A shared library: type (photo/render/masterplan/aerial/logo) and captions are required at upload, not added later."
         action={
           <Button disabled className="gap-1.5 opacity-50">
             <Upload className="size-4" />

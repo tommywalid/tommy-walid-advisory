@@ -21,7 +21,7 @@ export async function Hero() {
       />
       <svg
         aria-hidden
-        className="pointer-events-none absolute inset-y-0 right-0 hidden h-full w-[46%] opacity-[0.14] lg:block"
+        className="pointer-events-none absolute inset-y-0 end-0 hidden h-full w-[46%] opacity-[0.14] lg:block"
         viewBox="0 0 400 800"
         fill="none"
         preserveAspectRatio="xMaxYMid slice"

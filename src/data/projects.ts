@@ -258,8 +258,8 @@ export const projects: Project[] = [
     ],
     nearbyLandmarks: ["Port Rashid", "DIFC", "Downtown Dubai", "Bur Dubai"],
     overview: {
-      fr: "Les premières résidences de marque football développées en partenariat avec le Chelsea Football Club — plus de 1 400 appartements avec vue sur mer à Dubai Maritime City.",
-      en: "The first football-branded residences developed in partnership with Chelsea Football Club — over 1,400 sea-facing apartments in Dubai Maritime City.",
+      fr: "Les premières résidences de marque football développées en partenariat avec le Chelsea Football Club : plus de 1 400 appartements avec vue sur mer à Dubai Maritime City.",
+      en: "The first football-branded residences developed in partnership with Chelsea Football Club: over 1,400 sea-facing apartments in Dubai Maritime City.",
     },
     whyIRecommend: {
       fr: "Chelsea Residences est un développement en bord de mer à Dubai Maritime City, réalisé en partenariat avec le Chelsea Football Club, proposant plus de 1 400 appartements de 1 à 3 chambres avec vue sur mer à partir de 2 300 000 AED. Le plan de paiement est de 20 % à la réservation, 40 % durant la construction et 40 % à la livraison, prévue en décembre 2029. Les équipements à thème football incluent une plage privée, un terrain sur le toit et un centre d'entraînement de performance sportive. Les achats éligibles peuvent donner droit au Golden Visa des Émirats arabes unis.",
@@ -312,8 +312,8 @@ export const projects: Project[] = [
       "Expo City",
     ],
     overview: {
-      fr: "La phase 2 de la master-community en bord d'eau à thème insulaire de DAMAC à Dubailand — une communauté « éco-luxe » composée de 8 clusters à thème insulaire, proposant des maisons de ville et villas de 4 à 6 chambres.",
-      en: "Phase 2 of DAMAC's island-themed waterfront master community in Dubailand — an 'eco-luxury' community of 8 island-themed clusters, offering 4–6 bedroom townhouses and villas.",
+      fr: "La phase 2 de la master-community en bord d'eau à thème insulaire de DAMAC à Dubailand : une communauté « éco-luxe » composée de 8 clusters à thème insulaire, proposant des maisons de ville et villas de 4 à 6 chambres.",
+      en: "Phase 2 of DAMAC's island-themed waterfront master community in Dubailand: an 'eco-luxury' community of 8 island-themed clusters, offering 4–6 bedroom townhouses and villas.",
     },
     whyIRecommend: {
       fr: "DAMAC Islands 2 est la phase 2 de la master-community à thème insulaire de DAMAC à Dubailand, proposant des maisons de ville et villas de 4 à 6 chambres réparties sur 8 clusters à thème insulaire, à partir de 2 750 000 AED. Le plan de paiement est de 20 % à la réservation, 55 % durant la construction et 25 % à la livraison, prévue au T2 2030. Le promoteur revendique un record du monde Guinness pour les revenus générés en une seule journée de lancement, en novembre 2025. Les équipements sont axés sur la nature et le bien-être, avec un éco-parc, un jardin botanique et des plages privées ; les achats éligibles peuvent donner droit au Golden Visa.",
@@ -363,8 +363,8 @@ export const projects: Project[] = [
       "Burj Khalifa / Dubai Mall",
     ],
     overview: {
-      fr: "Le premier développement à vocation hôtelière d'Ellington — une communauté résidentielle en front de mer sur l'Island B, Dubai Islands, combinant résidences et une composante hôtelière intégrée.",
-      en: "Ellington's first hospitality-led development — a beachfront residential community on Island B, Dubai Islands, combining residences with an integrated hotel component.",
+      fr: "Le premier développement à vocation hôtelière d'Ellington : une communauté résidentielle en front de mer sur l'Island B, Dubai Islands, combinant résidences et une composante hôtelière intégrée.",
+      en: "Ellington's first hospitality-led development: a beachfront residential community on Island B, Dubai Islands, combining residences with an integrated hotel component.",
     },
     whyIRecommend: {
       fr: "The Meriva Collection est le premier développement à vocation hôtelière d'Ellington Properties, une communauté résidentielle en front de mer sur l'Island B, Dubai Islands, combinant appartements et penthouses de 1 à 4 chambres avec une composante hôtelière intégrée. Le projet offre un accès direct à la plage au sein d'un plan-masse en bord d'eau à faible densité, ainsi qu'une collection limitée de résidences signature de 3 et 5 chambres en front de mer avec piscines privées. Le prix de départ, le plan de paiement et la date de livraison ne sont pas encore publiés.",
@@ -629,8 +629,8 @@ export const projects: Project[] = [
       en: "A 10-storey residential building of ~170 units in Dubai South, launched as 'Inara Residence' and renamed 'Enre Residence.' Described by the developer as where 'contemporary architecture meets the quiet rhythm of nature.'",
     },
     whyIRecommend: {
-      fr: "Enre Residence (lancé sous le nom « Inara Residence » avant d'être renommé) est un immeuble de 10 étages regroupant environ 170 appartements du studio à 2 chambres à Dubai South. Le plan de paiement est de 20 % à la réservation, 40 % durant la construction et 40 % à la livraison (sans intérêt), avec une livraison prévue au T1 2028. Les unités sont entièrement meublées et équipées de la domotique compatible Alexa. Le prix de départ n'est pas confirmé — les sources disponibles rapportent des chiffres contradictoires.",
-      en: "Enre Residence (launched as 'Inara Residence' before being renamed) is a 10-storey building of approximately 170 studio to 2-bedroom apartments in Dubai South. The payment plan is 20% on booking, 40% during construction and 40% on handover (interest-free), with handover scheduled for Q1 2028. Units are fully furnished with Alexa-enabled smart home features. Starting price is not confirmed — available sources report conflicting figures.",
+      fr: "Enre Residence (lancé sous le nom « Inara Residence » avant d'être renommé) est un immeuble de 10 étages regroupant environ 170 appartements du studio à 2 chambres à Dubai South. Le plan de paiement est de 20 % à la réservation, 40 % durant la construction et 40 % à la livraison (sans intérêt), avec une livraison prévue au T1 2028. Les unités sont entièrement meublées et équipées de la domotique compatible Alexa. Le prix de départ n'est pas confirmé : les sources disponibles rapportent des chiffres contradictoires.",
+      en: "Enre Residence (launched as 'Inara Residence' before being renamed) is a 10-storey building of approximately 170 studio to 2-bedroom apartments in Dubai South. The payment plan is 20% on booking, 40% during construction and 40% on handover (interest-free), with handover scheduled for Q1 2028. Units are fully furnished with Alexa-enabled smart home features. Starting price is not confirmed: available sources report conflicting figures.",
     },
     whyIRecommendMeta: { aiAssisted: true },
     officialSourceUrl: "https://imtiaz.ae/property/enre-residence-by-imtiaz",
@@ -677,8 +677,8 @@ export const projects: Project[] = [
       en: "A mixed-use development on Sheikh Zayed Road in Downtown Jebel Ali, pairing fully furnished residential apartments with modular offices, co-working space, and ground-floor retail. Reported sold out on launch day.",
     },
     whyIRecommend: {
-      fr: "Raw District II est un développement à usage mixte sur Sheikh Zayed Road, à Downtown Jebel Ali, combinant des appartements résidentiels du studio à 3 chambres avec des espaces de bureaux et commerces, à partir de 666 000 AED. La livraison est prévue au T2 2029 ; le projet affiche une valeur totale de 1,5 milliard AED et aurait été vendu en totalité dès son lancement. Le plan de paiement n'est pas confirmé — les sources rapportent des structures différentes. Les équipements incluent une piscine familiale, une piscine d'hydrothérapie et des espaces de coworking.",
-      en: "Raw District II is a mixed-use development on Sheikh Zayed Road in Downtown Jebel Ali, combining studio to 3-bedroom residential apartments with office and retail space, from AED 666,000. Handover is scheduled for Q2 2029; the project reports an AED 1.5 billion total value and was reported sold out on its launch day. The payment plan is not confirmed — sources report differing structures. Amenities include a family pool, hydrotherapy pool and co-working spaces.",
+      fr: "Raw District II est un développement à usage mixte sur Sheikh Zayed Road, à Downtown Jebel Ali, combinant des appartements résidentiels du studio à 3 chambres avec des espaces de bureaux et commerces, à partir de 666 000 AED. La livraison est prévue au T2 2029 ; le projet affiche une valeur totale de 1,5 milliard AED et aurait été vendu en totalité dès son lancement. Le plan de paiement n'est pas confirmé : les sources rapportent des structures différentes. Les équipements incluent une piscine familiale, une piscine d'hydrothérapie et des espaces de coworking.",
+      en: "Raw District II is a mixed-use development on Sheikh Zayed Road in Downtown Jebel Ali, combining studio to 3-bedroom residential apartments with office and retail space, from AED 666,000. Handover is scheduled for Q2 2029; the project reports an AED 1.5 billion total value and was reported sold out on its launch day. The payment plan is not confirmed: sources report differing structures. Amenities include a family pool, hydrotherapy pool and co-working spaces.",
     },
     whyIRecommendMeta: { aiAssisted: true },
     officialSourceUrl: "https://imtiaz.ae/property/raw-district-ii-by-imtiaz",

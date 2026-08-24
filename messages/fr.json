@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Tommy Walid — Conseil en investissement immobilier à Dubaï",
+    "title": "Tommy Walid : Conseil en investissement immobilier à Dubaï",
     "description": "J'accompagne des investisseurs internationaux dans la sélection, la structuration et la gestion de leurs investissements immobiliers à Dubaï, avec la rigueur d'un family office."
   },
   "nav": {
@@ -32,7 +32,7 @@
   },
   "home": {
     "hero": {
-      "kicker": "Conseil indépendant en investissement immobilier — Dubaï",
+      "kicker": "Conseil indépendant en investissement immobilier, Dubaï",
       "title": "Vous n'avez pas besoin d'un agent immobilier de plus.\nVous avez besoin d'une personne en qui vous pouvez avoir confiance.",
       "ctaPrimary": "Prendre rendez-vous",
       "ctaSecondary": "Comment je vous accompagne"
@@ -90,7 +90,7 @@
       "phases": [
         {
           "title": "Comprenez vos objectifs",
-          "description": "Avant toute chose, je clarifie avec vous ce que vous cherchez réellement à accomplir — pas ce qui est disponible sur le marché. Vous repartez avec une stratégie claire et une sélection de projets qui vous correspond.",
+          "description": "Avant toute chose, je clarifie avec vous ce que vous cherchez réellement à accomplir, pas ce qui est disponible sur le marché. Vous repartez avec une stratégie claire et une sélection de projets qui vous correspond.",
           "tags": [
             { "label": "Conseil en investissement", "mode": "direct" },
             { "label": "Analyse de marché", "mode": "direct" },
@@ -99,7 +99,7 @@
         },
         {
           "title": "Sécurisez votre investissement",
-          "description": "De la négociation à la structuration juridique, fiscale et financière, chaque étape est coordonnée pour que votre acquisition soit sécurisée — sans que vous ayez à gérer cinq prestataires différents vous-même.",
+          "description": "De la négociation à la structuration juridique, fiscale et financière, chaque étape est coordonnée pour que votre acquisition soit sécurisée, sans que vous ayez à gérer cinq prestataires différents vous-même.",
           "tags": [
             { "label": "Négociation", "mode": "direct" },
             { "label": "Structuration juridique & fiscale", "mode": "partner" },
@@ -121,14 +121,14 @@
         },
         {
           "title": "Développez votre patrimoine",
-          "description": "Des années plus tard, je reste à vos côtés — pour suivre la performance de votre actif, optimiser votre portefeuille, et vous accompagner dans une revente le moment venu.",
+          "description": "Des années plus tard, je reste à vos côtés, pour suivre la performance de votre actif, optimiser votre portefeuille, et vous accompagner dans une revente le moment venu.",
           "tags": [
             { "label": "Suivi & optimisation de portefeuille", "mode": "direct" },
             { "label": "Revente", "mode": "partner" }
           ]
         }
       ],
-      "commitment": "Je reste votre interlocuteur unique, du premier échange jusqu'à plusieurs années après l'investissement — je coordonne chaque partenaire, vous n'êtes jamais transféré à une autre société."
+      "commitment": "Je reste votre interlocuteur unique, du premier échange jusqu'à plusieurs années après l'investissement. Je coordonne chaque partenaire, vous n'êtes jamais transféré à une autre société."
     },
     "servicesRadial": {
       "title": "Pas une liste de prestations, un accompagnement de la première conversation à la croissance de votre patrimoine.",
@@ -156,7 +156,7 @@
     "selectedProjects": {
       "kicker": "Sélection",
       "title": "Quelques opportunités que je recommande actuellement",
-      "subtitle": "Je ne montre pas tout ce qui existe sur le marché — seulement ce que je choisis personnellement de présenter à mes clients.",
+      "subtitle": "Je ne montre pas tout ce qui existe sur le marché, seulement ce que je choisis personnellement de présenter à mes clients.",
       "cta": "Voir toutes les opportunités"
     },
     "testimonials": {
@@ -164,9 +164,9 @@
       "title": "Ce que mes clients diront de moi",
       "notice": "Mes premiers témoignages clients seront publiés ici prochainement.",
       "items": [
-        { "quote": "Un accompagnement rigoureux et transparent, à l'image de ce qu'on attend d'un family office.", "attribution": "Témoignage client — à venir" },
-        { "quote": "Un interlocuteur unique, disponible en français, à chaque étape du projet.", "attribution": "Témoignage client — à venir" },
-        { "quote": "Une structuration pensée pour s'intégrer à l'ensemble de mon patrimoine.", "attribution": "Témoignage client — à venir" }
+        { "quote": "Un accompagnement rigoureux et transparent, à l'image de ce qu'on attend d'un family office.", "attribution": "Témoignage client (à venir)" },
+        { "quote": "Un interlocuteur unique, disponible en français, à chaque étape du projet.", "attribution": "Témoignage client (à venir)" },
+        { "quote": "Une structuration pensée pour s'intégrer à l'ensemble de mon patrimoine.", "attribution": "Témoignage client (à venir)" }
       ]
     },
     "faq": {
@@ -192,12 +192,12 @@
     "index": {
       "kicker": "Projets",
       "title": "Une sélection, pas un catalogue",
-      "intro": "Je ne montre pas tout ce qui existe sur le marché — seulement ce que je choisis personnellement de présenter à mes clients. Dites-moi ce que vous cherchez à accomplir, et je vous montre ce qui correspond.",
+      "intro": "Je ne montre pas tout ce qui existe sur le marché, seulement ce que je choisis personnellement de présenter à mes clients. Dites-moi ce que vous cherchez à accomplir, et je vous montre ce qui correspond.",
       "allLabel": "Tout voir",
       "propertyTypeLabel": "Type de bien",
       "locationLabel": "Emplacement",
       "anyLabel": "Indifférent",
-      "emptyStateBody": "Rien de disponible dans cette catégorie pour l'instant — c'est exactement le type de décision que j'accompagne directement.",
+      "emptyStateBody": "Rien de disponible dans cette catégorie pour l'instant : c'est exactement le type de décision que j'accompagne directement.",
       "emptyStateCta": "Dites-moi ce que vous recherchez",
       "noProjectsYetTitle": "Je constitue actuellement ma première sélection",
       "noProjectsYetBody": "Les opportunités que je recommande personnellement seront publiées ici prochainement. En attendant, parlons directement de votre projet.",
@@ -273,7 +273,7 @@
     "about": {
       "kicker": "À propos",
       "title": "Vingt ans de vente m'ont appris ce qu'il ne fallait pas faire.",
-      "intro": "Je suis Tommy Walid, conseiller en investissement immobilier basé à Dubaï. Avant d'accompagner mes clients, j'ai passé près de vingt ans dans la vente — assez longtemps pour savoir exactement ce que je ne voulais pas devenir.",
+      "intro": "Je suis Tommy Walid, conseiller en investissement immobilier basé à Dubaï. Avant d'accompagner mes clients, j'ai passé près de vingt ans dans la vente, assez longtemps pour savoir exactement ce que je ne voulais pas devenir.",
       "licenseNote": "Conseiller en investissement immobilier, j'exerce sous l'égide d'un courtage agréé RERA à Dubaï.",
       "videoLabel": "Une présentation vidéo arrivera prochainement.",
       "sections": [
@@ -283,15 +283,15 @@
         },
         {
           "title": "Le déclic",
-          "body": "Ce n'est pas un mauvais patron qui a façonné ma façon de travailler — c'est un schéma que j'ai vu se répéter, poste après poste, année après année : des clients poussés vers de mauvaises décisions pour une commission. J'ai décidé de faire l'inverse : éduquer d'abord, conseiller ensuite, vendre en dernier lieu."
+          "body": "Ce n'est pas un mauvais patron qui a façonné ma façon de travailler. C'est un schéma que j'ai vu se répéter, poste après poste, année après année : des clients poussés vers de mauvaises décisions pour une commission. J'ai décidé de faire l'inverse : éduquer d'abord, conseiller ensuite, vendre en dernier lieu."
         },
         {
           "title": "Pourquoi Dubaï, pour moi",
-          "body": "Dubaï continue de m'étonner par son ambition et par la diversité des personnes qui y bâtissent leur vie — investisseurs, entrepreneurs, familles venus du monde entier. C'est une ville où la rigueur et la transparence du marché rendent possible ce qui semblerait ailleurs plus incertain."
+          "body": "Dubaï continue de m'étonner par son ambition et par la diversité des personnes qui y bâtissent leur vie : investisseurs, entrepreneurs, familles venus du monde entier. C'est une ville où la rigueur et la transparence du marché rendent possible ce qui semblerait ailleurs plus incertain."
         },
         {
           "title": "Où je veux aller",
-          "body": "Je ne cherche pas à construire une grande structure. Je préfère rester à taille humaine — connaître chacun de mes clients personnellement plutôt que gérer un volume. Le jour où je ne pourrai plus répondre moi-même à chaque message, j'aurai grandi dans la mauvaise direction."
+          "body": "Je ne cherche pas à construire une grande structure. Je préfère rester à taille humaine : connaître chacun de mes clients personnellement plutôt que gérer un volume. Le jour où je ne pourrai plus répondre moi-même à chaque message, j'aurai grandi dans la mauvaise direction."
         }
       ],
       "quote": "Mon objectif est simple : que mes clients dorment tranquilles, sachant que leur patrimoine est investi intelligemment.",
@@ -384,7 +384,7 @@
       "principles": [
         {
           "title": "Écouter avant de conseiller",
-          "description": "Avant de vous montrer quoi que ce soit, je prends le temps de comprendre votre situation réelle — vos objectifs, vos contraintes, votre horizon. Pas un questionnaire type : une vraie conversation."
+          "description": "Avant de vous montrer quoi que ce soit, je prends le temps de comprendre votre situation réelle : vos objectifs, vos contraintes, votre horizon. Pas un questionnaire type : une vraie conversation."
         },
         {
           "title": "Sélectionner avec discipline",
@@ -392,7 +392,7 @@
         },
         {
           "title": "Des options comparées, jamais une solution unique",
-          "description": "Vous ne recevez jamais un projet unique présenté comme la solution. Je vous montre plusieurs opportunités, avec leurs avantages et leurs limites — la décision reste la vôtre."
+          "description": "Vous ne recevez jamais un projet unique présenté comme la solution. Je vous montre plusieurs opportunités, avec leurs avantages et leurs limites, la décision reste la vôtre."
         },
         {
           "title": "Je coordonne les bonnes personnes",
@@ -400,7 +400,7 @@
         },
         {
           "title": "Une stratégie qui évolue avec vous",
-          "description": "Votre situation change, vos objectifs aussi. Je reste votre interlocuteur pour ajuster la stratégie dans la durée — pas seulement au moment de l'achat."
+          "description": "Votre situation change, vos objectifs aussi. Je reste votre interlocuteur pour ajuster la stratégie dans la durée, pas seulement au moment de l'achat."
         }
       ]
     },

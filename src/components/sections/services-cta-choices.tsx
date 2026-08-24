@@ -34,14 +34,14 @@ export function ServicesCtaChoices({
             aria-pressed={isSelected}
             onClick={() => setSelected((current) => (current === i ? null : i))}
             className={cn(
-              "relative flex flex-col gap-2 rounded-2xl border bg-white p-6 pr-11 text-left transition-colors duration-200",
+              "relative flex flex-col gap-2 rounded-2xl border bg-white p-6 pe-11 text-start transition-colors duration-200",
               isSelected ? "border-gold bg-gold/[0.06]" : "border-beige-dark/70 hover:border-gold/40",
             )}
           >
             <span
               aria-hidden="true"
               className={cn(
-                "absolute top-6 right-6 size-2.5 shrink-0 rounded-full border transition-colors duration-200",
+                "absolute top-6 end-6 size-2.5 shrink-0 rounded-full border transition-colors duration-200",
                 isSelected ? "border-gold bg-gold" : "border-beige-dark bg-transparent",
               )}
             />

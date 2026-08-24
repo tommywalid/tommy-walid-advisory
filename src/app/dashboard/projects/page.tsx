@@ -19,14 +19,14 @@ export default function DashboardProjectsPage() {
     <>
       <DashboardPageHeader
         title="Projects"
-        description="The curated selection shown on the public site — target 20–30 live at a time."
+        description="The curated selection shown on the public site, target 20–30 live at a time."
         action={<NewItemButton label="New Project" />}
       />
 
       {projects.length === 0 ? (
         <DashboardEmptyState
           title="No projects yet"
-          body="Projects you add here will appear on /projects and, if featured, on the homepage — matching src/types/projects.ts exactly."
+          body="Projects you add here will appear on /projects and, if featured, on the homepage, matching src/types/projects.ts exactly."
         />
       ) : (
         <div className="overflow-hidden rounded-2xl border border-beige-dark/60 bg-white">

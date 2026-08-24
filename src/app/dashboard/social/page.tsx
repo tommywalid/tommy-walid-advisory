@@ -11,7 +11,7 @@ export default function DashboardSocialPage() {
     <>
       <DashboardPageHeader
         title="Social"
-        description="AI-generated social copy, drafted from an existing Project or Article — never invented independently, always reviewed before use."
+        description="AI-generated social copy, drafted from an existing Project or Article, never invented independently, always reviewed before use."
         action={
           <Button disabled className="gap-1.5 opacity-50">
             <Sparkles className="size-4" />
@@ -24,7 +24,7 @@ export default function DashboardSocialPage() {
       {snippets.length === 0 ? (
         <DashboardEmptyState
           title="No social drafts yet"
-          body="This is a drafting surface, not a posting/scheduling tool — generate a snippet from a Project or Article, review it, then copy it out. Publishing integrations are a later, separate step."
+          body="This is a drafting surface, not a posting/scheduling tool. Generate a snippet from a Project or Article, review it, then copy it out. Publishing integrations are a later, separate step."
         />
       ) : null}
     </>

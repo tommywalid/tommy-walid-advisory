@@ -12,7 +12,7 @@ export default function DashboardArticlesPage() {
     <>
       <DashboardPageHeader
         title="Articles"
-        description="For the future Market Insights journal — see docs/product/roadmap.md."
+        description="For the future Market Insights journal (see docs/product/roadmap.md)."
         action={<NewItemButton label="New Article" />}
       />
 

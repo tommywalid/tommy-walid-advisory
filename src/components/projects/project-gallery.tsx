@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import type { MediaAsset, MediaType } from "@/types/projects";
 import { cn } from "@/lib/utils";
@@ -27,6 +27,7 @@ export function ProjectGallery({
   mediaTypeLabels: Record<MediaType, string>;
 }) {
   const t = useTranslations("projects.gallery");
+  const isRtl = useLocale() === "ar";
   const [activeIndex, setActiveIndex] = useState(0);
 
   if (images.length === 0) {
@@ -53,8 +54,11 @@ export function ProjectGallery({
       <div
         className="relative h-[320px] w-full sm:h-[440px] lg:h-[560px]"
         onKeyDown={(e) => {
-          if (e.key === "ArrowLeft") goTo(activeIndex - 1);
-          if (e.key === "ArrowRight") goTo(activeIndex + 1);
+          // Physical arrow keys track visual direction, which mirrors under
+          // RTL along with the nav buttons themselves (see start-/end-
+          // positioning below) — so the mapping flips with `isRtl` too.
+          if (e.key === "ArrowLeft") goTo(activeIndex + (isRtl ? 1 : -1));
+          if (e.key === "ArrowRight") goTo(activeIndex + (isRtl ? -1 : 1));
         }}
       >
         {/*
@@ -79,7 +83,7 @@ export function ProjectGallery({
           />
         ))}
 
-        <span className="absolute top-4 left-4 rounded-full bg-forest/80 px-3 py-1 text-xs font-semibold text-cream backdrop-blur">
+        <span className="absolute top-4 start-4 rounded-full bg-forest/80 px-3 py-1 text-xs font-semibold text-cream backdrop-blur">
           {mediaTypeLabels[active.type]}
         </span>
 
@@ -89,20 +93,20 @@ export function ProjectGallery({
               type="button"
               aria-label={t("previous")}
               onClick={() => goTo(activeIndex - 1)}
-              className="absolute top-1/2 left-3 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-forest/70 text-cream backdrop-blur transition-colors hover:bg-forest/90 sm:left-5 sm:size-12"
+              className="absolute top-1/2 start-3 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-forest/70 text-cream backdrop-blur transition-colors hover:bg-forest/90 sm:start-5 sm:size-12"
             >
-              <ChevronLeft className="size-5 sm:size-6" />
+              <ChevronLeft className="size-5 rtl:rotate-180 sm:size-6" />
             </button>
             <button
               type="button"
               aria-label={t("next")}
               onClick={() => goTo(activeIndex + 1)}
-              className="absolute top-1/2 right-3 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-forest/70 text-cream backdrop-blur transition-colors hover:bg-forest/90 sm:right-5 sm:size-12"
+              className="absolute top-1/2 end-3 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-forest/70 text-cream backdrop-blur transition-colors hover:bg-forest/90 sm:end-5 sm:size-12"
             >
-              <ChevronRight className="size-5 sm:size-6" />
+              <ChevronRight className="size-5 rtl:rotate-180 sm:size-6" />
             </button>
 
-            <span className="absolute right-4 bottom-4 rounded-full bg-forest/80 px-3 py-1 text-xs font-medium text-cream backdrop-blur">
+            <span className="absolute end-4 bottom-4 rounded-full bg-forest/80 px-3 py-1 text-xs font-medium text-cream backdrop-blur">
               {activeIndex + 1} / {images.length}
             </span>
           </>

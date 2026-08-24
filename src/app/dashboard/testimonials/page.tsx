@@ -12,14 +12,14 @@ export default function DashboardTestimonialsPage() {
     <>
       <DashboardPageHeader
         title="Testimonials"
-        description="The public homepage currently shows labeled placeholder quotes from /messages — adding real ones here will replace them in a later step."
+        description="The public homepage currently shows labeled placeholder quotes from /messages. Adding real ones here will replace them in a later step."
         action={<NewItemButton label="New Testimonial" />}
       />
 
       {testimonials.length === 0 ? (
         <DashboardEmptyState
           title="No testimonials yet"
-          body="Real client testimonials, once available, are managed here — the homepage placeholder copy stays clearly labeled as such until then."
+          body="Real client testimonials, once available, are managed here. The homepage placeholder copy stays clearly labeled as such until then."
         />
       ) : (
         <div className="flex flex-col gap-3">

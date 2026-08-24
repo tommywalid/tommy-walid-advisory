@@ -64,7 +64,7 @@ export function ApproachExperience({
                   setActiveIndex((current) => (current === i ? null : i));
                 }}
                 className={cn(
-                  "border-t border-beige-dark py-6 text-left transition-opacity duration-300 first:border-t-0 first:pt-0",
+                  "border-t border-beige-dark py-6 text-start transition-opacity duration-300 first:border-t-0 first:pt-0",
                   activeIndex !== null && !active ? "opacity-70" : "opacity-100",
                 )}
               >

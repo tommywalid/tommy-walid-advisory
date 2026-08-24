@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
-const labels: Record<string, string> = { fr: "FR", en: "EN" };
+const labels: Record<string, string> = { fr: "🇫🇷 FR", en: "🇬🇧 EN", ar: "🇦🇪 UAE" };
 
 export function LocaleSwitcher({ dark = false }: { dark?: boolean }) {
   const locale = useLocale();

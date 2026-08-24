@@ -116,7 +116,7 @@ export async function Footer() {
           <p>
             © {year} {company.name}. {t("rights")}
           </p>
-          <p className="max-w-2xl sm:text-right">{t("disclaimer")}</p>
+          <p className="max-w-2xl sm:text-end">{t("disclaimer")}</p>
         </div>
       </div>
     </footer>

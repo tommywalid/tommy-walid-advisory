@@ -27,7 +27,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-beige-dark/70 bg-cream/85 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-        <Link href="/" aria-label={`${company.name} — ${t("home")}`}>
+        <Link href="/" aria-label={`${company.name}: ${t("home")}`}>
           <Logo />
         </Link>
 
@@ -82,7 +82,7 @@ export function Header() {
                       <Link
                         href={item.href}
                         className={cn(
-                          "rounded-lg border-l-2 px-3 py-3 font-heading text-lg transition-colors",
+                          "rounded-lg border-s-2 px-3 py-3 font-heading text-lg transition-colors",
                           active
                             ? "border-gold bg-beige/60 text-forest"
                             : "border-transparent text-forest hover:bg-beige",

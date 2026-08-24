@@ -59,7 +59,7 @@ export async function ServicesSummary({ id }: { id?: string }) {
                     </h3>
                     <ArrowRight
                       aria-hidden="true"
-                      className="size-4 shrink-0 -translate-x-1 text-gold-text opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
+                      className="size-4 shrink-0 -translate-x-1 rtl:translate-x-1 rtl:-scale-x-100 text-gold-text opacity-0 transition-all duration-200 group-hover:translate-x-0 rtl:group-hover:translate-x-0 group-hover:opacity-100"
                     />
                   </span>
                   <ul className="flex flex-col gap-1 text-sm leading-relaxed text-ink-soft">

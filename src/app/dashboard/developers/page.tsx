@@ -12,14 +12,14 @@ export default function DashboardDevelopersPage() {
     <>
       <DashboardPageHeader
         title="Developers"
-        description="One entry per builder, reused across every project of theirs — see src/types/projects.ts."
+        description="One entry per builder, reused across every project of theirs (see src/types/projects.ts)."
         action={<NewItemButton label="New Developer" />}
       />
 
       {developers.length === 0 ? (
         <DashboardEmptyState
           title="No developers yet"
-          body="A developer's trust note is written once here and reused across all their projects — no rewriting the same note per listing."
+          body="A developer's trust note is written once here and reused across all their projects, no rewriting the same note per listing."
         />
       ) : (
         <div className="overflow-hidden rounded-2xl border border-beige-dark/60 bg-white">

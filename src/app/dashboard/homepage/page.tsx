@@ -14,7 +14,7 @@ export default function DashboardHomepagePage() {
     <>
       <DashboardPageHeader
         title="Homepage"
-        description="What's currently curated for the public homepage — a control panel, not a duplicate of the Projects/Testimonials editors."
+        description="What's currently curated for the public homepage, a control panel, not a duplicate of the Projects/Testimonials editors."
       />
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -27,7 +27,7 @@ export default function DashboardHomepagePage() {
             {featuredProjects.length === 0 ? (
               <DashboardEmptyState
                 title="Nothing featured"
-                body="Mark a project as featured from its edit screen once available — the homepage section stays hidden entirely until then, by design."
+                body="Mark a project as featured from its edit screen once available. The homepage section stays hidden entirely until then, by design."
               />
             ) : (
               <ul className="flex flex-col gap-2">

@@ -7,7 +7,7 @@ import { StatCard } from "@/components/dashboard/stat-card";
 
 const reasonLabels: Record<string, string> = {
   "missing-recommendation": "Missing “Why I Recommend” note",
-  "recommendation-ai-draft-pending-review": "“Why I Recommend” is an AI draft — needs your review",
+  "recommendation-ai-draft-pending-review": "“Why I Recommend” is an AI draft, needs your review",
   "missing-cover-media": "Missing cover photo",
   "missing-price": "Missing starting price",
   "missing-payment-plan": "Missing payment plan",
@@ -15,7 +15,7 @@ const reasonLabels: Record<string, string> = {
   "missing-property-type": "Missing property type",
   "missing-developer-trust-note": "Developer missing “Why I Trust Them” note",
   "developer-trust-note-ai-draft-pending-review":
-    "Developer's “Why I Trust Them” is an AI draft — needs your review",
+    "Developer's “Why I Trust Them” is an AI draft, needs your review",
 };
 
 export default function DashboardOverviewPage() {
@@ -26,7 +26,7 @@ export default function DashboardOverviewPage() {
     <>
       <DashboardPageHeader
         title="Overview"
-        description="A real snapshot of your content — every number below is live, not illustrative."
+        description="A real snapshot of your content, every number below is live, not illustrative."
       />
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">

@@ -11,7 +11,7 @@ export function Topbar() {
     <header className="flex h-14 items-center justify-between border-b border-beige-dark bg-white px-8">
       <div className="flex items-center gap-2 text-xs font-medium text-gold">
         <ShieldAlert className="size-3.5" />
-        No authentication yet — do not deploy this route publicly.
+        No authentication yet. Do not deploy this route publicly.
       </div>
     </header>
   );

@@ -40,14 +40,14 @@ function Select({
       <select
         data-slot="select"
         className={cn(
-          "h-11 w-full appearance-none rounded-lg border border-beige-dark bg-white px-4 pr-10 text-sm text-ink transition-colors outline-none focus:border-gold",
+          "h-11 w-full appearance-none rounded-lg border border-beige-dark bg-white px-4 pe-10 text-sm text-ink transition-colors outline-none focus:border-gold",
           className,
         )}
         {...props}
       >
         {children}
       </select>
-      <ChevronDown className="pointer-events-none absolute top-1/2 right-4 size-4 -translate-y-1/2 text-ink-soft" />
+      <ChevronDown className="pointer-events-none absolute top-1/2 end-4 size-4 -translate-y-1/2 text-ink-soft" />
     </div>
   );
 }

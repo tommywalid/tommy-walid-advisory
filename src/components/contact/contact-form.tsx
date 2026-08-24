@@ -47,7 +47,7 @@ export function ContactForm({
     ].filter((line) => line !== null);
 
     const mailto = `mailto:${company.email}?subject=${encodeURIComponent(
-      `${t("formTitle")} — ${name || company.name}`,
+      `${t("formTitle")}: ${name || company.name}`,
     )}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
 
     window.location.href = mailto;

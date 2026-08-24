@@ -162,7 +162,7 @@ function renderBubbleInner(node: ServicesRadialNode, isActive: boolean, number: 
             <span className="mt-2 text-xs leading-relaxed text-ink-soft sm:text-sm">{node.description}</span>
           ) : null}
           {node.items ? (
-            <ul className="mt-2 flex w-full flex-col gap-1 text-left text-xs leading-relaxed text-ink-soft sm:text-sm">
+            <ul className="mt-2 flex w-full flex-col gap-1 text-start text-xs leading-relaxed text-ink-soft sm:text-sm">
               {node.items.map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <span aria-hidden="true" className="mt-[0.5em] size-1 shrink-0 rounded-full bg-gold" />
@@ -171,7 +171,7 @@ function renderBubbleInner(node: ServicesRadialNode, isActive: boolean, number: 
               ))}
             </ul>
           ) : null}
-          {isLink ? <ArrowRight aria-hidden="true" className="mt-3 size-4 text-gold-text" /> : null}
+          {isLink ? <ArrowRight aria-hidden="true" className="mt-3 size-4 text-gold-text rtl:-scale-x-100" /> : null}
         </>
       ) : null}
     </>
@@ -279,8 +279,8 @@ export function ServicesRadial({
             const isOtherActive = activeIndex !== null && !isActive;
             const number = String(i + 1).padStart(2, "0");
             const ariaLabel = isActive
-              ? `${number} — ${node.title}. ${node.description ?? node.items?.join(", ") ?? ""}`
-              : `${number} — ${node.title}`;
+              ? `${number}: ${node.title}. ${node.description ?? node.items?.join(", ") ?? ""}`
+              : `${number}: ${node.title}`;
             const style = {
               left: `${x}%`,
               top: `${y}%`,

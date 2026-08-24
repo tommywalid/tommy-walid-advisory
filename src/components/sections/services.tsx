@@ -72,14 +72,14 @@ export async function Services({
         <ol className="mt-10 flex flex-col lg:hidden">
           {phases.map((phase, i) => (
             <Reveal as="li" key={phase.title} delay={i * 0.06}>
-              <div className="relative pb-12 pl-14 last:pb-0">
+              <div className="relative pb-12 ps-14 last:pb-0">
                 {i < phases.length - 1 ? (
                   <span
                     aria-hidden
-                    className="absolute top-10 bottom-0 left-5 w-px bg-beige-dark"
+                    className="absolute top-10 bottom-0 start-5 w-px bg-beige-dark"
                   />
                 ) : null}
-                <span className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-full bg-forest font-heading text-sm text-gold-light">
+                <span className="absolute top-0 start-0 flex size-10 items-center justify-center rounded-full bg-forest font-heading text-sm text-gold-light">
                   {i + 1}
                 </span>
                 <h3 className="font-heading text-xl text-forest">

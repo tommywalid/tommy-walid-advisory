@@ -5,7 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 
 import { routing, type AppLocale } from "@/i18n/routing";
 import { company } from "@/config/company";
-import { fraunces, inter } from "@/lib/fonts";
+import { fraunces, inter, notoKufiArabic, notoSansArabic } from "@/lib/fonts";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import "../globals.css";
@@ -62,11 +62,13 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
   setRequestLocale(locale as AppLocale);
   const messages = await getMessages();
+  const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
     <html
       lang={locale}
-      className={`${fraunces.variable} ${inter.variable} h-full`}
+      dir={dir}
+      className={`${fraunces.variable} ${inter.variable} ${notoKufiArabic.variable} ${notoSansArabic.variable} h-full`}
     >
       <body className="flex min-h-full flex-col bg-cream text-ink antialiased">
         <NextIntlClientProvider messages={messages}>

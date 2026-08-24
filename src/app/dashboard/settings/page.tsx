@@ -27,7 +27,7 @@ export default function DashboardSettingsPage() {
     <>
       <DashboardPageHeader
         title="Settings"
-        description="Business information — currently sourced from src/config/company.ts. Editable here once the backend is connected."
+        description="Business information, currently sourced from src/config/company.ts. Editable here once the backend is connected."
       />
 
       <Card className="max-w-2xl bg-white">

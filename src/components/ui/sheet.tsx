@@ -43,13 +43,13 @@ function SheetContent({
       <DialogPrimitive.Content
         data-slot="sheet-content"
         className={cn(
-          "fixed inset-y-0 right-0 z-50 flex h-full w-full max-w-sm translate-x-full flex-col gap-6 border-l border-beige-dark bg-cream px-6 py-6 shadow-xl transition-transform duration-300 ease-in-out data-[state=open]:translate-x-0",
+          "fixed inset-y-0 end-0 z-50 flex h-full w-full max-w-sm translate-x-full rtl:-translate-x-full flex-col gap-6 border-s border-beige-dark bg-cream px-6 py-6 shadow-xl transition-transform duration-300 ease-in-out data-[state=open]:translate-x-0 rtl:data-[state=open]:translate-x-0",
           className,
         )}
         {...props}
       >
         {children}
-        <DialogPrimitive.Close className="absolute top-6 right-6 rounded-full p-1.5 text-forest transition-colors hover:bg-beige">
+        <DialogPrimitive.Close className="absolute top-6 end-6 rounded-full p-1.5 text-forest transition-colors hover:bg-beige">
           <X className="size-5" />
           <span className="sr-only">Close</span>
         </DialogPrimitive.Close>

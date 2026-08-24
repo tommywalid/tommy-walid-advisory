@@ -93,22 +93,25 @@ export function factOrPending(value: string): string {
 }
 
 /**
- * Returns the requested locale's text, falling back to the other locale if
- * that one is empty, then "—" if both are (e.g. content researched
- * English-only, or a field genuinely not yet written). Centralizes the
- * fallback so no page ever shows a blank paragraph where a note belongs.
+ * Returns the requested locale's text, falling back to English then French
+ * if the requested one is empty, then "—" if all are (e.g. content
+ * researched English-only, or a field genuinely not yet written). Arabic
+ * (`text.ar`) is optional per LocalizedText — most catalog entries don't
+ * have it yet, so `ar` requests fall back to English exactly like a missing
+ * `fr` field always has. Centralizes the fallback so no page ever shows a
+ * blank paragraph where a note belongs.
  */
 export function localizedText(text: LocalizedText, locale: string): string {
-  const primary = locale === "fr" ? text.fr : text.en;
-  const fallback = locale === "fr" ? text.en : text.fr;
-  return primary.trim() || fallback.trim() || "—";
+  const byLocale: Record<string, string | undefined> = { fr: text.fr, en: text.en, ar: text.ar };
+  const primary = byLocale[locale] ?? text.en;
+  return primary.trim() || text.en.trim() || text.fr.trim() || "—";
 }
 
-/** Same as localizedText, but "" (not "—") when both are empty — for callers that hide the block instead of showing a placeholder. */
+/** Same as localizedText, but "" (not "—") when all are empty — for callers that hide the block instead of showing a placeholder. */
 export function localizedTextOrEmpty(text: LocalizedText, locale: string): string {
-  const primary = locale === "fr" ? text.fr : text.en;
-  const fallback = locale === "fr" ? text.en : text.fr;
-  return primary.trim() || fallback.trim();
+  const byLocale: Record<string, string | undefined> = { fr: text.fr, en: text.en, ar: text.ar };
+  const primary = byLocale[locale] ?? text.en;
+  return primary.trim() || text.en.trim() || text.fr.trim();
 }
 
 /** "metro-access" → "Metro Access" — fallback label for a tag with no translation entry yet. */
