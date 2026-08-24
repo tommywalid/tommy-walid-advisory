@@ -28,15 +28,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-beige-dark/70 bg-cream/85 backdrop-blur-md">
       <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-6 lg:px-10">
-        <Link href="/" aria-label={`${company.name}: ${t("home")}`}>
+        <Link href="/" aria-label={`${company.name}: ${t("home")}`} className="flex items-center gap-3">
           <Image
             src="/images/brand/logo-gold-coin.png"
-            alt={company.name}
-            width={96}
-            height={96}
+            alt=""
+            width={72}
+            height={72}
             priority
-            className="size-20 sm:size-24"
+            className="size-[60px] sm:size-[72px]"
           />
+          <Logo className="uppercase" />
         </Link>
 
         <nav className="hidden items-center gap-9 lg:flex">
