@@ -6,6 +6,35 @@ import { Card } from "@/components/ui/card";
 import { Reveal } from "@/components/motion/reveal";
 
 /**
+ * Make currently writes `media_url` as a Google Drive
+ * `uc?export=download&id={fileId}` link, which doesn't reliably render
+ * inline as an `<img>`/`<video>` source in a browser. Drive's own
+ * `lh3.googleusercontent.com/d/{fileId}` form does. This resolves that at
+ * render time only — Make and Supabase still write/store the old format
+ * unchanged; nothing else in the pipeline is touched.
+ *
+ * Any URL that isn't a `drive.google.com` link with an `id` query param
+ * (already-migrated googleusercontent URLs, any other host, or a
+ * malformed value) is returned as-is rather than risk producing a broken
+ * one.
+ */
+function resolveMediaUrl(url: string): string {
+  let parsed: URL;
+  try {
+    parsed = new URL(url);
+  } catch {
+    return url;
+  }
+
+  if (parsed.hostname !== "drive.google.com") return url;
+
+  const fileId = parsed.searchParams.get("id");
+  if (!fileId) return url;
+
+  return `https://lh3.googleusercontent.com/d/${fileId}`;
+}
+
+/**
  * One Market Insight, in the same card language as ProjectCard (Card,
  * p-0 + inner padding, aspect-[4/3] cover). Cover is an <img> or a
  * <video> depending on `mediaType` — plain HTML elements rather than
@@ -21,6 +50,7 @@ export async function MarketInsightCard({
   delay?: number;
 }) {
   const locale = await getLocale();
+  const mediaUrl = resolveMediaUrl(insight.mediaUrl);
   const date = new Date(insight.publishedAt);
   const formattedDate = Number.isNaN(date.getTime())
     ? null
@@ -36,7 +66,7 @@ export async function MarketInsightCard({
         <div className="relative aspect-[4/3] w-full overflow-hidden bg-beige">
           {insight.mediaType === "video" ? (
             <video
-              src={insight.mediaUrl}
+              src={mediaUrl}
               controls
               playsInline
               preload="metadata"
@@ -45,7 +75,7 @@ export async function MarketInsightCard({
           ) : (
             // eslint-disable-next-line @next/next/no-img-element
             <img
-              src={insight.mediaUrl}
+              src={mediaUrl}
               alt=""
               className="size-full object-cover"
             />
@@ -57,17 +87,11 @@ export async function MarketInsightCard({
             {localizedMessage(insight.message, locale)}
           </p>
 
-          <div className="mt-auto flex items-center justify-between gap-3 pt-6 text-xs text-ink-soft">
-            <a
-              href={insight.sourceUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium tracking-wide uppercase transition-colors hover:text-forest"
-            >
-              {insight.sourceName}
-            </a>
-            {formattedDate ? <time dateTime={insight.publishedAt}>{formattedDate}</time> : null}
-          </div>
+          {formattedDate ? (
+            <div className="mt-auto flex items-center justify-end gap-3 pt-6 text-xs text-ink-soft">
+              <time dateTime={insight.publishedAt}>{formattedDate}</time>
+            </div>
+          ) : null}
         </div>
       </Card>
     </Reveal>
