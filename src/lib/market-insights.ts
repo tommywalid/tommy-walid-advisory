@@ -13,6 +13,7 @@ type MarketInsightRow = {
   source_name: string;
   source_url: string;
   published_at: string;
+  is_test: boolean;
 };
 
 function toMarketInsight(row: MarketInsightRow): MarketInsight {
@@ -36,6 +37,9 @@ function toMarketInsight(row: MarketInsightRow): MarketInsight {
  * treated as published — there's no draft/published flag on this table
  * (Make only inserts a row once the content is ready to go live).
  *
+ * Rows flagged `is_test` (written by debug/test scenarios in Make) are
+ * excluded — they never represent real published content.
+ *
  * Returns `[]` — never throws — when Supabase isn't configured yet or a
  * request fails, so the public page always has an honest empty state to
  * fall back to instead of a broken page. Logs the failure server-side so
@@ -47,6 +51,7 @@ export async function getMarketInsights(): Promise<MarketInsight[]> {
   const { data, error } = await supabase
     .from("market_insights")
     .select("*")
+    .eq("is_test", false)
     .order("published_at", { ascending: false });
 
   if (error) {
