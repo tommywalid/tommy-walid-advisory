@@ -10,6 +10,7 @@ import {
   FacebookIcon,
   YoutubeIcon,
   TiktokIcon,
+  TelegramIcon,
   WhatsappIcon,
 } from "@/components/brand/social-icons";
 
@@ -19,6 +20,7 @@ const socialLinks = [
   { href: company.social.facebook, label: "Facebook", Icon: FacebookIcon },
   { href: company.social.youtube, label: "YouTube", Icon: YoutubeIcon },
   { href: company.social.tiktok, label: "TikTok", Icon: TiktokIcon },
+  { href: company.social.telegram, label: "Telegram", Icon: TelegramIcon },
 ];
 
 export async function Footer() {

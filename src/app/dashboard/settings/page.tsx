@@ -47,6 +47,7 @@ export default function DashboardSettingsPage() {
           <Field label="Facebook" value={company.social.facebook} />
           <Field label="TikTok" value={company.social.tiktok} />
           <Field label="YouTube" value={company.social.youtube} />
+          <Field label="Telegram" value={company.social.telegram} />
         </div>
       </Card>
     </>

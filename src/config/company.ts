@@ -35,9 +35,10 @@ export const company = {
   social: {
     linkedin: "https://www.linkedin.com/in/walid-toumi-4a87535",
     instagram: "https://www.instagram.com/tommy_walid_01/",
-    facebook: "https://www.facebook.com/search/top?q=tommy%20dubai%20real%20estate",
+    facebook: "https://www.facebook.com/share/19oFNzMiLe/",
     tiktok: "https://www.tiktok.com/@walid.tommy7",
     youtube: "https://www.youtube.com/@WalidTOMMY01",
+    telegram: "https://t.me/tommy_walid",
   },
 
   /**
