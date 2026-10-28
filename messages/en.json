@@ -519,7 +519,8 @@
         "name": "Please enter your first and last name.",
         "phone": "Invalid WhatsApp number.",
         "email": "Invalid email address.",
-        "consent": "Please agree to be contacted."
+        "consent": "Please agree to be contacted.",
+        "submit": "Your request could not be sent. Please try again in a moment."
       }
     },
     "thanks": {

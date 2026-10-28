@@ -527,7 +527,8 @@
         "name": "Merci d'indiquer votre prénom et votre nom.",
         "phone": "Numéro WhatsApp invalide.",
         "email": "Adresse email invalide.",
-        "consent": "Merci d'accepter d'être contacté(e)."
+        "consent": "Merci d'accepter d'être contacté(e).",
+        "submit": "L'envoi n'a pas abouti. Merci de réessayer dans un instant."
       }
     },
     "thanks": {

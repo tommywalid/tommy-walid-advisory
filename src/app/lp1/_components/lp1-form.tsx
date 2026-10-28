@@ -1,45 +1,35 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
-import { company } from "@/config/company";
+import { company, getWhatsAppLink } from "@/config/company";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input, Select } from "@/components/ui/input";
+import { WhatsappIcon } from "@/components/brand/social-icons";
+import {
+  budgetKeys,
+  countryCodes,
+  goalKeys,
+  horizonKeys,
+  trackingKeys,
+  validateLead,
+  type Lp1ErrorKey,
+  type Lp1LeadInput,
+} from "../_lib/lead";
 
 /**
- * LP1 qualification form — DISPLAY ONLY, NOT CONNECTED.
+ * LP1 qualification form.
  *
- * Fields are rendered and validated client-side, but a valid submission
- * deliberately does nothing: no network call, no storage, no tracking.
- * The integration (Make webhook → Supabase) will be wired here later, at
- * the marked TODO, once approved. Option keys mirror the values expected
- * by the future lead pipeline.
+ * Submits to the same-origin server endpoint /lp1/api/lead, which forwards
+ * to the Make webhook (Make → Supabase → notification). The browser never
+ * holds the webhook URL or any key. The thank-you state is shown only when
+ * the server confirms the lead was stored; on failure the visitor sees an
+ * error and keeps everything they typed, so they can retry.
  */
-const budgetKeys = ["moins_150k", "150k_250k", "250k_500k", "plus_500k"] as const;
-const goalKeys = ["locatif", "plus_value", "residence", "diversification"] as const;
-const horizonKeys = ["0_3_mois", "3_6_mois", "6_12_mois", "renseigne"] as const;
-
-const countryCodes = [
-  { value: "+33|FR", label: "🇫🇷 +33" },
-  { value: "+32|BE", label: "🇧🇪 +32" },
-  { value: "+41|CH", label: "🇨🇭 +41" },
-  { value: "+352|LU", label: "🇱🇺 +352" },
-  { value: "+212|MA", label: "🇲🇦 +212" },
-  { value: "+1|CA", label: "🇨🇦 +1" },
-  { value: "+971|AE", label: "🇦🇪 +971" },
-  { value: "+44|GB", label: "🇬🇧 +44" },
-  { value: "+49|DE", label: "🇩🇪 +49" },
-  { value: "+31|NL", label: "🇳🇱 +31" },
-  { value: "+34|ES", label: "🇪🇸 +34" },
-  { value: "+39|IT", label: "🇮🇹 +39" },
-  { value: "+216|TN", label: "🇹🇳 +216" },
-  { value: "+213|DZ", label: "🇩🇿 +213" },
-  { value: "+966|SA", label: "🇸🇦 +966" },
-] as const;
-
-type ErrorKey = "questions" | "name" | "phone" | "email" | "consent";
+type Status = "idle" | "sending" | "success";
+type ErrorKey = Lp1ErrorKey | "submit";
 
 function OptionGroup({
   name,
@@ -80,27 +70,98 @@ function StepLabel({ children }: { children: React.ReactNode }) {
 
 export function Lp1Form() {
   const t = useTranslations("lp1.form");
+  const tThanks = useTranslations("lp1.thanks");
+  const lang = useLocale();
+  const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<ErrorKey | null>(null);
+  const [firstName, setFirstName] = useState("");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (status === "sending") return;
+
     const data = new FormData(event.currentTarget);
     const get = (key: string) => String(data.get(key) ?? "").trim();
 
-    let next: ErrorKey | null = null;
-    if (!get("budget") || !get("goal") || !get("horizon")) next = "questions";
-    else if (!get("firstName") || !get("lastName")) next = "name";
-    else if (!/^\+?\d{8,15}$/.test(get("whatsapp").replace(/[\s.\-()]/g, ""))) next = "phone";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(get("email"))) next = "email";
-    else if (!data.get("consent")) next = "consent";
+    const fields = {
+      budget: get("budget"),
+      goal: get("goal"),
+      horizon: get("horizon"),
+      firstName: get("firstName"),
+      lastName: get("lastName"),
+      countryCode: get("countryCode"),
+      whatsapp: get("whatsapp"),
+      email: get("email"),
+      consent: data.get("consent") !== null,
+    };
 
-    setError(next);
-    // TODO(lp1-integration): send the lead once the pipeline is approved.
-    // Intentionally a no-op for now — nothing leaves the browser.
+    const validationError = validateLead(fields);
+    setError(validationError);
+    if (validationError) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const payload: Lp1LeadInput = {
+      ...fields,
+      lang,
+      segment: params.get("seg") ?? "",
+      pageUrl: window.location.href.split("#")[0],
+      ...Object.fromEntries(trackingKeys.map((key) => [key, params.get(key) ?? ""])),
+    };
+
+    setStatus("sending");
+    try {
+      const response = await fetch("/lp1/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = (await response.json().catch(() => null)) as { ok?: boolean } | null;
+
+      if (response.ok && result?.ok === true) {
+        setFirstName(fields.firstName);
+        setStatus("success");
+        return;
+      }
+      setStatus("idle");
+      setError("submit");
+    } catch {
+      setStatus("idle");
+      setError("submit");
+    }
   }
 
+  if (status === "success") {
+    const whatsappHref = getWhatsAppLink();
+    return (
+      <div className="py-4 text-center" role="status">
+        <div className="mx-auto mb-4 grid size-14 place-items-center rounded-full bg-gold">
+          <svg aria-hidden width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-forest">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </div>
+        <h2 className="font-heading text-2xl text-forest sm:text-[28px]">
+          {tThanks("title", { name: firstName })}
+        </h2>
+        <p className="mt-3 mb-6 text-sm leading-relaxed text-ink-soft">{tThanks("body")}</p>
+        {whatsappHref ? (
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-white"
+          >
+            <WhatsappIcon className="size-4" />
+            {tThanks("whatsapp")}
+          </a>
+        ) : null}
+      </div>
+    );
+  }
+
+  const sending = status === "sending";
+
   return (
-    <form onSubmit={handleSubmit} noValidate>
+    <form onSubmit={handleSubmit} noValidate aria-busy={sending}>
       <h2 className="font-heading text-2xl text-forest sm:text-[28px]">{t("title")}</h2>
       <p className="mt-1.5 text-sm text-ink-soft">{t("subtitle")}</p>
 
@@ -153,7 +214,7 @@ export function Lp1Form() {
         </span>
       </label>
 
-      <Button type="submit" size="lg" className="w-full">
+      <Button type="submit" size="lg" className="w-full" disabled={sending}>
         {t("submit")}
       </Button>
       <p role="alert" className={cn("mt-2.5 min-h-[1em] text-sm text-red-700", !error && "sr-only")}>
