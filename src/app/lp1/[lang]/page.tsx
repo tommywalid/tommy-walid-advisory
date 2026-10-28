@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/accordion";
 import { Lp1Form } from "../_components/lp1-form";
 import { Lp1StickyCta } from "../_components/lp1-sticky-cta";
+import { Lp1Consent } from "../_components/lp1-consent";
 
 /**
  * LP1 — standalone landing page (/lp1/fr, /lp1/en, /lp1/ar).
@@ -283,6 +284,7 @@ export default async function Lp1Page({
       </footer>
 
       <Lp1StickyCta label={t("sticky.cta")} targetId={FORM_ID} />
+      <Lp1Consent pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID ?? ""} />
     </>
   );
 }

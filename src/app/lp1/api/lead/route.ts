@@ -139,7 +139,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: false, error: "upstream" }, { status: 502 });
     }
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, event_id: payload.event_id });
   } catch (error) {
     console.error(
       `[lp1/lead] Make webhook unreachable (${error instanceof Error ? error.message : String(error)}) — lead payload:`,

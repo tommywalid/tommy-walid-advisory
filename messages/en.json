@@ -644,6 +644,11 @@
     },
     "sticky": {
       "cta": "Book my complimentary call"
+    },
+    "consent": {
+      "text": "This site uses ad performance cookies.",
+      "accept": "Accept",
+      "decline": "Decline"
     }
   }
 }
