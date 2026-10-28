@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 
 import { company, getWhatsAppLink } from "@/config/company";
@@ -75,6 +75,22 @@ export function Lp1Form() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<ErrorKey | null>(null);
   const [firstName, setFirstName] = useState("");
+  const thanksRef = useRef<HTMLDivElement>(null);
+
+  // The thank-you block is much shorter than the form it replaces, so
+  // without this the visitor is left looking at empty space below it.
+  // Bring it into view and move focus to it (screen readers announce it).
+  useEffect(() => {
+    if (status !== "success") return;
+    const node = thanksRef.current;
+    if (!node) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    (document.getElementById("form") ?? node).scrollIntoView({
+      behavior: reduceMotion ? "auto" : "smooth",
+      block: "start",
+    });
+    node.focus({ preventScroll: true });
+  }, [status]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -133,7 +149,7 @@ export function Lp1Form() {
   if (status === "success") {
     const whatsappHref = getWhatsAppLink();
     return (
-      <div className="py-4 text-center" role="status">
+      <div ref={thanksRef} tabIndex={-1} className="py-4 text-center outline-none" role="status">
         <div className="mx-auto mb-4 grid size-14 place-items-center rounded-full bg-gold">
           <svg aria-hidden width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-forest">
             <polyline points="20 6 9 17 4 12" />
