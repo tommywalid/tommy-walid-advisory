@@ -459,5 +459,198 @@
         { "title": "Contact", "body": "Contenu à finaliser." }
       ]
     }
+  },
+  "lp1": {
+    "meta": {
+      "title": "Investir à Dubaï : ce que les brochures ne vous disent pas — Appel conseil offert | Tommy Walid",
+      "description": "Frais cachés, pièges du sur-plan, rendements affichés vs réels : réservez un appel conseil de 15 minutes avec un conseiller francophone basé à Dubaï."
+    },
+    "brand": {
+      "monogram": "TW",
+      "name": "TOMMY WALID",
+      "tagline": "Conseiller immobilier · Dubai Investissement"
+    },
+    "hero": {
+      "kicker": "Investir à Dubaï · la face cachée",
+      "title": "Investir à Dubaï : ce que les brochures <em>ne vous disent pas</em>",
+      "lead": "Rendements alléchants, paiements échelonnés, vue sur la marina… La réalité est plus nuancée. En 15 minutes, un conseiller francophone basé à Dubaï vous montre ce qui se cache derrière les annonces, avant que vous n'engagiez un euro.",
+      "bullets": {
+        "b1": "Les <strong>frais cachés</strong> qui grignotent votre rendement réel",
+        "b2": "Les <strong>pièges du sur-plan</strong> que l'on découvre trop tard",
+        "b3": "Le <strong>rendement affiché</strong> face au rendement net, une fois tout payé",
+        "b4": "Comment <strong>repérer un promoteur fiable</strong> et un projet surévalué"
+      },
+      "trust": {
+        "t1": "<b>Francophone</b> · basé à Dubaï",
+        "t2": "<b>Agence agréée</b> RERA",
+        "t3": "<b>Sans engagement</b>"
+      },
+      "photoAlt": "Walid Toumi (Tommy Walid), conseiller immobilier à Dubaï"
+    },
+    "form": {
+      "title": "Réservez votre appel conseil",
+      "subtitle": "15 minutes, offert, par WhatsApp ou téléphone.",
+      "steps": {
+        "budget": "1 · Votre budget d'investissement",
+        "goal": "2 · Votre objectif principal",
+        "horizon": "3 · Votre horizon",
+        "contact": "4 · Vos coordonnées"
+      },
+      "budget": {
+        "moins_150k": "Moins de 150 000 €",
+        "150k_250k": "150 000 – 250 000 €",
+        "250k_500k": "250 000 – 500 000 €",
+        "plus_500k": "Plus de 500 000 €"
+      },
+      "goal": {
+        "locatif": "Revenus locatifs",
+        "plus_value": "Plus-value / revente",
+        "residence": "Résidence / pied-à-terre",
+        "diversification": "Diversifier mon patrimoine"
+      },
+      "horizon": {
+        "0_3_mois": "Dans les 3 mois",
+        "3_6_mois": "3 à 6 mois",
+        "6_12_mois": "6 à 12 mois",
+        "renseigne": "Je me renseigne"
+      },
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "countryCode": "Indicatif pays",
+      "whatsapp": "Numéro WhatsApp",
+      "email": "Email",
+      "consent": "J'accepte d'être contacté(e) par WhatsApp, téléphone ou email au sujet de mon projet. Mes données sont utilisées uniquement à cette fin et peuvent être supprimées sur simple demande (<link>nous écrire</link>).",
+      "submit": "Réserver mon appel offert →",
+      "reassure": "🔒 Réponse sous 24 h ouvrées · Aucun démarchage abusif",
+      "errors": {
+        "questions": "Merci de répondre aux 3 questions.",
+        "name": "Merci d'indiquer votre prénom et votre nom.",
+        "phone": "Numéro WhatsApp invalide.",
+        "email": "Adresse email invalide.",
+        "consent": "Merci d'accepter d'être contacté(e)."
+      }
+    },
+    "thanks": {
+      "title": "Merci {name} !",
+      "body": "Votre demande est bien reçue. Je vous contacte personnellement sur WhatsApp dans les prochaines heures pour fixer votre appel.",
+      "whatsapp": "M'écrire directement sur WhatsApp"
+    },
+    "truth": {
+      "kicker": "La vérité derrière la brochure",
+      "title": "Ce que l'on vous montre… et ce que l'on ne vous dit pas",
+      "intro": "Rendus 3D, piscines à débordement, rendements à deux chiffres. Avant de signer, voici les sujets que je passe en revue avec chaque investisseur.",
+      "imageAlt": "Brochure d'un projet immobilier avec analyse du prix d'achat, des frais et du rendement net",
+      "caption": "Ce que montre la brochure",
+      "listTitle": "Ce qu'elle ne vous dit pas",
+      "items": [
+        {
+          "title": "Les frais à l'achat",
+          "body": "Plusieurs frais s'ajoutent au prix affiché. Beaucoup d'acheteurs ne les découvrent qu'à la signature."
+        },
+        {
+          "title": "Les charges annuelles",
+          "body": "Charges de copropriété, gestion locative, ameublement : ce qui sépare le rendement brut annoncé du rendement net réel."
+        },
+        {
+          "title": "Les retards de livraison",
+          "body": "Ce que prévoit vraiment le contrat, et comment vérifier l'historique d'un promoteur avant de lui confier votre argent."
+        },
+        {
+          "title": "La revente avant livraison",
+          "body": "Les conditions imposées par certains promoteurs pour revendre, à connaître avant de réserver."
+        },
+        {
+          "title": "Le « prix de lancement »",
+          "body": "Comment savoir si un prix est réellement attractif face aux transactions enregistrées au Dubai Land Department."
+        }
+      ],
+      "cta": "Je veux connaître la vérité →"
+    },
+    "process": {
+      "title": "Comment ça se passe",
+      "intro": "Un processus simple, pensé pour les investisseurs qui achètent à distance.",
+      "imageAlt": "Walid Toumi en rendez-vous conseil avec un couple d'investisseurs",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Vous remplissez le formulaire",
+          "body": "30 secondes pour préciser votre budget, votre objectif et votre horizon."
+        },
+        {
+          "number": "02",
+          "title": "Appel conseil de 15 min",
+          "body": "Nous faisons le point sur votre situation et répondons à vos questions, par WhatsApp ou téléphone."
+        },
+        {
+          "number": "03",
+          "title": "Sélection sur mesure",
+          "body": "Si c'est pertinent, vous recevez une sélection de projets adaptés, avec plans de paiement et documents officiels."
+        }
+      ]
+    },
+    "why": {
+      "title": "Pourquoi Dubaï attire les investisseurs",
+      "intro": "Les arguments qui reviennent le plus souvent chez les investisseurs que j'accompagne.",
+      "items": [
+        {
+          "title": "Fiscalité locale",
+          "body": "Pas d'impôt sur le revenu aux Émirats sur les loyers. Les règles de votre pays de résidence s'appliquent : nous identifions les points à vérifier avec votre conseiller."
+        },
+        {
+          "title": "Paiement échelonné",
+          "body": "Sur le neuf (sur-plan), les promoteurs proposent des paiements étalés pendant la construction, parfois au-delà de la livraison."
+        },
+        {
+          "title": "Achat 100 % à distance",
+          "body": "Réservation, contrats et enregistrement auprès du Dubai Land Department peuvent se faire sans voyager."
+        }
+      ]
+    },
+    "about": {
+      "photoAlt": "Walid Toumi, conseiller immobilier à Dubaï",
+      "role": "Votre interlocuteur",
+      "name": "Walid Toumi — Tommy Walid",
+      "p1": "Sales Team Leader chez Dubai Investissement (HBS Group), à Business Bay. J'accompagne des investisseurs francophones d'Europe dans leurs projets immobiliers sur plan à Dubaï.",
+      "p2": "Mon rôle : vous donner une lecture honnête du marché, filtrer les projets et vous accompagner de la réservation jusqu'à la remise des clés — en français, en arabe ou en anglais."
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "question": "Un non-résident peut-il acheter à Dubaï ?",
+          "answer": "Oui. Les étrangers peuvent acheter en pleine propriété (freehold) dans les zones désignées, qui couvrent la plupart des quartiers recherchés par les investisseurs."
+        },
+        {
+          "question": "Dois-je me déplacer à Dubaï ?",
+          "answer": "Non, l'achat peut être réalisé entièrement à distance. Beaucoup de clients viennent néanmoins visiter une fois leur sélection faite."
+        },
+        {
+          "question": "À partir de quel budget peut-on investir ?",
+          "answer": "Cela dépend du quartier et du type de bien. Nous en parlons pendant l'appel pour vous donner des fourchettes réalistes, sans promesse irréaliste."
+        },
+        {
+          "question": "Et la fiscalité dans mon pays ?",
+          "answer": "Vous restez soumis aux règles fiscales de votre pays de résidence. Je ne suis pas conseiller fiscal : je vous indique les points à valider avec votre comptable ou votre notaire."
+        },
+        {
+          "question": "L'appel m'engage-t-il à quelque chose ?",
+          "answer": "Non. L'appel est offert et sans engagement. Son but est de vous aider à décider si Dubaï correspond à votre projet."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à y voir plus clair ?",
+      "intro": "15 minutes pour savoir si Dubaï correspond à votre projet.",
+      "button": "Réserver mon appel offert"
+    },
+    "legal": {
+      "agency": "<b>Dubai Investissement — HBS Group</b> · Ubora Tower, Business Bay, Dubaï, Émirats arabes unis",
+      "registration": "ORN : [ORN_AGENCE] · BRN : [BRN_WALID] · Permis Trakheesi : [NUMERO_TRAKHEESI]",
+      "disclaimer": "Les informations de cette page sont fournies à titre indicatif et ne constituent ni un conseil fiscal ni un conseil en investissement. Les performances passées ne préjugent pas des performances futures.",
+      "copyright": "© {year} Tommy Walid · <link>tommywalid.com</link>"
+    },
+    "sticky": {
+      "cta": "Réserver mon appel offert"
+    }
   }
 }

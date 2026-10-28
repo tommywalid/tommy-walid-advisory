@@ -451,5 +451,198 @@
         { "title": "Contact", "body": "Content to be finalized." }
       ]
     }
+  },
+  "lp1": {
+    "meta": {
+      "title": "Investing in Dubai: What the Brochures Don't Tell You — Complimentary Advisory Call | Tommy Walid",
+      "description": "Hidden fees, off-plan pitfalls, advertised vs. actual returns: book a 15-minute advisory call with a French-speaking advisor based in Dubai."
+    },
+    "brand": {
+      "monogram": "TW",
+      "name": "TOMMY WALID",
+      "tagline": "Real Estate Advisor · Dubai Investment"
+    },
+    "hero": {
+      "kicker": "Investing in Dubai · The hidden side",
+      "title": "Investing in Dubai: what the brochures <em>don't tell you</em>",
+      "lead": "Attractive returns, payment plans, marina views… The reality is more nuanced. In 15 minutes, a French-speaking advisor based in Dubai will show you what lies behind the advertisements, before you commit a single euro.",
+      "bullets": {
+        "b1": "The <strong>hidden fees</strong> that eat into your real return",
+        "b2": "The <strong>off-plan pitfalls</strong> you may discover too late",
+        "b3": "The <strong>advertised return</strong> versus the net return once everything is paid",
+        "b4": "How to <strong>spot a reliable developer</strong> and an overpriced project"
+      },
+      "trust": {
+        "t1": "<b>French-speaking</b> · based in Dubai",
+        "t2": "<b>RERA-licensed</b> agency",
+        "t3": "<b>No commitment</b>"
+      },
+      "photoAlt": "Walid Toumi (Tommy Walid), real estate advisor in Dubai"
+    },
+    "form": {
+      "title": "Book your advisory call",
+      "subtitle": "15 minutes, complimentary, via WhatsApp or phone.",
+      "steps": {
+        "budget": "1 · Your investment budget",
+        "goal": "2 · Your main objective",
+        "horizon": "3 · Your investment horizon",
+        "contact": "4 · Your contact details"
+      },
+      "budget": {
+        "moins_150k": "Less than €150,000",
+        "150k_250k": "€150,000 – €250,000",
+        "250k_500k": "€250,000 – €500,000",
+        "plus_500k": "More than €500,000"
+      },
+      "goal": {
+        "locatif": "Rental income",
+        "plus_value": "Capital appreciation / resale",
+        "residence": "Residence / second home",
+        "diversification": "Diversify my assets"
+      },
+      "horizon": {
+        "0_3_mois": "Within 3 months",
+        "3_6_mois": "3 to 6 months",
+        "6_12_mois": "6 to 12 months",
+        "renseigne": "I'm exploring my options"
+      },
+      "firstName": "First name",
+      "lastName": "Last name",
+      "countryCode": "Country code",
+      "whatsapp": "WhatsApp number",
+      "email": "Email",
+      "consent": "I agree to be contacted by WhatsApp, phone or email regarding my project. My data will only be used for this purpose and can be deleted upon request (<link>contact us</link>).",
+      "submit": "Book my complimentary call →",
+      "reassure": "🔒 Response within 24 business hours · No aggressive sales calls",
+      "errors": {
+        "questions": "Please answer the 3 questions.",
+        "name": "Please enter your first and last name.",
+        "phone": "Invalid WhatsApp number.",
+        "email": "Invalid email address.",
+        "consent": "Please agree to be contacted."
+      }
+    },
+    "thanks": {
+      "title": "Thank you, {name}!",
+      "body": "Your request has been received. I will personally contact you on WhatsApp within the next few hours to schedule your call.",
+      "whatsapp": "Message me directly on WhatsApp"
+    },
+    "truth": {
+      "kicker": "The truth behind the brochure",
+      "title": "What they show you… and what they don't tell you",
+      "intro": "3D renderings, infinity pools, double-digit returns. Before you sign, these are the topics I review with every investor.",
+      "imageAlt": "Real estate project brochure with an analysis of purchase price, fees and net return",
+      "caption": "What the brochure shows",
+      "listTitle": "What it doesn't tell you",
+      "items": [
+        {
+          "title": "Purchase costs",
+          "body": "Several costs are added to the advertised price. Many buyers only discover them at the time of signing."
+        },
+        {
+          "title": "Annual costs",
+          "body": "Service charges, property management, furnishing: these are what separate the advertised gross return from the actual net return."
+        },
+        {
+          "title": "Delivery delays",
+          "body": "What the contract actually provides for, and how to check a developer's track record before entrusting them with your money."
+        },
+        {
+          "title": "Resale before handover",
+          "body": "The conditions imposed by some developers for reselling before completion, which you should know before booking."
+        },
+        {
+          "title": "The “launch price”",
+          "body": "How to determine whether a price is genuinely attractive compared with transactions recorded by the Dubai Land Department."
+        }
+      ],
+      "cta": "I want to know the truth →"
+    },
+    "process": {
+      "title": "How it works",
+      "intro": "A simple process designed for investors buying remotely.",
+      "imageAlt": "Walid Toumi during an advisory meeting with an investor couple",
+      "steps": [
+        {
+          "number": "01",
+          "title": "You fill out the form",
+          "body": "30 seconds to share your budget, objective and investment horizon."
+        },
+        {
+          "number": "02",
+          "title": "15-minute advisory call",
+          "body": "We review your situation and answer your questions, by WhatsApp or phone."
+        },
+        {
+          "number": "03",
+          "title": "Tailored selection",
+          "body": "If relevant, you receive a selection of suitable projects, with payment plans and official documents."
+        }
+      ]
+    },
+    "why": {
+      "title": "Why Dubai attracts investors",
+      "intro": "The arguments I hear most often from the investors I work with.",
+      "items": [
+        {
+          "title": "Local taxation",
+          "body": "There is no personal income tax in the UAE on rental income. The rules of your country of residence still apply: we identify the points to verify with your advisor."
+        },
+        {
+          "title": "Payment plans",
+          "body": "For new-build off-plan properties, developers offer payment plans spread throughout construction, sometimes extending beyond handover."
+        },
+        {
+          "title": "100% remote purchase",
+          "body": "Reservation, contracts and registration with the Dubai Land Department can all be completed without travelling."
+        }
+      ]
+    },
+    "about": {
+      "photoAlt": "Walid Toumi, real estate advisor in Dubai",
+      "role": "Your point of contact",
+      "name": "Walid Toumi — Tommy Walid",
+      "p1": "Sales Team Leader at Dubai Investissement (HBS Group), in Business Bay. I work with French-speaking investors from Europe on their off-plan property projects in Dubai.",
+      "p2": "My role: to give you an honest view of the market, filter projects and support you from reservation through to handover — in French, Arabic or English."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Can non-residents buy property in Dubai?",
+          "answer": "Yes. Foreigners can purchase freehold property in designated areas, covering most of the districts sought after by investors."
+        },
+        {
+          "question": "Do I need to travel to Dubai?",
+          "answer": "No. The purchase can be completed entirely remotely. Many clients nevertheless choose to visit once they have made their selection."
+        },
+        {
+          "question": "What budget do I need to invest?",
+          "answer": "It depends on the area and type of property. We discuss this during the call to give you realistic ranges, without unrealistic promises."
+        },
+        {
+          "question": "What about taxation in my country?",
+          "answer": "You remain subject to the tax rules of your country of residence. I am not a tax advisor: I will point out the matters to validate with your accountant or notary."
+        },
+        {
+          "question": "Does the call commit me to anything?",
+          "answer": "No. The call is complimentary and without obligation. Its purpose is to help you decide whether Dubai is right for your project."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to see things more clearly?",
+      "intro": "15 minutes to find out whether Dubai is right for your project.",
+      "button": "Book my complimentary call"
+    },
+    "legal": {
+      "agency": "<b>Dubai Investissement — HBS Group</b> · Ubora Tower, Business Bay, Dubai, United Arab Emirates",
+      "registration": "ORN: [ORN_AGENCE] · BRN: [BRN_WALID] · Trakheesi Permit: [NUMERO_TRAKHEESI]",
+      "disclaimer": "The information on this page is provided for general information purposes only and does not constitute tax or investment advice. Past performance is not indicative of future performance.",
+      "copyright": "© {year} Tommy Walid · <link>tommywalid.com</link>"
+    },
+    "sticky": {
+      "cta": "Book my complimentary call"
+    }
   }
 }
