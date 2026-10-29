@@ -652,6 +652,11 @@
     },
     "sticky": {
       "cta": "Réserver mon appel offert"
+    },
+    "consent": {
+      "text": "Ce site utilise des cookies de mesure d'audience publicitaire.",
+      "accept": "Accepter",
+      "decline": "Refuser"
     }
   }
 }

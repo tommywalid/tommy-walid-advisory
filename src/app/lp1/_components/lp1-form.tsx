@@ -18,6 +18,7 @@ import {
   type Lp1ErrorKey,
   type Lp1LeadInput,
 } from "../_lib/lead";
+import { trackLead } from "../_lib/meta-pixel";
 
 /**
  * LP1 qualification form.
@@ -131,9 +132,10 @@ export function Lp1Form() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const result = (await response.json().catch(() => null)) as { ok?: boolean } | null;
+      const result = (await response.json().catch(() => null)) as { ok?: boolean; event_id?: string } | null;
 
       if (response.ok && result?.ok === true) {
+        trackLead(result.event_id);
         setFirstName(fields.firstName);
         setStatus("success");
         return;
