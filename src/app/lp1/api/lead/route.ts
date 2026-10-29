@@ -1,5 +1,7 @@
 import { randomUUID } from "node:crypto";
-import { NextResponse } from "next/server";
+import { after, NextResponse } from "next/server";
+
+import { sendCapiLead } from "../../_lib/meta-capi";
 
 import {
   budgetKeys,
@@ -36,6 +38,12 @@ const clip = (value: unknown, max: number) =>
 
 const oneOf = <T extends readonly string[]>(list: T, value: string) =>
   (list as readonly string[]).includes(value);
+
+/** First public IP of the request (Vercel sets x-forwarded-for). */
+function clientIp(request: Request): string {
+  const forwarded = request.headers.get("x-forwarded-for") ?? "";
+  return clip(forwarded.split(",")[0], 64) || clip(request.headers.get("x-real-ip"), 64);
+}
 
 export async function POST(request: Request) {
   let body: Partial<Lp1LeadInput>;
@@ -79,6 +87,7 @@ export async function POST(request: Request) {
   }
 
   const [dialCode, country] = input.countryCode.split("|");
+  const adConsent = clip(body.adConsent, 10) === "granted" ? "granted" : "denied";
   const tracking = Object.fromEntries(
     trackingKeys.map((key) => [key, clip(body[key], 200)]),
   );
@@ -106,6 +115,14 @@ export async function POST(request: Request) {
     event_id: randomUUID(),
     submitted_at: new Date().toISOString(),
     ...tracking,
+    // Conversions API: this route sends the Lead to Meta server-side ONLY when
+    // ad_consent is "granted" (same rule as the browser pixel). Browser
+    // identifiers are therefore forwarded only in that case.
+    ad_consent: adConsent,
+    fbp: adConsent === "granted" ? clip(body.fbp, 200) : "",
+    fbc: adConsent === "granted" ? clip(body.fbc, 500) : "",
+    client_ip: adConsent === "granted" ? clientIp(request) : "",
+    client_user_agent: adConsent === "granted" ? clip(request.headers.get("user-agent"), 500) : "",
   };
 
   const webhookUrl = process.env.LP1_LEAD_WEBHOOK_URL;
@@ -137,6 +154,29 @@ export async function POST(request: Request) {
         JSON.stringify(payload),
       );
       return NextResponse.json({ ok: false, error: "upstream" }, { status: 502 });
+    }
+
+    // Conversions API: only after Make confirmed the lead, and only with
+    // ad consent. Runs after the response is sent, so it never slows down
+    // or breaks the visitor's confirmation.
+    if (adConsent === "granted") {
+      after(() =>
+        sendCapiLead({
+          eventId: payload.event_id,
+          eventTime: Math.floor(Date.parse(payload.submitted_at) / 1000),
+          eventSourceUrl: payload.page_url,
+          email: payload.email,
+          phoneE164: payload.whatsapp,
+          firstName: payload.first_name,
+          lastName: payload.last_name,
+          country: payload.pays,
+          leadId: payload.lead_id,
+          fbp: payload.fbp,
+          fbc: payload.fbc,
+          clientIp: payload.client_ip,
+          clientUserAgent: payload.client_user_agent,
+        }),
+      );
     }
 
     return NextResponse.json({ ok: true, event_id: payload.event_id });

@@ -18,7 +18,7 @@ import {
   type Lp1ErrorKey,
   type Lp1LeadInput,
 } from "../_lib/lead";
-import { trackLead } from "../_lib/meta-pixel";
+import { readConsent, trackLead } from "../_lib/meta-pixel";
 
 /**
  * LP1 qualification form.
@@ -117,10 +117,17 @@ export function Lp1Form() {
     if (validationError) return;
 
     const params = new URLSearchParams(window.location.search);
+    const adConsent = readConsent() ?? "";
+    const cookie = (name: string) =>
+      document.cookie.split("; ").find((c) => c.startsWith(`${name}=`))?.slice(name.length + 1) ?? "";
     const payload: Lp1LeadInput = {
       ...fields,
       lang,
       segment: params.get("seg") ?? "",
+      adConsent,
+      // Meta identifiers are only read and sent when the visitor accepted ad cookies.
+      fbp: adConsent === "granted" ? cookie("_fbp") : "",
+      fbc: adConsent === "granted" ? cookie("_fbc") : "",
       pageUrl: window.location.href.split("#")[0],
       ...Object.fromEntries(trackingKeys.map((key) => [key, params.get(key) ?? ""])),
     };
