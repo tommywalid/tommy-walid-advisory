@@ -511,7 +511,7 @@
       "countryCode": "Country code",
       "whatsapp": "WhatsApp number",
       "email": "Email",
-      "consent": "I agree to be contacted by WhatsApp, phone or email regarding my project. My data will only be used for this purpose and can be deleted upon request (<link>contact us</link>).",
+      "consent": "By submitting this form, you agree to be contacted by WhatsApp, phone or email about your project. Your data is used for this purpose only and can be deleted on request (<link>contact us</link>).",
       "submit": "Book my complimentary call →",
       "reassure": "🔒 Response within 24 business hours · No aggressive sales calls",
       "errors": {
@@ -519,7 +519,6 @@
         "name": "Please enter your first and last name.",
         "phone": "Invalid WhatsApp number.",
         "email": "Invalid email address.",
-        "consent": "Please agree to be contacted.",
         "submit": "Your request could not be sent. Please try again in a moment."
       }
     },
