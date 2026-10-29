@@ -37,6 +37,12 @@ const clip = (value: unknown, max: number) =>
 const oneOf = <T extends readonly string[]>(list: T, value: string) =>
   (list as readonly string[]).includes(value);
 
+/** First public IP of the request (Vercel sets x-forwarded-for). */
+function clientIp(request: Request): string {
+  const forwarded = request.headers.get("x-forwarded-for") ?? "";
+  return clip(forwarded.split(",")[0], 64) || clip(request.headers.get("x-real-ip"), 64);
+}
+
 export async function POST(request: Request) {
   let body: Partial<Lp1LeadInput>;
   try {
@@ -79,6 +85,7 @@ export async function POST(request: Request) {
   }
 
   const [dialCode, country] = input.countryCode.split("|");
+  const adConsent = clip(body.adConsent, 10) === "granted" ? "granted" : "denied";
   const tracking = Object.fromEntries(
     trackingKeys.map((key) => [key, clip(body[key], 200)]),
   );
@@ -106,6 +113,14 @@ export async function POST(request: Request) {
     event_id: randomUUID(),
     submitted_at: new Date().toISOString(),
     ...tracking,
+    // Conversions API: Make sends the Lead to Meta server-side ONLY when
+    // ad_consent is "granted" (same rule as the browser pixel). Browser
+    // identifiers are therefore forwarded only in that case.
+    ad_consent: adConsent,
+    fbp: adConsent === "granted" ? clip(body.fbp, 200) : "",
+    fbc: adConsent === "granted" ? clip(body.fbc, 500) : "",
+    client_ip: adConsent === "granted" ? clientIp(request) : "",
+    client_user_agent: adConsent === "granted" ? clip(request.headers.get("user-agent"), 500) : "",
   };
 
   const webhookUrl = process.env.LP1_LEAD_WEBHOOK_URL;

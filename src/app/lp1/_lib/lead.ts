@@ -54,6 +54,11 @@ export type Lp1LeadInput = {
   consent: boolean;
   segment?: string;
   pageUrl?: string;
+  /** Ad-measurement cookie choice from the LP1 banner ("granted" | "denied" | ""). */
+  adConsent?: string;
+  /** Meta browser/click ids (_fbp/_fbc cookies) — only sent when adConsent is "granted". */
+  fbp?: string;
+  fbc?: string;
 } & Partial<Record<(typeof trackingKeys)[number], string>>;
 
 export type Lp1ErrorKey = "questions" | "name" | "phone" | "email" | "consent";
