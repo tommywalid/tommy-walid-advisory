@@ -1,5 +1,7 @@
 import { randomUUID } from "node:crypto";
-import { NextResponse } from "next/server";
+import { after, NextResponse } from "next/server";
+
+import { sendCapiLead } from "../../_lib/meta-capi";
 
 import {
   budgetKeys,
@@ -113,7 +115,7 @@ export async function POST(request: Request) {
     event_id: randomUUID(),
     submitted_at: new Date().toISOString(),
     ...tracking,
-    // Conversions API: Make sends the Lead to Meta server-side ONLY when
+    // Conversions API: this route sends the Lead to Meta server-side ONLY when
     // ad_consent is "granted" (same rule as the browser pixel). Browser
     // identifiers are therefore forwarded only in that case.
     ad_consent: adConsent,
@@ -152,6 +154,29 @@ export async function POST(request: Request) {
         JSON.stringify(payload),
       );
       return NextResponse.json({ ok: false, error: "upstream" }, { status: 502 });
+    }
+
+    // Conversions API: only after Make confirmed the lead, and only with
+    // ad consent. Runs after the response is sent, so it never slows down
+    // or breaks the visitor's confirmation.
+    if (adConsent === "granted") {
+      after(() =>
+        sendCapiLead({
+          eventId: payload.event_id,
+          eventTime: Math.floor(Date.parse(payload.submitted_at) / 1000),
+          eventSourceUrl: payload.page_url,
+          email: payload.email,
+          phoneE164: payload.whatsapp,
+          firstName: payload.first_name,
+          lastName: payload.last_name,
+          country: payload.pays,
+          leadId: payload.lead_id,
+          fbp: payload.fbp,
+          fbc: payload.fbc,
+          clientIp: payload.client_ip,
+          clientUserAgent: payload.client_user_agent,
+        }),
+      );
     }
 
     return NextResponse.json({ ok: true, event_id: payload.event_id });
