@@ -61,7 +61,7 @@ export type Lp1LeadInput = {
   fbc?: string;
 } & Partial<Record<(typeof trackingKeys)[number], string>>;
 
-export type Lp1ErrorKey = "questions" | "name" | "phone" | "email" | "consent";
+export type Lp1ErrorKey = "questions" | "name" | "phone" | "email";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -84,7 +84,6 @@ export function validateLead(input: {
   if (!input.firstName.trim() || !input.lastName.trim()) return "name";
   if (!/^\+?\d{8,15}$/.test(stripPhone(input.whatsapp))) return "phone";
   if (!EMAIL_RE.test(input.email.trim())) return "email";
-  if (!input.consent) return "consent";
   return null;
 }
 

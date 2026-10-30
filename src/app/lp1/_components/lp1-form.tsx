@@ -109,7 +109,9 @@ export function Lp1Form() {
       countryCode: get("countryCode"),
       whatsapp: get("whatsapp"),
       email: get("email"),
-      consent: data.get("consent") !== null,
+      // No checkbox: submitting the form, under the information notice
+      // shown below the button, is the request to be contacted.
+      consent: true,
     };
 
     const validationError = validateLead(fields);
@@ -226,24 +228,21 @@ export function Lp1Form() {
         <Input type="email" name="email" placeholder={t("email")} aria-label={t("email")} autoComplete="email" required />
       </div>
 
-      <label className="mt-4 mb-5 flex items-start gap-2.5 text-xs leading-relaxed text-ink-soft">
-        <input type="checkbox" name="consent" required className="mt-0.5 size-4 shrink-0 accent-forest" />
-        <span>
-          {t.rich("consent", {
-            link: (chunks) => (
-              <a href={`mailto:${company.email}`} className="text-gold-text underline underline-offset-2">
-                {chunks}
-              </a>
-            ),
-          })}
-        </span>
-      </label>
 
-      <Button type="submit" size="lg" className="w-full" disabled={sending}>
+      <Button type="submit" size="lg" className="mt-5 w-full" disabled={sending}>
         {t("submit")}
       </Button>
       <p role="alert" className={cn("mt-2.5 min-h-[1em] text-sm text-red-700", !error && "sr-only")}>
         {error ? t(`errors.${error}`) : ""}
+      </p>
+      <p className="mt-2 text-xs leading-relaxed text-ink-soft">
+        {t.rich("consent", {
+          link: (chunks) => (
+            <a href={`mailto:${company.email}`} className="text-gold-text underline underline-offset-2">
+              {chunks}
+            </a>
+          ),
+        })}
       </p>
       <p className="mt-2 text-center text-xs text-ink-soft">{t("reassure")}</p>
     </form>

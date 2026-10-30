@@ -519,7 +519,7 @@
       "countryCode": "Indicatif pays",
       "whatsapp": "Numéro WhatsApp",
       "email": "Email",
-      "consent": "J'accepte d'être contacté(e) par WhatsApp, téléphone ou email au sujet de mon projet. Mes données sont utilisées uniquement à cette fin et peuvent être supprimées sur simple demande (<link>nous écrire</link>).",
+      "consent": "En envoyant ce formulaire, vous acceptez d'être recontacté(e) par WhatsApp, téléphone ou email au sujet de votre projet. Vos données ne servent qu'à cela et peuvent être supprimées sur simple demande (<link>nous écrire</link>).",
       "submit": "Réserver mon appel offert →",
       "reassure": "🔒 Réponse sous 24 h ouvrées · Aucun démarchage abusif",
       "errors": {
@@ -527,7 +527,6 @@
         "name": "Merci d'indiquer votre prénom et votre nom.",
         "phone": "Numéro WhatsApp invalide.",
         "email": "Adresse email invalide.",
-        "consent": "Merci d'accepter d'être contacté(e).",
         "submit": "L'envoi n'a pas abouti. Merci de réessayer dans un instant."
       }
     },

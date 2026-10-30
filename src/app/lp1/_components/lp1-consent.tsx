@@ -1,19 +1,24 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import { Button } from "@/components/ui/button";
 import { loadMetaPixel, readConsent, storeConsent, type ConsentValue } from "../_lib/meta-pixel";
 
 /**
- * Ad-measurement consent banner for LP1. The Meta Pixel is loaded only
- * after "Accept"; "Decline" loads nothing. Rendered only when a pixel ID
- * is configured — with no pixel there is nothing to consent to.
+ * Ad-measurement consent dialog for LP1, centered over the page so the
+ * visitor makes an explicit choice. The Meta Pixel is loaded only after
+ * "Accept"; "Decline" loads nothing and the page stays fully usable.
+ *
+ * Both choices are buttons of identical size and style, one click each:
+ * CNIL doctrine requires refusing to be as easy and as visible as
+ * accepting. Rendered only when a pixel ID is configured.
  */
 export function Lp1Consent({ pixelId }: { pixelId: string }) {
   const t = useTranslations("lp1.consent");
   const [choice, setChoice] = useState<ConsentValue | null | "unknown">("unknown");
+  const firstButton = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const stored = readConsent();
@@ -21,7 +26,19 @@ export function Lp1Consent({ pixelId }: { pixelId: string }) {
     if (stored === "granted") loadMetaPixel(pixelId);
   }, [pixelId]);
 
-  if (!pixelId || choice !== null) return null;
+  const open = Boolean(pixelId) && choice === null;
+
+  useEffect(() => {
+    if (!open) return;
+    firstButton.current?.focus();
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [open]);
+
+  if (!open) return null;
 
   function decide(value: ConsentValue) {
     storeConsent(value);
@@ -30,18 +47,21 @@ export function Lp1Consent({ pixelId }: { pixelId: string }) {
   }
 
   return (
-    <div
-      role="region"
-      aria-label={t("text")}
-      className="fixed inset-x-0 bottom-0 z-[60] border-t border-gold/25 bg-forest px-4 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom))] text-cream shadow-[0_-10px_30px_-10px_rgba(0,0,0,0.4)]"
-    >
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 sm:flex-row sm:justify-between lg:px-6">
-        <p className="text-center text-sm text-cream/85 sm:text-start">{t("text")}</p>
-        <div className="flex w-full shrink-0 gap-2 sm:w-auto">
-          <Button type="button" variant="outlineLight" size="sm" className="flex-1 sm:flex-none" onClick={() => decide("denied")}>
+    <div className="fixed inset-0 z-[60] flex items-center justify-center bg-ink/60 p-4 backdrop-blur-[2px]">
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="lp1-consent-text"
+        className="w-full max-w-sm rounded-xl border border-gold/25 bg-forest p-6 text-center text-cream shadow-2xl"
+      >
+        <p id="lp1-consent-text" className="text-sm leading-relaxed text-cream/90">
+          {t("text")}
+        </p>
+        <div className="mt-5 grid grid-cols-2 gap-3">
+          <Button ref={firstButton} type="button" variant="gold" className="w-full" onClick={() => decide("denied")}>
             {t("decline")}
           </Button>
-          <Button type="button" variant="gold" size="sm" className="flex-1 sm:flex-none" onClick={() => decide("granted")}>
+          <Button type="button" variant="gold" className="w-full" onClick={() => decide("granted")}>
             {t("accept")}
           </Button>
         </div>
