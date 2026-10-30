@@ -135,7 +135,9 @@ export async function POST(request: Request) {
     const response = await fetch(webhookUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
+      // raw_json: the full payload as one JSON string, stored by Make in
+      // leads.raw_payload as a backup copy of everything the form sent.
+      body: JSON.stringify({ ...payload, raw_json: JSON.stringify(payload) }),
       signal: AbortSignal.timeout(WEBHOOK_TIMEOUT_MS),
       cache: "no-store",
     });
